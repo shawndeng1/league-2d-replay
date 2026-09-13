@@ -1,0 +1,51 @@
+{
+  "fixtureSha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+  "deaths": 75,
+  "respawns": 71,
+  "timerMatches": 71,
+  "timersBeyondMatchEnd": 4,
+  "timerToPacketSeconds": {
+    "min": 0.0006999816821462446,
+    "median": 0.017031311040227592,
+    "max": 0.03337145996238178
+  },
+  "assists": {
+    "champions": [
+      "Malphite",
+      "Graves",
+      "TwistedFate",
+      "Ashe",
+      "Seraphine",
+      "Camille",
+      "Naafiri",
+      "Syndra",
+      "Vayne",
+      "Shaco"
+    ],
+    "candidateCounts": [
+      7,
+      6,
+      8,
+      11,
+      14,
+      8,
+      9,
+      15,
+      7,
+      16
+    ],
+    "metadataCounts": [
+      8,
+      5,
+      8,
+      11,
+      13,
+      7,
+      9,
+      15,
+      6,
+      14
+    ],
+    "status": "REJECTED: context is not an assist list"
+  }
+}

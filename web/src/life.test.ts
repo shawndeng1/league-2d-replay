@@ -1,0 +1,17 @@
+import {it,expect} from 'vitest';
+import type {GameEvent,PositionSample} from '../../shared/replay';
+import {indexLifeEvents,playerLifeAt,samplePlayerPosition} from './life';
+import {getEventReviewStart,filterEvents,currentScore} from './events';
+import {recentTrail} from './trails';
+const source={opcode:'unit fixture',packetSize:0,rawTimestamp:10,confidence:'VERIFIED' as const};
+const death:GameEvent={id:'death',timestamp:10,type:'CHAMPION_KILL',killerPlayerId:7,victimPlayerId:2,x:7700,y:6600,source};
+const respawn:GameEvent={id:'respawn',timestamp:20,type:'CHAMPION_RESPAWN',playerId:2,deathEventId:'death',x:394,y:461,source};
+const life=[death,respawn];
+const samples:PositionSample[]=[{timestamp:9,x:7700,y:6600,speed:350,path:[{x:7700,y:6600},{x:12000,y:6600}]},{timestamp:20.04,x:394,y:462,speed:500,path:[{x:394,y:462},{x:1394,y:462}]}];
+it('indexes only the victim’s deaths and own respawns',()=>{const index=indexLifeEvents([respawn,death],[2,7]);expect(index.get(2)).toEqual(life);expect(index.get(7)).toEqual([]);});
+it('seeks deterministically across exact death and respawn boundaries',()=>{expect(playerLifeAt(life,9).dead).toBe(false);expect(playerLifeAt(life,10)).toMatchObject({dead:true,respawnAt:20});expect(playerLifeAt(life,19.99).dead).toBe(true);expect(playerLifeAt(life,20).dead).toBe(false);expect(playerLifeAt(life,11).dead).toBe(true);});
+it('never guesses a respawn beyond match end',()=>expect(playerLifeAt([death],100)).toMatchObject({dead:true,respawnAt:undefined}));
+it('holds the death location instead of continuing the previous route',()=>{expect(samplePlayerPosition(samples,15,life)).toMatchObject({x:7700,y:6600});expect(samplePlayerPosition(samples,19.99,life)).toMatchObject({x:7700,y:6600});});
+it('uses the notification until movement resumes a tick later',()=>{expect(samplePlayerPosition(samples,20,life)).toMatchObject({x:394,y:461});expect(samplePlayerPosition(samples,20.04,life)).toMatchObject({x:394,y:462});expect(samplePlayerPosition(samples,21.04,life)?.x).toBeCloseTo(894);});
+it('does not draw a trail from the corpse to spawn',()=>{const trail=recentTrail(samples,21,30,life);expect(trail.find(p=>p.x<1000)?.breakBefore).toBe(true);expect(trail.filter(p=>p.age<.3&&p.x>2000).every(p=>p.x===7700)).toBe(true);});
+it('filters and reviews respawns without changing kill/death totals',()=>{expect(filterEvents(life,'Respawns',2)).toEqual([respawn]);expect(getEventReviewStart(respawn)).toBe(17);expect(currentScore(life,21,2)).toEqual({kills:0,deaths:1});});

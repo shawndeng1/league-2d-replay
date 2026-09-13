@@ -1,0 +1,62 @@
+{
+  "profileVersion": 1,
+  "complete": true,
+  "clientVersion": "16.18.817.5716",
+  "protocolDigest": "f6a10af08504a7ee",
+  "clientSha256": "6c3a62afa3d62b66db8a777140c4338979bdb56b87242446570fe6b118f40095",
+  "playerIdStart": 1073741998,
+  "imageBase": 5368709120,
+  "sizeOfImage": 36098048,
+  "sections": [
+    {
+      "name": ".text",
+      "virtualAddress": 4096,
+      "virtualSize": 27787592,
+      "rawSize": 27791360,
+      "sha256": "904fff788065238b290393189a69f6c6ccc20aea655fd59c4eeefffc95e1d756"
+    },
+    {
+      "name": ".rdata",
+      "virtualAddress": 27795456,
+      "virtualSize": 4548082,
+      "rawSize": 4550656,
+      "sha256": "80e3485c9b92190439cbc1386d07dced96c61228ae4d6a22914c4939ba6e8134"
+    },
+    {
+      "name": ".data",
+      "virtualAddress": 32346112,
+      "virtualSize": 1647776,
+      "rawSize": 638976,
+      "sha256": "432627a39f51476f78d4e835f5eb5e160908920c74fe031f003430d5b0989589"
+    }
+  ],
+  "stubs": {
+    "returnTrueRvas": [
+      "0x1256800"
+    ],
+    "allocatorRvas": [],
+    "mallocRvas": [
+      "0x11b9530"
+    ],
+    "freeRvas": [
+      "0x11b9560"
+    ]
+  },
+  "runtimeObjects": [],
+  "decoders": {
+    "championDeath": {
+      "status": "verified",
+      "entryRva": "0xf1b3a0",
+      "endRva": "0xf1bd06",
+      "constructorRva": "0xe993f0",
+      "constructorEndRva": "0xe99572"
+    },
+    "championRespawn": {
+      "status": "verified",
+      "entryRva": "0xf09620",
+      "endRva": "0xf0989f",
+      "constructorRva": "0xe88460",
+      "constructorEndRva": "0xe884fc"
+    }
+  }
+}

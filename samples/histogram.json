@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "sha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+  "clientVersion": "16.18.817.5716",
+  "protocolDigest": "f6a10af08504a7ee",
+  "transport": {
+    "blockCount": 2413360,
+    "streamBlocks": {
+      "gameChunk": 1971319,
+      "keyframe": 442039,
+      "startKeyframe": 1,
+      "startSentinel": 1
+    },
+    "firstTimestamp": 0.0,
+    "lastTimestamp": 2193.7107324218746,
+    "distinctOpcodes": 262,
+    "topOpcodes": [
+      {
+        "id": 1033,
+        "hex": "0x0409",
+        "count": 1021439,
+        "payloadBytes": 2042878,
+        "averagePayloadBytes": 2.0
+      },
+      {
+        "id": 840,
+        "hex": "0x0348",
+        "count": 138010,
+        "payloadBytes": 1093720,
+        "averagePayloadBytes": 7.925
+      },
+      {
+        "id": 1061,
+        "hex": "0x0425",
+        "count": 98460,
+        "payloadBytes": 246579,
+        "averagePayloadBytes": 2.504
+      },
+      {
+        "id": 733,
+        "hex": "0x02dd",
+        "count": 75018,
+        "payloadBytes": 1286216,
+        "averagePayloadBytes": 17.145
+      },
+      {
+        "id": 171,
+        "hex": "0x00ab",
+        "count": 71816,
+        "payloadBytes": 5078504,
+        "averagePayloadBytes": 70.715
+      },
+      {
+        "id": 540,
+        "hex": "0x021c",
+        "count": 54757,
+        "payloadBytes": 210842,
+        "averagePayloadBytes": 3.851
+      },
+      {
+        "id": 76,
+        "hex": "0x004c",
+        "count": 51301,
+        "payloadBytes": 3927929,
+        "averagePayloadBytes": 76.566
+      },
+      {
+        "id": 59,
+        "hex": "0x003b",
+        "count": 45870,
+        "payloadBytes": 318854,
+        "averagePayloadBytes": 6.951
+      },
+      {
+        "id": 1161,
+        "hex": "0x0489",
+        "count": 38385,
+        "payloadBytes": 936020,
+        "averagePayloadBytes": 24.385
+      },
+      {
+        "id": 49,
+        "hex": "0x0031",
+        "count": 34860,
+        "payloadBytes": 134677,
+        "averagePayloadBytes": 3.863
+      },
+      {
+        "id": 1069,
+        "hex": "0x042d",
+        "count": 34662,
+        "payloadBytes": 133037,
+        "averagePayloadBytes": 3.838
+      },
+      {
+        "id": 642,
+        "hex": "0x0282",
+        "count": 33607,
+        "payloadBytes": 33607,
+        "averagePayloadBytes": 1.0
+      },
+      {
+        "id": 297,
+        "hex": "0x0129",
+        "count": 28984,
+        "payloadBytes": 460900,
+        "averagePayloadBytes": 15.902
+      },
+      {
+        "id": 1195,
+        "hex": "0x04ab",
+        "count": 28632,
+        "payloadBytes": 257823,
+        "averagePayloadBytes": 9.005
+      },
+      {
+        "id": 522,
+        "hex": "0x020a",
+        "count": 26790,
+        "payloadBytes": 64503,
+        "averagePayloadBytes": 2.408
+      },
+      {
+        "id": 125,
+        "hex": "0x007d",
+        "count": 19864,
+        "payloadBytes": 4899325,
+        "averagePayloadBytes": 246.643
+      },
+      {
+        "id": 890,
+        "hex": "0x037a",
+        "count": 19707,
+        "payloadBytes": 157102,
+        "averagePayloadBytes": 7.972
+      },
+      {
+        "id": 880,
+        "hex": "0x0370",
+        "count": 18618,
+        "payloadBytes": 460358,
+        "averagePayloadBytes": 24.727
+      },
+      {
+        "id": 92,
+        "hex": "0x005c",
+        "count": 16529,
+        "payloadBytes": 89061,
+        "averagePayloadBytes": 5.388
+      },
+      {
+        "id": 774,
+        "hex": "0x0306",
+        "count": 16516,
+        "payloadBytes": 556690,
+        "averagePayloadBytes": 33.706
+      },
+      {
+        "id": 310,
+        "hex": "0x0136",
+        "count": 16472,
+        "payloadBytes": 73745,
+        "averagePayloadBytes": 4.477
+      },
+      {
+        "id": 1086,
+        "hex": "0x043e",
+        "count": 15805,
+        "payloadBytes": 3028287,
+        "averagePayloadBytes": 191.603
+      },
+      {
+        "id": 652,
+        "hex": "0x028c",
+        "count": 15805,
+        "payloadBytes": 127312,
+        "averagePayloadBytes": 8.055
+      },
+      {
+        "id": 837,
+        "hex": "0x0345",
+        "count": 15599,
+        "payloadBytes": 102878,
+        "averagePayloadBytes": 6.595
+      },
+      {
+        "id": 127,
+        "hex": "0x007f",
+        "count": 15427,
+        "payloadBytes": 366345,
+        "averagePayloadBytes": 23.747
+      },
+      {
+        "id": 280,
+        "hex": "0x0118",
+        "count": 15269,
+        "payloadBytes": 80275,
+        "averagePayloadBytes": 5.257
+      },
+      {
+        "id": 996,
+        "hex": "0x03e4",
+        "count": 14874,
+        "payloadBytes": 399171,
+        "averagePayloadBytes": 26.837
+      },
+      {
+        "id": 167,
+        "hex": "0x00a7",
+        "count": 14768,
+        "payloadBytes": 71652,
+        "averagePayloadBytes": 4.852
+      },
+      {
+        "id": 939,
+        "hex": "0x03ab",
+        "count": 14551,
+        "payloadBytes": 121075,
+        "averagePayloadBytes": 8.321
+      },
+      {
+        "id": 1222,
+        "hex": "0x04c6",
+        "count": 13419,
+        "payloadBytes": 13419,
+        "averagePayloadBytes": 1.0
+      },
+      {
+        "id": 1181,
+        "hex": "0x049d",
+        "count": 13419,
+        "payloadBytes": 820571,
+        "averagePayloadBytes": 61.15
+      },
+      {
+        "id": 521,
+        "hex": "0x0209",
+        "count": 13368,
+        "payloadBytes": 386535,
+        "averagePayloadBytes": 28.915
+      },
+      {
+        "id": 1043,
+        "hex": "0x0413",
+        "count": 13021,
+        "payloadBytes": 2788047,
+        "averagePayloadBytes": 214.119
+      },
+      {
+        "id": 742,
+        "hex": "0x02e6",
+        "count": 12944,
+        "payloadBytes": 48136,
+        "averagePayloadBytes": 3.719
+      },
+      {
+        "id": 595,
+        "hex": "0x0253",
+        "count": 12023,
+        "payloadBytes": 24046,
+        "averagePayloadBytes": 2.0
+      },
+      {
+        "id": 589,
+        "hex": "0x024d",
+        "count": 10680,
+        "payloadBytes": 10680,
+        "averagePayloadBytes": 1.0
+      },
+      {
+        "id": 98,
+        "hex": "0x0062",
+        "count": 10247,
+        "payloadBytes": 156210,
+        "averagePayloadBytes": 15.244
+      },
+      {
+        "id": 653,
+        "hex": "0x028d",
+        "count": 8693,
+        "payloadBytes": 52018,
+        "averagePayloadBytes": 5.984
+      },
+      {
+        "id": 969,
+        "hex": "0x03c9",
+        "count": 8656,
+        "payloadBytes": 22160,
+        "averagePayloadBytes": 2.56
+      },
+      {
+        "id": 153,
+        "hex": "0x0099",
+        "count": 8630,
+        "payloadBytes": 0,
+        "averagePayloadBytes": 0.0
+      },
+      {
+        "id": 991,
+        "hex": "0x03df",
+        "count": 8614,
+        "payloadBytes": 211535,
+        "averagePayloadBytes": 24.557
+      },
+      {
+        "id": 1177,
+        "hex": "0x0499",
+        "count": 8406,
+        "payloadBytes": 11868,
+        "averagePayloadBytes": 1.412
+      },
+      {
+        "id": 616,
+        "hex": "0x0268",
+        "count": 8348,
+        "payloadBytes": 8348,
+        "averagePayloadBytes": 1.0
+      },
+      {
+        "id": 482,
+        "hex": "0x01e2",
+        "count": 8059,
+        "payloadBytes": 9630,
+        "averagePayloadBytes": 1.195
+      },
+      {
+        "id": 830,
+        "hex": "0x033e",
+        "count": 8049,
+        "payloadBytes": 15876,
+        "averagePayloadBytes": 1.972
+      },
+      {
+        "id": 932,
+        "hex": "0x03a4",
+        "count": 8049,
+        "payloadBytes": 8049,
+        "averagePayloadBytes": 1.0
+      },
+      {
+        "id": 172,
+        "hex": "0x00ac",
+        "count": 8049,
+        "payloadBytes": 8049,
+        "averagePayloadBytes": 1.0
+      },
+      {
+        "id": 1246,
+        "hex": "0x04de",
+        "count": 7628,
+        "payloadBytes": 92141,
+        "averagePayloadBytes": 12.079
+      },
+      {
+        "id": 1003,
+        "hex": "0x03eb",
+        "count": 7530,
+        "payloadBytes": 8059,
+        "averagePayloadBytes": 1.07
+      },
+      {
+        "id": 97,
+        "hex": "0x0061",
+        "count": 7475,
+        "payloadBytes": 18797,
+        "averagePayloadBytes": 2.515
+      }
+    ]
+  },
+  "semantic": {
+    "status": "unavailable",
+    "message": "semantic decoder unavailable for client 16.18.817.5716",
+    "transportCompleted": true,
+    "unknownPayloadsPreserved": true
+  }
+}

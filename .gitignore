@@ -1,0 +1,8 @@
+.venv/
+reference/
+__pycache__/
+*.rofl
+samples/local/
+node_modules/
+dist/
+.pytest_cache/

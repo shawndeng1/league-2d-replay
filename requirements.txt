@@ -1,0 +1,6 @@
+rofllens @ git+https://github.com/ss26367098/rofllens.git@62a475a8f05e7dfa94df5990758be2156c892496
+pefile==2024.8.26
+unicorn==2.1.4
+fastapi==0.141.1
+uvicorn==0.52.4
+python-multipart==0.0.32
