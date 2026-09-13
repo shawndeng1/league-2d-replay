@@ -1,0 +1,207 @@
+[
+  {
+    "sha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "champions": [
+      "Malphite",
+      "Graves",
+      "TwistedFate",
+      "Ashe",
+      "Seraphine",
+      "Camille",
+      "Naafiri",
+      "Syndra",
+      "Vayne",
+      "Shaco"
+    ],
+    "candidate": [
+      8,
+      5,
+      8,
+      11,
+      13,
+      7,
+      9,
+      15,
+      6,
+      14
+    ],
+    "metadata": [
+      8,
+      5,
+      8,
+      11,
+      13,
+      7,
+      9,
+      15,
+      6,
+      14
+    ],
+    "totalsMatch": true,
+    "confidence": "UNKNOWN: gold recipient is not verified assist credit"
+  },
+  {
+    "sha256": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "champions": [
+      "KSante",
+      "Darius",
+      "Zyra",
+      "Jinx",
+      "Senna",
+      "Jax",
+      "MasterYi",
+      "Ahri",
+      "Caitlyn",
+      "Lux"
+    ],
+    "candidate": [
+      2,
+      0,
+      2,
+      3,
+      3,
+      2,
+      2,
+      6,
+      4,
+      17
+    ],
+    "metadata": [
+      2,
+      0,
+      2,
+      3,
+      3,
+      1,
+      2,
+      6,
+      4,
+      17
+    ],
+    "totalsMatch": false,
+    "confidence": "UNKNOWN: gold recipient is not verified assist credit"
+  },
+  {
+    "sha256": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "champions": [
+      "Camille",
+      "MasterYi",
+      "Zed",
+      "Ziggs",
+      "Lux",
+      "Fiora",
+      "Amumu",
+      "TwistedFate",
+      "Ezreal",
+      "Blitzcrank"
+    ],
+    "candidate": [
+      4,
+      3,
+      3,
+      6,
+      11,
+      2,
+      3,
+      4,
+      1,
+      7
+    ],
+    "metadata": [
+      4,
+      3,
+      3,
+      6,
+      11,
+      2,
+      3,
+      4,
+      1,
+      7
+    ],
+    "totalsMatch": true,
+    "confidence": "UNKNOWN: gold recipient is not verified assist credit"
+  },
+  {
+    "sha256": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "champions": [
+      "Pantheon",
+      "Amumu",
+      "TwistedFate",
+      "Caitlyn",
+      "Lux",
+      "MonkeyKing",
+      "MasterYi",
+      "Yasuo",
+      "Seraphine",
+      "Brand"
+    ],
+    "candidate": [
+      8,
+      10,
+      13,
+      10,
+      15,
+      9,
+      10,
+      7,
+      15,
+      17
+    ],
+    "metadata": [
+      8,
+      10,
+      12,
+      10,
+      15,
+      9,
+      10,
+      7,
+      15,
+      17
+    ],
+    "totalsMatch": false,
+    "confidence": "UNKNOWN: gold recipient is not verified assist credit"
+  },
+  {
+    "sha256": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "champions": [
+      "Vladimir",
+      "Naafiri",
+      "Amumu",
+      "Jinx",
+      "Pyke",
+      "JarvanIV",
+      "MasterYi",
+      "Diana",
+      "Ashe",
+      "Thresh"
+    ],
+    "candidate": [
+      11,
+      13,
+      6,
+      18,
+      8,
+      13,
+      4,
+      10,
+      14,
+      15
+    ],
+    "metadata": [
+      11,
+      14,
+      7,
+      19,
+      8,
+      13,
+      4,
+      10,
+      14,
+      15
+    ],
+    "totalsMatch": false,
+    "confidence": "UNKNOWN: gold recipient is not verified assist credit"
+  }
+]

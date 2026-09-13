@@ -9,6 +9,21 @@ scrub, and change playback speed. No League simulation or invented trajectories.
 samples over 36:33.710. Other client builds fail with an unsupported-version
 error instead of silently applying the wrong decoder.
 
+**Dragon review update:** five real replays now pass integration checks. The
+parser extracts 18 team dragon notifications across them; the original replay
+has six. They appear in the existing event feed and timeline with a ten-second
+review lead-in. Re-upload older cached replay JSON to add these events.
+Individual dragon killer, elemental type, Baron and Herald remain unavailable.
+Assist-credit candidates were tested across all five matches and rejected for
+inconsistent totals; current assists are still omitted. See
+[`docs/rofl-format.md`](docs/rofl-format.md) for the evidence and next decoding steps.
+
+Run `.\.venv\Scripts\python.exe -m pytest -q` from the root (37 tests), and
+`npm test` / `npm run build` in `web` (27 tests plus production build).
+`ROFL_TEST_DIR` optionally points to the directory containing all five private
+fixtures; missing local replays or the exact client cause integration skips.
+The small real dragon packet fixtures are included in `samples/dragon-packets.json`.
+
 ## Run locally
 
 Requirements: Python 3.11–3.13, Node.js 22.12+ (tested with 22.13), Git, and
@@ -222,7 +237,7 @@ Check the final test result and process exit code; actual parse errors are not i
 
 ## Known limitations and roadmap
 
-- One exact build and one real replay are validated. Wider compatibility needs
+- One exact build and five real replays are validated. Wider compatibility needs
   additional fixtures and independently validated profiles.
 - Participant order → entity mapping follows the established parser convention
   and matches this fixture's teams/laning; a dedicated hero-spawn identity decoder
@@ -230,18 +245,19 @@ Check the final test result and process exit code; actual parse errors are not i
   map-selection field. Other maps are unsupported.
 - Positions are network path origins with recorded routes and speeds. This is
   not an exact continuous simulation: changing movement buffs, recalls, deaths,
-  and dashes may still cause corrections or snaps. HP and death state are not decoded.
-- Champion kills/deaths are verified against all ten metadata totals. Assists,
-  objectives and structures are not decoded. Death highlight locations
+  and dashes may still cause corrections or snaps. HP is not decoded; death and respawn notifications control life state.
+- Champion kills/deaths are verified against all ten metadata totals. Dragon
+  notifications include team credit, checked against final team totals. Assists,
+  Baron, Herald and structures are not decoded. Death highlight locations
   use nearby observed movement origins where available, labeled approximate.
 - Fog of war, minions, projectiles, abilities, attacks, cooldowns, and combat
   simulation are postponed. Only the all-player view is exposed.
 - The official Data Dragon map is a schematic minimap, not the detailed in-game
   terrain texture. Uncached champion icons use the official Data Dragon CDN.
 
-Next: obtain additional same-build fixtures, identify a reliable assist-credit
-source, and decode objectives with independent validation. The nearby local
-replays are 16.17, so wider patch support remains unverified. Improve path timing
+Next: identify an explicit assist-credit source and Baron/Herald notifications.
+Five 16.18 fixtures now provide independent validation; nearby 16.17 replays
+remain unsupported. Improve path timing
 and profile tooling for later patches. Port stable parser layers to Rust when it
 offers a clear maintenance benefit.
 

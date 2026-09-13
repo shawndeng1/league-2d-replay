@@ -2,6 +2,7 @@
 import argparse
 import json
 import struct
+from bisect import bisect_left
 from pathlib import Path
 import pefile
 from rofllens import ReplayReader
@@ -13,6 +14,10 @@ def main():
     ap.add_argument('--entry',type=lambda v:int(v,0),required=True)
     ap.add_argument('--constructor-anchor',type=lambda v:int(v,0),required=True)
     ap.add_argument('--all',action='store_true')
+    ap.add_argument('--replay',default=r'C:\Users\tom-d\OneDrive\Documents\League of Legends\Replays\NA1-5640196741.rofl')
+    ap.add_argument('--output',type=Path)
+    ap.add_argument('--after',type=float,default=0)
+    ap.add_argument('--at-events',type=Path,help='Only probe timestamps of champion kills in normalized JSON')
     ap.add_argument('--constructor-start',type=lambda v:int(v,0))
     ap.add_argument('--constructor-end',type=lambda v:int(v,0))
     args=ap.parse_args()
@@ -29,8 +34,13 @@ def main():
     path=root.with_name(f'packet-{args.opcode:04x}.json');path.write_text(json.dumps(profile))
     engine=UnicornDecoderEngine.from_cached_profile_sections(path)
     rows=[]
-    with ReplayReader.open(r'C:\Users\tom-d\OneDrive\Documents\League of Legends\Replays\NA1-5640196741.rofl') as reader:
+    event_times=None if args.at_events is None else sorted(e['timestamp'] for e in json.loads(args.at_events.read_text())['events'] if e['type']=='CHAMPION_KILL')
+    with ReplayReader.open(args.replay) as reader:
         for b in reader.iter_blocks(streams={'gameChunk'},opcodes={args.opcode},include_payload=True):
+            if b.timestamp<args.after:continue
+            if event_times is not None:
+                i=bisect_left(event_times,b.timestamp-.000002)
+                if i==len(event_times) or abs(event_times[i]-b.timestamp)>.000002:continue
             try:
                 o=engine.observe_decoder('candidate',b.payload,allow_unverified=True,capture_heap_writes=True)
                 row={'timestamp':b.timestamp,'param':b.param,'payloadHex':b.payload.hex(),'output':o.output_snapshot.hex(),'heap':o.heap_snapshot.hex(),'outputWrites':o.output_writes,'heapWrites':o.heap_writes}
@@ -40,8 +50,9 @@ def main():
                     print(round(b.timestamp,3),hex(b.param),[(hex(a),hex(v),round(struct.unpack('<f',struct.pack('<I',v))[0],3)) for a,v in fields.items()],flush=True)
                     print('output',o.output_snapshot[:128].hex(),'heap',o.heap_snapshot[:128].hex(),flush=True)
                 if not args.all and len(rows)>=4:break
-            except Exception as exc: print(type(exc).__name__,str(exc),flush=True)
-    Path(f'samples/local/packet-{args.opcode:04x}.json').write_text(json.dumps(rows))
+            except Exception as exc:
+                raise RuntimeError(f'Candidate failed at {b.timestamp:.6f}s; no fields accepted') from exc
+    (args.output or Path(f'samples/local/packet-{args.opcode:04x}.json')).write_text(json.dumps(rows))
     print('decoded',len(rows),'profile',profile['decoders'],flush=True)
 
 if __name__=='__main__':main()

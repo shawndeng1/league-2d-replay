@@ -15,6 +15,7 @@ from .patch_16_18 import PLAYER_ENTITY_START
 
 DEATH_OPCODE = 0x0475
 RESPAWN_OPCODE = 0x01B3
+DRAGON_OPCODE = 0x002D
 # Plaintext writes in the exact-build respawn notification's decoded object.
 # All 71 packets place these coordinates at the correct team's spawn; the
 # notification follows the independently decoded death timer (see format docs).
@@ -36,6 +37,28 @@ class DeathDecoder:
         # Runtime always checks the user's executable and section hashes. No cached
         # code, game process attachment, or modifications to the installed client.
         self.engine = UnicornDecoderEngine(Path(__file__).parent/'profiles/16.18-events.json', client_exe)
+
+    def decode_dragon(self, block):
+        """Team dragon notification; no inferred killer, elemental type or position.
+
+        Decoded object+0x10 is a u16 team, read before byte re-obfuscation.
+        All 18 occurrences across five replays match final team dragon totals.
+        Object+0x18's vector and +0x28 are not participant/assist fields.
+        See docs/rofl-format.md for the independent observations and limits.
+        """
+        if not math.isfinite(block.timestamp) or block.timestamp < 0:
+            raise ValueError('Invalid dragon timestamp')
+        observation = self.engine.observe_decoder('dragonNotification',block.payload)
+        values=[v for a,s,v in observation.output_writes if a==0x10 and s==2]
+        if not values or values[-1] not in (100,200):
+            raise ValueError('Unknown dragon notification team')
+        team='BLUE' if values[-1]==100 else 'RED'
+        timestamp=round(block.timestamp,6)
+        digest=hashlib.sha256(block.payload).hexdigest()[:12]
+        return {'id':f'dragon-{round(timestamp*1000)}-{team.lower()}-{digest}',
+                'timestamp':timestamp,'type':'OBJECTIVE_KILL','objective':'DRAGON','killerTeam':team,
+                'source':{'opcode':'0x002d','packetSize':len(block.payload),
+                          'rawTimestamp':block.timestamp,'confidence':'VERIFIED'}}
 
     def decode(self, block, players):
         if not math.isfinite(block.timestamp) or block.timestamp < 0:
@@ -85,6 +108,21 @@ class DeathDecoder:
                 'source':{'opcode':'0x01b3','packetSize':len(block.payload),'rawTimestamp':block.timestamp,
                           'entityId':block.param,'confidence':'VERIFIED','coordinateSource':'respawn notification',
                           'coordinateConfidence':'VERIFIED'}}
+
+def validate_dragons(events, participants, duration):
+    """Fail closed if the supported notification does not cover metadata totals."""
+    if len({e['id'] for e in events}) != len(events):
+        raise ValueError('Duplicate dragon identifiers')
+    if any(not 0 <= e['timestamp'] <= duration for e in events):
+        raise ValueError('Dragon outside replay duration')
+    counts=Counter(e['killerTeam'] for e in events)
+    for team,raw_team in [('BLUE','100'),('RED','200')]:
+        roster=[p for p in participants if p['TEAM']==raw_team]
+        if any('DRAGON_KILLS' not in p for p in roster):
+            raise ValueError('Missing dragon metadata for validation')
+        if counts[team]!=sum(int(p['DRAGON_KILLS']) for p in roster):
+            raise ValueError(f'Dragon notifications disagree with {team} final metadata')
+    return events
 
 def validate_deaths(events, players, duration):
     events.sort(key=lambda e:(e['timestamp'],e['id']))

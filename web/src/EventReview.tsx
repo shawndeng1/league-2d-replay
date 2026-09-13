@@ -19,7 +19,7 @@ export function EventFeed({events,players,selectedEvent,onReview,player,debug}:P
   return <details className="review-panel" open><summary>Events <small>{visible.length}</small></summary>
     <div className="event-filters">{(['All','Kills','Respawns','Objectives','Structures'] as const).map(value=><button key={value} aria-pressed={filter===value} onClick={()=>setFilter(value)}>{value}</button>)}</div>
     {player!==null&&<label className="review-toggle"><input type="checkbox" checked={onlyPlayer} onChange={e=>setOnlyPlayer(e.target.checked)}/> Selected player only</label>}
-    <p className="support-note">Showing decoded events only. Objectives, structures and assists are not decoded.</p>
+    <p className="support-note">Showing decoded events only. Dragon notifications include team credit; Baron, Herald, structures and assists remain unavailable. Re-upload older parsed replays to add dragons.</p>
     <div className="event-feed">{visible.map(event=><button key={event.id} className={selectedEvent===event.id?'chosen':''} title={eventDetails(event,players)} onClick={()=>onReview(event)}><time>{formatTime(event.timestamp)}</time><EventSymbol event={event}/><span>{eventLabel(event,players)}</span></button>)}{!visible.length&&<p>No decoded events in this view.</p>}</div>
     {debug&&selected&&<pre className="event-debug" aria-label="Event source details">{JSON.stringify(selected,null,2)}{'\n'}Coordinates: {selected.x===undefined?'unavailable':`${selected.x}, ${selected.y}`}</pre>}
   </details>;

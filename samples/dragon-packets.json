@@ -1,0 +1,142 @@
+[
+  {
+    "file": "NA1-5640196741.rofl",
+    "sha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "finalTeamDragons": {
+      "BLUE": 2,
+      "RED": 4
+    },
+    "packets": [
+      {
+        "timestamp": 402.4428977050802,
+        "payloadHex": "544945d42dfc7e524db7cc",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 767.1328334960967,
+        "payloadHex": "6449c92dfc2d0701a5fc",
+        "killerTeam": "BLUE"
+      },
+      {
+        "timestamp": 1093.8030087890565,
+        "payloadHex": "d04ac92dfcde4d0c5e66",
+        "killerTeam": "BLUE"
+      },
+      {
+        "timestamp": 1418.762613281246,
+        "payloadHex": "c04a45d42dfcde4d0c5e66",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 1749.7392353515581,
+        "payloadHex": "e24b45d42dfcde4d0c5e66",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 2078.976703124996,
+        "payloadHex": "f44845d42dfcde4d0c5e6677",
+        "killerTeam": "RED"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640893952.rofl",
+    "sha256": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "finalTeamDragons": {
+      "BLUE": 0,
+      "RED": 3
+    },
+    "packets": [
+      {
+        "timestamp": 524.3011472167994,
+        "payloadHex": "444945d42dfc7701192fcc",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 858.6525527343782,
+        "payloadHex": "c24a45d42dfc3ecdbcf0a8",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 1265.8278867187473,
+        "payloadHex": "e44b45d42dfcde4d0c5e66",
+        "killerTeam": "RED"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640901584.rofl",
+    "sha256": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "finalTeamDragons": {
+      "BLUE": 2,
+      "RED": 0
+    },
+    "packets": [
+      {
+        "timestamp": 563.6912670898479,
+        "payloadHex": "5049c92dfc2d0701a5fc",
+        "killerTeam": "BLUE"
+      },
+      {
+        "timestamp": 962.1263876953128,
+        "payloadHex": "f24ac92dfcde4d0c5e66",
+        "killerTeam": "BLUE"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640933743.rofl",
+    "sha256": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "finalTeamDragons": {
+      "BLUE": 0,
+      "RED": 4
+    },
+    "packets": [
+      {
+        "timestamp": 572.7879013671879,
+        "payloadHex": "644945d42dfc7e524db7cc",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 950.4320131835974,
+        "payloadHex": "d04a45d42dfc7701192fcc",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 1265.1731240234353,
+        "payloadHex": "f24b45d42dfc3ecdbcf0a8",
+        "killerTeam": "RED"
+      },
+      {
+        "timestamp": 1671.6407607421784,
+        "payloadHex": "d04945d42dfc3ecdbcf0a877",
+        "killerTeam": "RED"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640962900.rofl",
+    "sha256": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "finalTeamDragons": {
+      "BLUE": 3,
+      "RED": 0
+    },
+    "packets": [
+      {
+        "timestamp": 399.09053588867346,
+        "payloadHex": "4049c92dfc7e524db7cc",
+        "killerTeam": "BLUE"
+      },
+      {
+        "timestamp": 844.7476230468758,
+        "payloadHex": "e24ac92dfcd8ac0e70",
+        "killerTeam": "BLUE"
+      },
+      {
+        "timestamp": 1177.7293642578088,
+        "payloadHex": "d74bc92dfc3ecdbcf0a8",
+        "killerTeam": "BLUE"
+      }
+    ]
+  }
+]

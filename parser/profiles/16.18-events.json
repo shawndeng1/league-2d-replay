@@ -44,6 +44,13 @@
   },
   "runtimeObjects": [],
   "decoders": {
+    "dragonNotification": {
+      "status": "verified",
+      "entryRva": "0xf1e520",
+      "endRva": "0xf1ed4d",
+      "constructorRva": "0xea0120",
+      "constructorEndRva": "0xea0228"
+    },
     "championDeath": {
       "status": "verified",
       "entryRva": "0xf1b3a0",

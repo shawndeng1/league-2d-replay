@@ -12,7 +12,7 @@ export interface RespawnEvent extends BaseEvent {type:'CHAMPION_RESPAWN';playerI
 export type GameEvent = ChampionKillEvent | RespawnEvent | ObjectiveEvent | StructureEvent;
 export interface Replay {
   schemaVersion: 1;
-  metadata: { patch: string; mapId: number; duration: number; sourceSha256: string; decoder: string; positionSource: string; worldBounds: WorldBounds; entityMapping: string; eventCoverage?:{championKills:boolean;respawns?:boolean;assists:boolean;objectives:boolean;structures:boolean} };
+  metadata: { patch: string; mapId: number; duration: number; sourceSha256: string; decoder: string; positionSource: string; worldBounds: WorldBounds; entityMapping: string; eventCoverage?:{championKills:boolean;respawns?:boolean;assists:boolean;objectives:boolean;dragons?:boolean;structures:boolean} };
   players: Player[];
   tracks: Track[];
   events: GameEvent[];

@@ -362,6 +362,107 @@ Research dumps stay private in `samples/local`. Sanitized results are in
 totals, malformed packets, stable IDs, unsupported 16.17 input, lifecycle pairing,
 boundary seeking, countdowns, corpse holds and trail discontinuities.
 
+## Dragon notifications and assist-credit audit (five replay corpus)
+
+The four newly supplied files have the same supported client version
+`16.18.817.5716` and protocol digest. They all pass movement, participant,
+kill-total and lifecycle validation without changing the movement decoder.
+
+| Replay | Movement samples | Kill + respawn events | Dragon notifications (Blue / Red) |
+| --- | ---: | ---: | ---: |
+| NA1-5640196741 | 56,432 | 146 | 2 / 4 |
+| NA1-5640893952 | 37,603 | 64 | 0 / 3 |
+| NA1-5640901584 | 35,706 | 76 | 2 / 0 |
+| NA1-5640933743 | 59,746 | 164 | 0 / 4 |
+| NA1-5640962900 | 37,965 | 164 | 3 / 0 |
+
+### VERIFIED: team dragon notification, `0x002D`
+
+Exact client constructor RVA `0xEA0120`–`0xEA0228`; deserializer
+`0xF1E520`–`0xF1ED4D`. The constructor writes opcode `0x002D` at
+`0xEA0127`. These are offline emulated client functions, under the same
+executable/section hash checks as the death decoder.
+
+The last **two-byte** write to decoded object `+0x10` is team 100 or 200.
+Subsequent individual byte writes obfuscate it again, so reading the final
+object snapshot directly is wrong. This is a decoded structure offset, not
+a guessed offset in the raw payload.
+
+Evidence: all 18 packets across five matches match both total and per-team
+`DRAGON_KILLS` metadata exactly. The first write to object `+0x28` also equals
+the team's number of previously killed dragons, separately for each team
+throughout these matches (0, 1, 2, 3). That counter interpretation is LIKELY;
+it is not exported. The packet's team interpretation is further supported by
+the initial fixture's recorded locations: Naafiri is near the dragon pit at
+all four red notifications; Graves is near it at the later blue notification,
+and Seraphine at the earlier one. These agree with their final individual
+dragon credits, but do not establish a general individual-killer decoder.
+
+Original replay notification timestamps (seconds):
+`402.442898 RED`, `767.132833 BLUE`, `1093.803009 BLUE`,
+`1418.763… RED`, `1749.739… RED`, `2078.976703 RED`.
+The precise raw timestamps and all 18 payload fixtures are preserved in
+`samples/dragon-packets.json`; normalized timestamps retain six decimals.
+The original replay has **six** dragon kills: Naafiri 4, Graves 1, Seraphine 1.
+
+UNKNOWN: the vector at object `+0x18`, elemental subtype/hash mapping,
+individual killer, Elder behavior and notification-to-death delay at finer
+than game tick precision. No subtype, player ID or map coordinate is invented.
+Baron, Herald and structure notifications remain unsupported.
+
+Production emits `OBJECTIVE_KILL / DRAGON` with team, stable payload-derived
+ID, timestamp and source confidence. It validates final team totals and fails
+closed on disagreement. This is notification time; it is not claimed to be
+an independently measured exact damage/death instant. Existing timeline and
+feed support provide the ten-second review lead-in. Coverage adds optional
+`dragons: true`; `objectives: false` continues to mean incomplete coverage of
+the full objective category. Decoder tag advances to `16.18-review-v3`.
+
+### Assist credit: an additional attractive heuristic rejected
+
+`0x003B` deserializer `0x10D1D90`–`0x10D215D`, constructor
+`0xE8BF10`–`0xE8BFE9`, yields a float at object `+0x10` and participant entity
+at `+0x14` (last four-byte writes). LIKELY: a gold-award notification. At the
+first kill it awards Syndra 400 and Shaco approximately 106.142. It also
+appears for ordinary small awards, including approximately 1.02, outside kills.
+No victim or award-reason field has been established.
+
+A research-only rule taking opposing-team, non-killer recipients of awards
+greater than 2 at the same kill timestamp perfectly matches all ten final
+assist totals in the original replay. Independent fixtures falsify it:
+
+- 5640893952: Jax candidate 2, metadata 1.
+- 5640901584: all aggregate totals match (still not per-event proof).
+- 5640933743: Twisted Fate candidate 13, metadata 12.
+- 5640962900: Naafiri 13 vs 14, Amumu 6 vs 7, Jinx 18 vs 19.
+
+It both overcounts and misses credits. Simultaneous kills and unrelated gold
+awards make time-only association ambiguous. The threshold is a deliberately
+tested heuristic, not a protocol field. `assistingPlayerIds` remains omitted
+and coverage remains false. `samples/assist-award-evidence.json` records the
+five comparisons; `tools/audit_assist_awards.py` reproduces them from private
+probe dumps. Next: establish an explicit stat/credit increment or award reason
+and victim association, and verify individual events across this corpus.
+
+Other probes: `0x023D` has notification-like hashes and a team, but no verified
+assist list; `0x00A9` has two floats and an entity, with unrelated later updates.
+The `0x03E4` emulator probe requires an unresolved runtime memory dependency;
+it was stopped and none of its output accepted. No arbitrary memory stub was
+added to make that candidate appear to work.
+
+Reproduce a candidate using the existing cached research profile:
+
+```powershell
+python tools/probe_packet.py --opcode 0x2d --entry 0xf1e520 --constructor-anchor 0xea0127 --constructor-start 0xea0120 --constructor-end 0xea0228 --all --replay 'C:\path\replay.rofl' --output samples/local/dragon-probe.json
+python tools/probe_packet.py --opcode 0x3b --entry 0x10d1d90 --constructor-anchor 0xe8bf17 --constructor-start 0xe8bf10 --constructor-end 0xe8bfe9 --all --replay 'C:\path\replay.rofl' --at-events samples/local/replay.json --output samples/local/gold-probe.json
+python tools/audit_assist_awards.py samples/local/replay.json samples/local/gold-probe.json
+```
+
+`--at-events` uses a two-microsecond tolerance because normalized timestamps
+are rounded to six decimals; decimal-bucket equality can drop genuine matches.
+Candidate probes stop at their first decoding error. They never update the
+production profile automatically.
+
 ## Reproduce the offline comparison
 
 Install `requirements-dev.txt`. Clone the two reference repositories only if

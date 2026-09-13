@@ -12,5 +12,7 @@ def main():
             print(f"{minutes:02}:{seconds:06.3f} CHAMPION_KILL {names.get(e.get('killerPlayerId'),'Non-player')} -> {names[e['victimPlayerId']]} [{e['id']}]")
         elif e['type']=='CHAMPION_RESPAWN':
             print(f"{minutes:02}:{seconds:06.3f} CHAMPION_RESPAWN {names[e['playerId']]} [{e['id']}]")
+        elif e['type']=='OBJECTIVE_KILL':
+            print(f"{minutes:02}:{seconds:06.3f} {e['objective']}_KILL {e.get('killerTeam','Unknown team')} [{e['id']}]")
 
 if __name__=='__main__':main()

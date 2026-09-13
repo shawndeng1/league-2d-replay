@@ -9,6 +9,7 @@ from pathlib import Path
 from rofllens import ReplayReader
 from .movement import parse_movement_payloads
 from .events import DeathDecoder, DEATH_OPCODE, RESPAWN_OPCODE, validate_deaths, attach_observed_locations, merge_life_events
+from .events import DRAGON_OPCODE, validate_dragons
 from rofllens.errors import RoflParseError, SemanticDecodeError
 from .patch_16_18 import (CLIENT_VERSION, PROTOCOL_DIGEST, PLAYER_ENTITY_START,
                           MOVEMENT_OPCODE, PatchDecoder)
@@ -79,10 +80,16 @@ class ReplayParser:
             death_decoder = DeathDecoder(self.client_exe)
             events = []
             respawns = []
+            dragons = []
             opcodes = Counter()
             movement_packets = 0
             for block in reader.iter_blocks(streams={'gameChunk'}, include_payload=True):
                 opcodes[f'0x{block.packet_id:04x}'] += 1
+                if block.packet_id == DRAGON_OPCODE:
+                    try:
+                        dragons.append(death_decoder.decode_dragon(block))
+                    except (ValueError,SemanticDecodeError) as exc:
+                        raise ParseError('EVENT_DECODE_FAILED',f'Dragon at {block.timestamp:.3f}s: {exc}') from exc
                 if block.packet_id == DEATH_OPCODE:
                     try:
                         events.append(death_decoder.decode(block, players))
@@ -127,15 +134,17 @@ class ReplayParser:
             with path.open('rb') as handle:
                 source_hash = hashlib.file_digest(handle, 'sha256').hexdigest()
             attach_observed_locations(events,samples)
+            life_events=merge_life_events(validate_deaths(events,players,duration),respawns,duration)
+            objective_events=validate_dragons(dragons,reader.metadata.participants,duration)
             log.info('Decoded %s: %d movement packets, %d champion samples', source_hash[:12], movement_packets, sum(map(len, samples)))
             return {'schemaVersion': 1,
                     'metadata': {'patch': CLIENT_VERSION, 'mapId': 11, 'duration': duration,
-                                 'sourceSha256': source_hash, 'decoder': 'rofl-v2/16.18-review-v2',
-                                 'eventCoverage': {'championKills': True, 'respawns': True, 'assists': False, 'objectives': False, 'structures': False},
+                                 'sourceSha256': source_hash, 'decoder': 'rofl-v2/16.18-review-v3',
+                                 'eventCoverage': {'championKills': True, 'respawns': True, 'assists': False, 'objectives': False, 'dragons': True, 'structures': False},
                                  'positionSource': 'movement-path-origin-with-route',
                                  'entityMapping': 'patch-profile participant order',
                                  'worldBounds': {'minX': 0, 'maxX': 14716, 'minY': 0, 'maxY': 14824}},
                     'players': players,
                     'tracks': [{'playerId': i, 'samples': track} for i, track in enumerate(samples)],
-                    'events': merge_life_events(validate_deaths(events,players,duration),respawns,duration),
+                    'events': sorted(life_events+objective_events,key=lambda e:(e['timestamp'],e['id'])),
                     'diagnostics': {'movementPackets': movement_packets, 'sampleCount': sum(map(len, samples)), 'opcodeHistogram': dict(opcodes)}}
