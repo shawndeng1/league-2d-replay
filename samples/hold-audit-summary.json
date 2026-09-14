@@ -1,0 +1,47 @@
+[
+  {
+    "replayId": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "holds": {
+      "ARRIVES_AT_OBSERVED_SPAWN": 45,
+      "LEAVES_OBSERVED_SPAWN": 1,
+      "UNEXPLAINED_RELOCATION": 15,
+      "SMALL_CORRECTION_AFTER_HOLD": 22
+    }
+  },
+  {
+    "replayId": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "holds": {
+      "ARRIVES_AT_OBSERVED_SPAWN": 40,
+      "UNEXPLAINED_RELOCATION": 17,
+      "LEAVES_OBSERVED_SPAWN": 5,
+      "SMALL_CORRECTION_AFTER_HOLD": 13
+    }
+  },
+  {
+    "replayId": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "holds": {
+      "ARRIVES_AT_OBSERVED_SPAWN": 64,
+      "LEAVES_OBSERVED_SPAWN": 6,
+      "UNEXPLAINED_RELOCATION": 10,
+      "SMALL_CORRECTION_AFTER_HOLD": 18
+    }
+  },
+  {
+    "replayId": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "holds": {
+      "ARRIVES_AT_OBSERVED_SPAWN": 47,
+      "LEAVES_OBSERVED_SPAWN": 5,
+      "UNEXPLAINED_RELOCATION": 10,
+      "SMALL_CORRECTION_AFTER_HOLD": 18
+    }
+  },
+  {
+    "replayId": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "holds": {
+      "ARRIVES_AT_OBSERVED_SPAWN": 78,
+      "UNEXPLAINED_RELOCATION": 20,
+      "LEAVES_OBSERVED_SPAWN": 4,
+      "SMALL_CORRECTION_AFTER_HOLD": 24
+    }
+  }
+]

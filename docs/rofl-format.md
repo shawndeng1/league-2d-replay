@@ -748,7 +748,7 @@ An independent `0x0119` neutral-death script at the same timestamp repeats that
 entity at vector +4/+12/+120 and decoded object +0x28. This script describes
 self-removal and has no usable target-name hash: it must NOT supply killer credit.
 The existing neutral script tag/length checks apply (0x1d7, 124 bytes).
-Unit-death decoder: RVA F09E20�F0A39D; constructor E8AAF0�E8AC33. All offsets
+Unit-death decoder: RVA F09E20–F0A39D; constructor E8AAF0–E8AC33. All offsets
 are decoded client-object fields, not raw packet offsets. Exact client hash remains required.
 
 | Replay suffix | Time (seconds) | Dying entity | Credited participant (zero based) |
@@ -871,3 +871,400 @@ IDs do not match decoded identity fields. The grub adapter filters by the decode
 unit name before applying entity/position assertions. Such unrelated records are
 not normalized. SRU_Horde records still require exact identity agreement; the
 non-grub behavior does not justify an alias rule for grubs or other entities.
+
+
+## Display-only route reconciliation (2026-09-14)
+
+NA1-5640962900 has frequent differences between the prior route's predicted
+position at the next update and that update's recorded origin. Median errors for
+short intervals are about 7–10 world units, with 95th percentiles around 32–43.
+These produce small repeated visual snaps despite a smoothly running ticker.
+No binary fields, timestamps, or normalized samples were changed.
+
+For moving paths with multiple points and a next observation within two seconds,
+the viewer linearly distributes the end residual over that interval when its
+length is at most min(100, max(48, speed * interval * 0.5 + 8)) world units.
+This bounded visual heuristic preserves route bends and arrives exactly at the
+next real origin. It is not a claim of exact intermediate game simulation. Zero
+speed, single-point paths and larger errors are not reconciled by this short-interval rule.
+Life-state overrides still apply. Of 2,520 moving short intervals with at least
+30 units of boundary error in this replay, 2,197 qualify; 323 larger differences
+remain discontinuous pending actual movement/protocol evidence. Fixtures and
+continuity tests cover three real champions; input JSON is never modified.
+
+### Long-route timing: Master Yi and Ashe
+
+VERIFIED from actual normalized observations in NA1-5640962900:
+
+| Champion | Earlier time | Next time | Gap | Predicted progress | Observed route progress | Off-route error |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Master Yi | 21.937561 | 25.545068 | 3.607507s | 2846.77 | 2693.33 | 10.05 |
+| Ashe | 17.127561 | 26.414068 | 9.286507s | 7447.69 | 7007.57 | 9.36 |
+
+Distances are world units. Holding the earlier recorded speed constant overshoots
+by roughly 154 and 440 units, then snaps backward at the next observation.
+The prior two-second reconciliation limit missed both examples. UNKNOWN: exact
+speed-change times and intermediate speed curve. No new protocol fields or
+particular movement buffs are asserted by this change.
+
+The viewer projects the next real origin onto the previous polyline. For gaps
+in (2, 15] seconds, a projection within 32 units, more than 32 units from either
+route endpoint, and observed/predicted progress ratio in [0.5, 1.25], it
+interpolates observed distance along the route and a bounded lateral residual.
+This is a display heuristic, not verified intermediate simulation. Finished
+routes are excluded so idle time is not stretched into slow movement. Stops,
+off-route relocations, and gaps outside these gates retain previous behavior.
+
+Real sample pairs are stored in web/src/long-route-gaps.fixture.json. Tests step
+both intervals at 60 Hz and assert forward progress without backward snaps,
+boundary continuity, exact recorded endpoints, and unchanged input. Additional
+cases cover route bends, finished routes, off-route relocations, and zero speed.
+Existing Malphite coverage now expects observed-progress interpolation too.
+No cache rebuild or backend restart is needed.
+
+## Cross-replay movement audit (2026-09-14)
+
+The offline TypeScript auditor imports the same samplePosition and
+samplePlayerPosition functions as the viewer. It measures the visible jump
+immediately before/at each unique observation timestamp, records corrections
+of at least 30 world units, and separates known life transitions. Duplicate
+timestamps use the renderer's last-update rule. A negative dot product against
+the preceding 50ms of movement labels a backward correction. Predicted holds
+use route length and recorded speed, not asserted game inactivity.
+
+| Cached replay SHA prefix | Boundaries | Candidates outside known life transitions |
+| --- | ---: | ---: |
+| 09ed9f33cc67 | 37,955 | 702 |
+| 3a968c92f7c5 | 35,696 | 542 |
+| 971d3811c614 | 59,736 | 946 |
+| a3657dbd88f3 | 37,593 | 406 |
+| d2758074c6c5 | 56,422 | 897 |
+
+VERIFIED: 227,402 boundaries examined; 3,493 remaining non-life candidates.
+These are not confirmed defects. The largest corrections often follow roughly
+eight-second holds and travel over 13,000 world units. LIKELY: many are recalls.
+UNKNOWN: a packet-confirmed recall identity/timing for each case. No blanket
+smoothing or recall events were introduced. The audit does not detect GPU frame
+drops, speed discontinuities without a position jump, or every possible freeze.
+Known life coverage can also be incomplete; non-life is a diagnostic category,
+not proof that a transition was unrelated to a death.
+
+### Ashe rapid direction changes, NA1-5640962900, 9-12 seconds
+
+VERIFIED: a fresh gameChunk window contains 364 packets, including 29 packets
+of 0x004c and 23 movement records for player 8 / entity 0x400000b6. All 23
+timestamps (rounded as in production), routes, and speeds match the cached
+normalized track exactly. Evidence is generated by tools/export_movement_window.py;
+the inspected local dump is samples/local/movement-audit/ashe-packets.json.
+
+At 9.110561 the recorded origin is (14482,14354), speed 806.875, route endpoint
+(14312,14266). At 9.278561 the origin is (14450,14326) and a new route points
+back toward (14572,14356). Constant-speed traversal predicts too much progress;
+the viewer's bounded correction deliberately leaves a 94.81-unit backward snap.
+Similar remaining corrections occur at 9.411561, 9.712561, and 10.280561.
+
+UNKNOWN: whether movement start delays, turn handling, or separate speed state
+explain the timing. Packet frequency alone does not identify these fields.
+The window includes 0x0425 (132), 0x03ab (111), 0x0118 (22), and other packets;
+none is newly labeled as speed/dash data. Next protocol step: compare the client
+handlers and the currently unnamed 0x004c header fields across these observed
+direction changes and ordinary straight movement. Establish field semantics
+before changing sample timestamps or emitting additional movement state.
+
+## Movement header investigation (2026-09-14, follow-up)
+
+The matching local deserializer at RVA 0x104f430 writes a u32 at object +0x10
+and a u16 at +0x14 before the vector at +0x18. Inline selectors for the u32 are
+2 -> 2, 5 -> 0, 1 -> 1, 3 -> 0xffffffff; for the u16 they are 2 -> 65535,
+6 -> 1, 4 -> 2, 3 -> 0. Other selectors consume the existing encoded varint.
+These branches were inspected at 0x104f49e..637 and 0x104f644..7d3.
+
+**VERIFIED:** the u16 equals the number of decoded records in every one of
+195,041 gameChunk movement packets across the five replays below. It includes
+all records, before filtering to champion entities. The production adapter now
+checks this count, including empty buffers. Disagreement becomes the existing
+MOVEMENT_DECODE_FAILED error instead of silently accepting a structurally valid
+but incomplete path list. decode_movement_buffer remains available to older
+callers; decode_movement_packet exposes the count and the unnamed u32 internally.
+The normalized replay schema and playback timing are unchanged.
+
+**UNKNOWN:** the u32's gameplay meaning. It never decreases in these files, but
+monotonicity does not establish a clock. Treating u32 deltas as milliseconds
+produced substantially worse route predictions on identical comparison sets:
+
+| Replay | Packets/count matches | Comparisons | Transport median error | u32/1000 median error |
+| --- | ---: | ---: | ---: | ---: |
+| NA1-5640962900 | 35,346 | 23,764 | 7.31 | 103.74 |
+| NA1-5640196741 | 51,264 | 36,847 | 7.03 | 103.88 |
+| NA1-5640893952 | 31,271 | 23,118 | 7.85 | 97.50 |
+| NA1-5640901584 | 27,944 | 24,426 | 6.83 | 91.90 |
+| NA1-5640933743 | 49,216 | 40,134 | 6.96 | 96.67 |
+
+Errors are world units. Comparisons require a moving multipoint route, transport
+gap 0.03-1s, and candidate-header gap in (0,1]s; both predictors use exactly the
+same pairs and the earlier recorded speed. Large errors are retained. This
+rejects the tested clock interpretation, not every possible interpretation of
+the field. No alternative timestamps are emitted. The 9-12s Ashe examples alone
+were misleading: u32 values rise from 7747 to 10414 and superficially resemble
+milliseconds, while full-match deltas drift far from transport time.
+
+Reproduce with `python -m tools.movement_timing <replay.rofl> [more.rofl ...]`.
+The ignored output is samples/local/movement-audit/timing.json; `--output` and
+`--client` are configurable. A small real-packet fixture is committed at
+samples/movement-header-fixture.json. Tests cover inline selector constants,
+varint bounds/truncation, real decoded header values and record counts, empty
+buffers, and count disagreement. No client executable bytes/tables are included.
+
+The rapid-direction-change stutter is still unresolved. This investigation
+rules out replacing replay timestamps with u32/1000 and adds a structural check;
+it does not establish a speed-change, dash, recall, or movement-start-delay field.
+The next useful evidence is the client consumer of the route records (rather
+than only the deserializer), correlated with the known direction-change window.
+
+The sanitized five-replay measurements are saved in
+samples/movement-timing-report.json. Re-running all five through the production
+count check produced identical timing reports and accepted all 195,041 packets.
+Final targeted parser run: 39 tests passed, including the full original real-replay
+movement integration. Unicorn emitted native access-violation diagnostics during
+emulation, but this run completed successfully (exit 0); these diagnostics should
+be investigated separately and are not claimed to be resolved by the header change.
+
+## Rapid turns: bounded display correction (2026-09-14)
+
+Static client tracing did not establish the movement-application function.
+The 0x004c packet constructor at 0xebcc70 references vtable 0x1b8a928; its
+0x3938c0 method returns object size 0x28 and 0x3891a0 frees the vector/object.
+Neither is the movement consumer. A literal 0x4c near 0xc74036 led to a
+boolean callback at 0xc53a00 rather than validated route application. These are
+rejected leads; shared immediate values are not packet-handler identity evidence.
+The exact turn timing remains UNKNOWN. No new movement packet is decoded here.
+
+Independently of that unknown, the actual origin pairs establish an avoidable
+display overshoot. Ashe's next origin at 9.278561 is near the earlier commanded
+route, but constant-speed prediction travels beyond it before the new opposing
+command arrives. The display can interpolate between observed origins without
+claiming an exact turn-delay model.
+
+The new rule requires all of the following:
+
+- A moving multipoint route and next multipoint command within (0, 0.25]s.
+- The next origin projects onto the earlier route interior within 16 world units.
+- Observed progress is positive but less than the constant-speed prediction.
+- The predicted endpoint differs from the observed origin by at most 100 units.
+- The new command opposes the local previous-route direction (negative dot product).
+
+For those intervals only, travel distance follows observed progress along the
+polyline, with a bounded lateral residual to reach the real origin. This is
+display interpolation, not a decoded motion state or newly fabricated samples.
+Stopped/single-point commands, off-route corrections, and larger displacements
+remain under the existing rules. Input samples are unchanged; seeking is stateless.
+
+The full before/after boundary audit found:
+
+| Replay SHA prefix | Non-life flags before | After | Removed |
+| --- | ---: | ---: | ---: |
+| 09ed9f33cc67 | 702 | 677 | 25 |
+| 3a968c92f7c5 | 542 | 523 | 19 |
+| 971d3811c614 | 946 | 917 | 29 |
+| a3657dbd88f3 | 406 | 393 | 13 |
+| d2758074c6c5 | 897 | 844 | 53 |
+
+There were zero newly flagged boundaries and no increased jump among retained
+flags. All removed jumps were at most 100 units. This audit measures positional
+continuity, not exact gameplay fidelity or GPU frame timing. The remaining 3,354
+candidates are not all defects. Summarized results: samples/rapid-turn-audit.json.
+
+web/src/rapid-turns.fixture.json contains six raw-verified Ashe pairs and one
+actual corrected pair from each of the other four replays (Camille, Yasuo,
+Caitlyn, Malphite). Tests check monotonic progress without overshooting the next
+origin, exact start/end positions, continuity and unchanged input, plus rejection
+of larger/off-route reversals. Existing Yi/Ashe long-route and relocation tests
+still pass. The frontend suite now has 44 passing tests.
+
+## Holds and relocation evidence (2026-09-14)
+
+The hold audit separates geometry from unsupported gameplay labels. Of 462
+non-life HOLD_THEN_RELOCATION candidates across five replays, 95 have corrections
+of at most 100 units, 274 arrive within 300 units of the player's own decoded
+respawn positions, 21 leave that region, and 72 remain unexplained. If no decoded
+respawn position is available, the audit does not assume one. These are diagnostic
+categories; arrival at spawn does not establish a recall packet or channel time.
+Long review links now include the hold, capped at 15 seconds of lead-in.
+Summary: samples/hold-audit-summary.json. Local report:
+samples/local/movement-audit/holds/report.md.
+
+The longest hold in the affected replay is Diana's 106.646-226.693 interval,
+ending with only a roughly 43-unit correction near spawn. It is not evidence of
+120 seconds of missing walking. Other large relocations occur both toward and
+away from spawn; they are intentionally not interpolated across the whole map.
+
+### Amumu at 340.498318-344.142318 in NA1-5640962900
+
+VERIFIED: fresh 0x004c decoding contains a single-point path at (7726,7412),
+then no intervening movement sample for entity 0x400000b0 before (8216,7942).
+Other packet types continue arriving during this interval. The bounded packet
+export covers 338-346s, with 4,319 packets and 13 Amumu movement observations.
+This is a gap in the supported position source, not proof of packet loss.
+
+0x0062 (deserializer 0x103f6c0, constructor 0xeb72f0) writes three floats at
+decoded-object +0x10/+0x14/+0x18 and an entity-like u32 at +0x1c. At 341.567318,
+the planar floats are (8210.081,7934.297), entity 0x400000b5. Diana's recorded
+origin is (8210,7934). At 342.939318 the floats are (8222.716,7982.593), again
+0x400000b5, versus Diana's (8222,7982). LIKELY: target coordinates and target
+entity. UNKNOWN: exact packet semantics. These are not accepted as Amumu's position.
+
+0x04b5 (0xfe9950 / constructor 0xe8b940) yields an opaque 52-byte buffer in
+four probed packets. No position or movement semantics were established.
+
+### Candidate origin fields in 0x02c4
+
+Deserializer 0x10d0760 (constructor 0xe8a8f0) produces scalar writes at:
+
+| Decoded object fields | Observation | Confidence |
+| --- | --- | --- |
+| +0x5c, +0x6c | Match envelope champion entity in 200 sampled records | VERIFIED correlation; broader semantics UNKNOWN |
+| +0x104/+0x108/+0x10c | Origin-like world triplet | LIKELY cast-related origin; not verified current champion position |
+| +0x130/+0x134/+0x138 | Separate target-like triplet | LIKELY target, not a champion sample |
+| +0x110 | Time-like float; can predate packet arrival | LIKELY action time; not a replacement replay clock |
+
+At 340.498318, the origin-like planar values are (7726.394,7410.062), target-like
+values (8470.953,8219.772), with time-like value about 340.499. Later records at
+342.001318, 342.335318, and 342.806318 have origin-like values (8210,7934), inside
+the movement gap. These promising examples were not sufficient for production.
+
+A deterministic sample of 200 packets spanning the affected match covers all
+ten champions. All 200 source identity pairs match the envelope. Of 100 packets
+within 2ms of a recorded movement origin, only 75 origin candidates are within
+4 world units. Counterexamples include Diana at 1511.131 (~401 units), Jarvan IV
+at 980.064 (~401 units), and Thresh at 1306.192 (~459 units, candidate clock
+about 2.037s earlier). Maximum absolute candidate-clock offset is 2.171s.
+This rejects unconditional injection of these fields into champion tracks.
+Potential stale cast origins, spell-specific offsets, and ordering remain UNKNOWN.
+
+Research is isolated in tools/research_cast_origins.py. Reproduce with
+`python -m tools.research_cast_origins <replay.rofl> --profile <packet-02c4.json> --output <research.json>`.
+The research profile is generated by tools/probe_packet.py using the exact
+addresses above. No unverified profile is added to production. The small
+samples/cast-origin-research-fixture.json preserves relevant observed writes;
+samples/cast-origin-correlation-summary.json records the broad result. Tests
+ensure origin/target separation, reading scalar writes before byte obfuscation,
+and rejection of incomplete/nonfinite fields. Next step is resolving action
+type, origin semantics, and timing before accepting any supplemental samples.
+
+## Embedded action time and variant correlation (2026-09-14)
+
+The candidate embedded time (+0x110) was compared with actual movement origins,
+without route extrapolation. Corroboration requires an observation within 2ms
+and planar error at most 4 world units. This explicitly avoids treating a distant
+sample during a gap as ground truth. In each replay, 200 deterministically spaced
+0x02c4 packets span all ten players, with 200/200 source identity matches.
+
+| Replay | Arrival-time corroborated | Embedded-time corroborated | Embedded coincident mismatches | No close embedded-time observation |
+| --- | ---: | ---: | ---: | ---: |
+| NA1-5640962900 | 75 | 74 | 15 | 111 |
+| NA1-5640196741 | 51 | 51 | 8 | 141 |
+
+VERIFIED: Thresh records at 524.911 and 1306.192 have origin errors about
+415/459 units at arrival, but under two units at their embedded times roughly
+2.171/2.037 seconds earlier. A third earlier-position case is corroborated too.
+This supports an earlier action origin for those records. It does not establish
+that all candidate times can replace transport time. The aggregate does not improve;
+the two comparison populations also differ because nearby observations are sparse.
+
+Additional grouping keys were read from scalar writes at +0x118 and +0xd8.
+Their general semantics remain UNKNOWN. A case-folded ELF-style string-hash
+hypothesis maps +0x118 values as follows:
+
+| Fingerprint | Name hypothesis | Evidence in affected replay's sample |
+| --- | --- | --- |
+| 0x06496ea8 | SummonerFlash | Three ~397-401 unit coincident mismatches across Jarvan IV and Diana |
+| 0x07b05da5 | VladimirE | 13 records, three coincident mismatches, ten without close observations |
+| 0x07b05db1 | VladimirQ | Ten records; seven corroborated, three sparse |
+| 0x0a85b9cd | Tantrum | Eight Amumu records; seven corroborated, one sparse |
+
+LIKELY: action fingerprints and action-dependent origins. The name mapping is
+a research hypothesis; hash matches can collide and the client consumer has not
+been traced to prove these identities. In particular +0xd8 is not established
+as a summoner-spell slot (its observed values must not be presented as such).
+The Flash-like cases could describe a pre-relocation origin, while other actions
+can retain older origins. Exact ordering and charged-action behavior remain UNKNOWN.
+
+The evidence rejects unconditional origin injection and unconditional shifting
+to the candidate timestamp. Even seven corroborated Tantrum observations do not
+justify an action-specific production decoder without wider validation during
+movement gaps and interpretation of the action origin. No normalized position,
+event, schema, timing, or viewer behavior changed in this follow-up.
+
+Reproduction: tools/research_cast_origins.py now retains the two grouping fields;
+tools/analyze_origin_timing.py compares the two timelines and emits grouped results.
+samples/origin-timing-summary.json contains both summaries, and
+samples/origin-timing-fixture.json contains five real counterexample cases with
+their relevant observed movement windows. Five focused tests cover earlier versus
+coincident mismatching origins, hash hypotheses, sparse evidence, input immutability,
+scalar-write handling, and invalid fields. The local readable report is
+samples/local/movement-audit/origin-timing-review.md.
+
+Regression fixtures include a backward correction and a held relocation from
+each of the five replays. Tests require finite positions under backward seeking,
+exact observed endpoints, preserved unresolved discontinuities, no input mutation,
+life-state masking, duplicate handling, and continued Yi/Ashe long-gap continuity.
+
+### Scoped Amumu action positions (2026-09-14, decoder v8)
+
+The wider validation requested above is now complete for the Amumu envelope
+entity and fingerprint `0x0a85b9cd` only. This supersedes the earlier provisional
+decision for that combination; general `0x02c4` origins remain unsupported.
+
+VERIFIED within the three tested 16.18.817.5716 replays:
+
+| Replay | Fingerprint records | Coincident movement observations (within 2 ms) | Origins within 4 world units | Added gap observations |
+| --- | ---: | ---: | ---: | ---: |
+| NA1-5640962900 | 85 | 66 | 66 | 3 |
+| NA1-5640901584 | 73 | 60 | 56 | 2 |
+| NA1-5640933743 | 165 | 136 | 131 | 2 |
+
+All 323 records have matching envelope/source identities and embedded times
+within 0.501 ms of packet time. Of 262 coincident observations, 253 agree within
+4 units. The other nine agree within approximately 2 units with the next movement
+observation 33–67 ms later. These demonstrate stream ordering differences, so
+the adapter gives original movement observations precedence within 100 ms.
+The 61 records without coincident movement evidence are not independently
+position-verified merely by belonging to this fingerprint; their use is supported
+by the scoped population evidence and conservative gap guards.
+
+The exact-client decoder is registered as `amumuActionOrigin`: deserializer
+RVA `0x10d0760` through `0x10d0a43`, constructor `0xe8a8f0` through `0xe8a991`.
+The last four-byte scalar writes provide source IDs at object offsets `+0x5c`
+and `+0x6c`, planar origin at `+0x104` / `+0x10c`, time at `+0x110`, and fingerprint
+at `+0x118`. These are decoded-object offsets, not wire payload offsets. The
+existing exact-client profile validation still applies. Height `+0x108`, target
+coordinates, and the opaque `+0xd8` grouping value are not used for positioning.
+
+LIKELY: the fingerprint identifies Tantrum, based on the case-folded ELF hash.
+The name is still a hypothesis, not a normalized spell event. UNKNOWN: general
+action-origin semantics, cast ordering, and missing dash trajectories. This is
+not evidence that Flash, Vladimir E, Thresh actions, or other champions can use
+this adapter.
+
+`parser/action_positions.py` checks identity, finite map coordinates, and time
+agreement before considering a sample. It only inserts inside existing tracks,
+outside known dead intervals, when the original route has stopped or exhausted
+and the observation differs by more than four units. Active routes and nearby
+original observations are preserved. Normalized samples carry `positionOnly`
+and `positionSource: AMUMU_ACTION_ORIGIN`, with no fabricated speed or path.
+The frontend holds these samples until the next record, including after seeking.
+
+The three accepted observations in NA1-5640962900 are at 342.335318, 933.029361,
+and 1035.553428 seconds. The first is (8210, 7934), about 1.807 seconds before
+the next movement update at 344.142318. The different action at 342.001 is
+excluded. Existing events, map entities, and original samples in all three
+refreshed caches were compared against backups and remain unchanged.
+
+Reproduce the population scan with `tools/research_cast_origins.py --champion
+Amumu --all` and its replay/profile arguments. Local reports are under
+`samples/local/movement-audit/amumu-all-*.json`. The portable scalar-write fixture
+is `samples/cast-origin-research-fixture.json`. Tests cover scoped rejection,
+identity/time/finite-value guards, nearby movement precedence, active routes,
+dead intervals, idempotence, and the exact three additions in the real Amumu
+replay. Frontend tests check holding, endpoints, and backward seeking. The
+real-replay test skips when the private fixture or supported client is absent.

@@ -1,10 +1,12 @@
 """Exact-build movement buffer decoder. See docs/rofl-format.md for evidence.
 
-Only packet 0x004c is supported. Header business fields are deliberately unnamed.
+Only packet 0x004c is supported. The u32 header field remains semantically unknown;
+the u16 field is a validated record count.
 This translates the buffer transport operations at client RVAs 0x104f430 and
 0xfc00f0. Lookup data is read from the user's hash-checked client, not shipped.
 """
 import hashlib
+from dataclasses import dataclass
 from pathlib import Path
 import pefile
 
@@ -13,6 +15,15 @@ PROTOCOL_DIGEST = 'f6a10af08504a7ee'
 CLIENT_SHA256 = '6c3a62afa3d62b66db8a777140c4338979bdb56b87242446570fe6b118f40095'
 PLAYER_ENTITY_START = 0x400000AE
 MOVEMENT_OPCODE = 0x004C
+
+
+@dataclass(frozen=True)
+class MovementPacket:
+    # Object +0x10: monotonic in five replays, but NOT a verified time field.
+    field_u32: int
+    # Object +0x14: equals parsed record count in all 195,041 audited packets.
+    record_count: int
+    buffer: bytes
 
 
 def rotate_left(v: int, n: int) -> int:
@@ -41,6 +52,10 @@ class PatchDecoder:
         self.buffer = bytes(table[table[rotate_left(table[(v-0x57)&255],3)]] for v in range(256))
 
     def decode_movement_buffer(self, payload: bytes) -> bytes:
+        """Compatibility interface for callers that only need the route buffer."""
+        return self.decode_movement_packet(payload).buffer
+
+    def decode_movement_packet(self, payload: bytes) -> MovementPacket:
         if not payload:
             raise ValueError('Empty movement packet.')
         cursor = 1
@@ -61,10 +76,14 @@ class PatchDecoder:
             raise ValueError('Movement varint overflow.')
 
         # Selector codes choose either an inline constant or an encoded varint.
-        if ((payload[0] >> 1) & 7) not in (1, 2, 3, 5):
-            varint(self.field_a, 32)
-        if ((payload[0] >> 4) & 7) not in (2, 3, 4, 6):
-            varint(self.field_b, 16)
+        # Exact constants from deserializer 0x104f430, branches 0x104f49e
+        # through 0x104f7d3. These are selector values, not direct field bits.
+        field_u32 = {2: 2, 5: 0, 1: 1, 3: 0xffffffff}.get((payload[0] >> 1) & 7)
+        if field_u32 is None:
+            field_u32 = varint(self.field_a, 32)
+        record_count = {2: 65535, 6: 1, 4: 2, 3: 0}.get((payload[0] >> 4) & 7)
+        if record_count is None:
+            record_count = varint(self.field_b, 16)
         size = 0 if payload[0] & 1 else varint(self.buffer, 32)
         if size != len(payload)-cursor:
             raise ValueError('Movement buffer length disagrees with packet boundary.')
@@ -73,4 +92,4 @@ class PatchDecoder:
         # Client fills alternating front/back slots, not sequential slots.
         result[:(size+1)//2] = decoded[::2]
         result[(size+1)//2:] = decoded[1::2][::-1]
-        return bytes(result)
+        return MovementPacket(field_u32, record_count, bytes(result))

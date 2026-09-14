@@ -40,7 +40,7 @@ inconsistent totals; current assists are still omitted. See
 [`docs/rofl-format.md`](docs/rofl-format.md) for the evidence and next decoding steps.
 
 Run `.\.venv\Scripts\python.exe -m pytest -q` from the root, and
-`npm test` / `npm run build` in `web` (57 Python tests, 34 frontend tests, plus production build).
+`npm test` / `npm run build` in `web` (57 Python tests, 36 frontend tests, plus production build).
 `ROFL_TEST_DIR` optionally points to the directory containing all five private
 fixtures; missing local replays or the exact client cause integration skips.
 Small real packet fixtures are included in `samples/dragon-packets.json` and
@@ -326,3 +326,117 @@ are documented in `docs/rofl-format.md`.
 Refresh an existing cache with `python -m tools.enrich_map_entities <actual.rofl> <cached.json>`. New uploads use v7 after restarting the backend; reload the viewer
 after updating a cache. Run `python -m pytest tests/test_neutral_entities.py -q`
 and the normal frontend tests/build to verify this feature.
+
+
+### Movement jitter correction
+
+The viewer reconciles small route-prediction errors with the next recorded origin
+across moving intervals of at most two seconds. Corrections are bounded to 48–100
+world units (depending on speed and interval); explicit stops, single-point paths,
+and large relocations retain their prior behavior. Raw replay
+samples are unchanged. This is stateless display interpolation, so pausing and
+backward seeking produce the same position. No re-upload is required after this
+frontend update—reload the page. Unsupported gaps and incompletely decoded movement
+mechanics may still cause visible jumps.
+
+`movement-boundaries.fixture.json` contains actual consecutive observations from
+NA1-5640962900 for Vladimir, Naafiri, and Amumu. Tests verify continuity at the
+sample boundary, exact recorded endpoints, unchanged input, and discontinuity
+preservation. Memoized event feed/timeline components also avoid rebuilding their
+unchanged markers at each playback-clock update.
+
+Long moving intervals (over 2 and up to 15 seconds) use observed progress along
+the recorded route when the next origin is within 32 world units of its interior
+and implies 0.5-1.25 times the earlier speed. This addresses Master Yi (25.545s)
+and Ashe (26.414s) in NA1-5640962900: constant-speed prediction overshot their
+next recorded positions. Completed routes and off-route relocations retain their
+prior behavior. Timing between observations is interpolated; exact speed changes
+are not decoded. `long-route-gaps.fixture.json` contains both real sample pairs.
+The frontend suite has 38 passing tests. Reload; no re-upload is required.
+
+### Auditing movement across replays
+
+From `web`, run `npm run audit:movement`. It reads all normalized JSON files in
+`samples/local/replays` and writes `samples/local/movement-audit/report.md` and
+`report.json`. Optional arguments specify input and output directories:
+`npm run audit:movement -- <input-directory> <output-directory>`.
+The Markdown report links directly to each champion and review timestamp.
+JSON retains sample pairs, nearby events, correction distances, and classifications.
+It uses the viewer's actual interpolation and death/respawn overrides, runs
+offline, and adds no per-frame work to the map.
+
+The five-replay baseline covers 227,402 boundaries, with 3,493 corrections of
+at least 30 world units outside known life transitions. These are candidates
+for review, not 3,493 confirmed bugs: real relocations intentionally remain
+discontinuous. Ten actual pairs from all five replays now guard against blindly
+smoothing those cases. The frontend suite has 42 passing tests.
+
+To inspect original packets around a candidate, from the repository root run:
+`python -m tools.export_movement_window <replay.rofl> --start 9 --end 12 --player 8`.
+It requires the matching local client executable (`--client` can override its
+path). The default evidence output is `samples/local/movement-window.json`.
+This research command labels only the existing decoded movement records; unknown
+packets stay unlabeled. See `docs/rofl-format.md` for the current findings.
+
+Movement-header follow-up: all 195,041 packets across the five replays confirm
+the u16 header field is the decoded record count. The parser now checks it.
+The unnamed u32 is not a validated clock: using its delta as milliseconds makes
+prediction substantially worse, so existing timestamps remain unchanged. Run
+`python -m tools.movement_timing <replay.rofl> [more.rofl ...]` for the repeatable
+comparison and `python -m pytest tests/test_movement_header.py tests/test_movement.py -q`
+for focused checks. This is parser validation and research, not a fix for the
+remaining rapid-direction-change stutters. No re-upload is needed for existing
+cached replays; restart the backend to apply validation to new uploads.
+
+Rapid-turn follow-up: the viewer now reconciles a small overshoot when an update
+arrives within 0.25s, lies within 16 world units of the interior of the previous
+route, and the next command points back against that route. The maximum correction
+is 100 world units. It interpolates observed progress; it does not decode turn
+delays or change replay timestamps. Ten real pairs across five replays cover the
+new behavior, including six Ashe turns at 9-12 seconds in NA1-5640962900.
+The five-replay audit removed 139 flags with no new flagged boundaries, leaving
+3,354 non-life review candidates. Remaining candidates can include real relocations.
+All 44 frontend tests pass. Reload the viewer to apply this display-only change;
+existing replay caches work without re-uploading.
+
+Hold review now distinguishes small corrections, arrival/departure near a player's
+observed respawn positions, and unexplained relocations. Run `npm run audit:movement`
+from `web`; review links include up to 15 seconds before a held relocation.
+The five-replay baseline contains 462 non-life holds: 95 small corrections,
+274 arrivals near spawn, 21 departures near spawn, and 72 unexplained relocations.
+These are spatial diagnostic labels, not decoded recalls or teleports.
+
+Research into Amumu's 5:40-5:44 gap found origin-like fields in 0x02c4, but wider
+checks rejected unconditional use as champion positions. Those candidate fields
+remain research-only. The movement data and playback behavior are unchanged by
+this investigation. The frontend suite has 46 passing tests; two focused Python
+tests cover the research field extraction.
+
+Action-origin timing research now compares raw movement observations at both
+packet arrival and the embedded candidate time. On two 200-packet samples,
+shifting all origins to the embedded time did not improve overall corroboration.
+Three Thresh records match earlier positions; other mismatches cluster around
+fingerprints matching SummonerFlash and VladimirE. Those names are hash hypotheses,
+not newly supported spell events. General action-origin supplementation remains disabled;
+the narrowly validated Amumu exception below is now enabled.
+Reproduce the correlation with `python -m tools.analyze_origin_timing <research.json> <normalized.json> --output <report.json>`;
+run `python -m pytest tests/test_cast_origin_research.py tests/test_origin_timing.py -q`
+for the five focused checks. Results are in `samples/origin-timing-summary.json`.
+
+Amumu follow-up (decoder v8): validation across three real replays now permits
+position observations from Amumu's Tantrum-fingerprint records. Only stopped or
+exhausted-route gaps are supplemented, with existing movement samples taking
+precedence within 100 ms. The viewer holds these observed positions until the
+next update; it does not invent a dash route. Seven observations were added across
+the three local caches, including three in NA1-5640962900. At 5:42.335 this replay
+now shows the observed location instead of waiting until 5:44.142.
+
+Reload the viewer to load the refreshed caches. Restart the backend to use the
+updated parser for new uploads. Other matching caches can be upgraded with
+`python -m tools.enrich_action_positions <replay.rofl> <cached.json>` (using the
+project virtual environment and supported installed League client). This verifies
+the replay identity and saves a `.before-amumu.bak` backup before replacing JSON.
+Run `python -m pytest tests/test_action_positions.py -q` for the scoped decoder
+and real-replay integration checks, and `npm test` in `web` for playback checks.
+This reduces a specific stale-position interval; other unexplained relocations
+and missing dash trajectories remain unresolved.

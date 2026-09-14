@@ -1,0 +1,37 @@
+[
+  {
+    "replayId": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "before": 702,
+    "after": 677,
+    "removed": 25,
+    "newFlags": 0
+  },
+  {
+    "replayId": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "before": 542,
+    "after": 523,
+    "removed": 19,
+    "newFlags": 0
+  },
+  {
+    "replayId": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "before": 946,
+    "after": 917,
+    "removed": 29,
+    "newFlags": 0
+  },
+  {
+    "replayId": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "before": 406,
+    "after": 393,
+    "removed": 13,
+    "newFlags": 0
+  },
+  {
+    "replayId": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "before": 897,
+    "after": 844,
+    "removed": 53,
+    "newFlags": 0
+  }
+]

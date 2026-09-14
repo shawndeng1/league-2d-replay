@@ -1,0 +1,37 @@
+{
+  "replay": "NA1-5640962900.rofl",
+  "patch": "16.18.817.5716",
+  "opcode": "0x004c",
+  "packets": [
+    {
+      "timestamp": 9.110561,
+      "payloadHex": "ec58efef34edb7e527c7b716b7c779c3b74908014e",
+      "fieldU32": 7747,
+      "recordCount": 1
+    },
+    {
+      "timestamp": 9.278561,
+      "payloadHex": "c823ead134cdb78b27a9b741b7ca79cdb7e708714e0101f749f348b7c779f8b7c759c6568cb734",
+      "fieldU32": 7901,
+      "recordCount": 2
+    },
+    {
+      "timestamp": 9.411561,
+      "payloadHex": "ecd0b3ef34feb71a27c7b7f8b7c77980b74908014e",
+      "fieldU32": 8036,
+      "recordCount": 1
+    },
+    {
+      "timestamp": 9.545561,
+      "payloadHex": "ce4afb9634fab7662741b748b7cd797db74908014ef7019249b70f79c7b70d59c7cc22b71e34",
+      "fieldU32": 8159,
+      "recordCount": 2
+    },
+    {
+      "timestamp": 9.712561,
+      "payloadHex": "e88cc72f343ab7c72701b7c7b7be79c7b78808594e01",
+      "fieldU32": 8291,
+      "recordCount": 1
+    }
+  ]
+}

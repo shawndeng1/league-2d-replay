@@ -1,0 +1,132 @@
+{
+  "patch": "16.18.817.5716",
+  "hypothesis": "field_u32 / 1000 as movement time",
+  "conclusion": "Rejected for the tested direct millisecond interpretation; no production timestamp changes.",
+  "replays": [
+    {
+      "replay": "NA1-5640962900.rofl",
+      "packets": 35346,
+      "fieldU16MatchesRecordCount": 35346,
+      "fieldU32Decreases": 0,
+      "transportMinusHeaderSeconds": {
+        "count": 35346,
+        "median": -1007.7405341796837,
+        "p95": -63.71831750488167
+      },
+      "predictionErrorWorldUnits": {
+        "transport": {
+          "count": 23764,
+          "median": 7.3099457932691525,
+          "p95": 33.75449031154725
+        },
+        "headerCandidate": {
+          "count": 23764,
+          "median": 103.74091693703812,
+          "p95": 231.4821758524793
+        }
+      },
+      "headerBetter": 180,
+      "headerWorse": 23304
+    },
+    {
+      "replay": "NA1-5640196741.rofl",
+      "packets": 51264,
+      "fieldU16MatchesRecordCount": 51264,
+      "fieldU32Decreases": 0,
+      "transportMinusHeaderSeconds": {
+        "count": 51264,
+        "median": -1484.502491210944,
+        "p95": -127.73520629882739
+      },
+      "predictionErrorWorldUnits": {
+        "transport": {
+          "count": 36847,
+          "median": 7.032540675699576,
+          "p95": 33.83697315048012
+        },
+        "headerCandidate": {
+          "count": 36847,
+          "median": 103.87587105013345,
+          "p95": 228.69474802582812
+        }
+      },
+      "headerBetter": 249,
+      "headerWorse": 36081
+    },
+    {
+      "replay": "NA1-5640893952.rofl",
+      "packets": 31271,
+      "fieldU16MatchesRecordCount": 31271,
+      "fieldU32Decreases": 0,
+      "transportMinusHeaderSeconds": {
+        "count": 31271,
+        "median": -870.3263037109338,
+        "p95": -58.672629974362806
+      },
+      "predictionErrorWorldUnits": {
+        "transport": {
+          "count": 23118,
+          "median": 7.851551121031028,
+          "p95": 33.41392475447501
+        },
+        "headerCandidate": {
+          "count": 23118,
+          "median": 97.49921044633825,
+          "p95": 211.0639881296708
+        }
+      },
+      "headerBetter": 150,
+      "headerWorse": 22646
+    },
+    {
+      "replay": "NA1-5640901584.rofl",
+      "packets": 27944,
+      "fieldU16MatchesRecordCount": 27944,
+      "fieldU32Decreases": 0,
+      "transportMinusHeaderSeconds": {
+        "count": 27944,
+        "median": -791.6532773437457,
+        "p95": -53.33775469970567
+      },
+      "predictionErrorWorldUnits": {
+        "transport": {
+          "count": 24426,
+          "median": 6.8261825416667286,
+          "p95": 32.051088890698345
+        },
+        "headerCandidate": {
+          "count": 24426,
+          "median": 91.89745168374881,
+          "p95": 209.51659522844076
+        }
+      },
+      "headerBetter": 166,
+      "headerWorse": 23945
+    },
+    {
+      "replay": "NA1-5640933743.rofl",
+      "packets": 49216,
+      "fieldU16MatchesRecordCount": 49216,
+      "fieldU32Decreases": 0,
+      "transportMinusHeaderSeconds": {
+        "count": 49216,
+        "median": -1390.6453237304759,
+        "p95": -124.52082971191143
+      },
+      "predictionErrorWorldUnits": {
+        "transport": {
+          "count": 40134,
+          "median": 6.9603414608763705,
+          "p95": 32.00895954509438
+        },
+        "headerCandidate": {
+          "count": 40134,
+          "median": 96.66610075258693,
+          "p95": 215.96167956878963
+        }
+      },
+      "headerBetter": 238,
+      "headerWorse": 39503
+    }
+  ]
+}

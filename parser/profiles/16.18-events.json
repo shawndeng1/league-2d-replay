@@ -121,6 +121,14 @@
       "constructorRva": "0xe8aaf0",
       "constructorEndRva": "0xe8ac33"
     },
+    "amumuActionOrigin": {
+      "status": "verified",
+      "entryRva": "0x10d0760",
+      "endRva": "0x10d0a43",
+      "constructorRva": "0xe8a8f0",
+      "constructorEndRva": "0xe8a991",
+      "scope": "amumu-tantrum-origin-only"
+    },
     "neutralIdentityPrefix": {
       "status": "verified",
       "entryRva": "0xf16b60",

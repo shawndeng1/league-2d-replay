@@ -1,0 +1,1715 @@
+[
+  {
+    "replay": "NA1-5640962900.rofl",
+    "summary": {
+      "packets": 200,
+      "classes": {
+        "INSUFFICIENT_OBSERVATIONS": 111,
+        "COINCIDENT_ORIGIN_CORROBORATED": 71,
+        "EARLIER_POSITION_CORROBORATED": 3,
+        "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 15
+      },
+      "arrivalCorroborated": 75,
+      "embeddedCorroborated": 74,
+      "status": "RESEARCH_ONLY; matching observations does not validate missing intervals"
+    },
+    "groups": [
+      {
+        "fingerprint": "0x7b05da5",
+        "slotCandidate": 8,
+        "nameHypothesis": "VladimirE",
+        "packets": 13,
+        "players": [
+          0
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 10,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 3
+        }
+      },
+      {
+        "fingerprint": "0x7801c1",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 11,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 9,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 2
+        }
+      },
+      {
+        "fingerprint": "0x7105f1",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 10,
+        "players": [
+          3
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 9,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0x7b05db1",
+        "slotCandidate": 8,
+        "nameHypothesis": "VladimirQ",
+        "packets": 10,
+        "players": [
+          0
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 7,
+          "INSUFFICIENT_OBSERVATIONS": 3
+        }
+      },
+      {
+        "fingerprint": "0x77d0fb5",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 8,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 8
+        }
+      },
+      {
+        "fingerprint": "0xa85b9cd",
+        "slotCandidate": 5,
+        "nameHypothesis": "Tantrum",
+        "packets": 8,
+        "players": [
+          2
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 7,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xff688e4",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 8,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2,
+          "COINCIDENT_ORIGIN_CORROBORATED": 6
+        }
+      },
+      {
+        "fingerprint": "0xd65196c",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 7,
+        "players": [
+          9
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 5,
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x18f7675",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 6,
+        "players": [
+          5
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 5,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x1cac2e5",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 6,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 5,
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x8c3baf5",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 6,
+        "players": [
+          6
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 5,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x77d1041",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          1
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 5
+        }
+      },
+      {
+        "fingerprint": "0xa4b8e92",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          9
+        ],
+        "classes": {
+          "EARLIER_POSITION_CORROBORATED": 3,
+          "INSUFFICIENT_OBSERVATIONS": 1,
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xaf8c995",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          9
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 5
+        }
+      },
+      {
+        "fingerprint": "0xd7527c5",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2,
+          "COINCIDENT_ORIGIN_CORROBORATED": 3
+        }
+      },
+      {
+        "fingerprint": "0xfb93891",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          5,
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 5
+        }
+      },
+      {
+        "fingerprint": "0x202e3a2",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 4,
+        "players": [
+          2
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2,
+          "INSUFFICIENT_OBSERVATIONS": 1,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0x7801c7",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 4,
+        "players": [
+          4
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 3,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xaf8c981",
+        "slotCandidate": 6,
+        "nameHypothesis": "ThreshQ",
+        "packets": 4,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2,
+          "COINCIDENT_ORIGIN_CORROBORATED": 2
+        }
+      },
+      {
+        "fingerprint": "0xc0218e3",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 4,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 4
+        }
+      },
+      {
+        "fingerprint": "0x58428fb",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 3
+        }
+      },
+      {
+        "fingerprint": "0x607e524",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 3
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          2,
+          7
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x7b43203",
+        "slotCandidate": 5,
+        "nameHypothesis": "BandageToss",
+        "packets": 3,
+        "players": [
+          2
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 3
+        }
+      },
+      {
+        "fingerprint": "0x299b182",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x2d43e54",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x6364f24",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1,
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x6496ea8",
+        "slotCandidate": 5,
+        "nameHypothesis": "SummonerFlash",
+        "packets": 2,
+        "players": [
+          7
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 2
+        }
+      },
+      {
+        "fingerprint": "0x7539e9",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x7801b5",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x8480263",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x98ed340",
+        "slotCandidate": 6,
+        "nameHypothesis": "ThreshQLeap",
+        "packets": 2,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x9fff594",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0xaf8c987",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xc9004c5",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2
+        }
+      },
+      {
+        "fingerprint": "0xdcce223",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xdcce223",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x23a80dd",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x299b182",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x2c5971b",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x364af1c",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          3
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x58428fb",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x6364f24",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x6496ea8",
+        "slotCandidate": 8,
+        "nameHypothesis": "SummonerFlash",
+        "packets": 1,
+        "players": [
+          5
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0x65e8695",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x65e8695",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x679d405",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x689ec1",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x6af8481",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x77d1047",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          1
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x7801c2",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          1
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x7d632c9",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          8
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x8394931",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xa9306a0",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          5
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xbb0af95",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          6
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xccfb982",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xd7527c2",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xd7527c3",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          8
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xf8e27d3",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xfb93891",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0xfb93891",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xfb93891",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      }
+    ]
+  },
+  {
+    "replay": "NA1-5640196741.rofl",
+    "summary": {
+      "packets": 200,
+      "classes": {
+        "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 8,
+        "INSUFFICIENT_OBSERVATIONS": 141,
+        "COINCIDENT_ORIGIN_CORROBORATED": 51
+      },
+      "arrivalCorroborated": 51,
+      "embeddedCorroborated": 51,
+      "status": "RESEARCH_ONLY; matching observations does not validate missing intervals"
+    },
+    "groups": [
+      {
+        "fingerprint": "0xbcf664c",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 20,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 17,
+          "COINCIDENT_ORIGIN_CORROBORATED": 3
+        }
+      },
+      {
+        "fingerprint": "0x77d0fb5",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 12,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 12
+        }
+      },
+      {
+        "fingerprint": "0xcc8a965",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 10,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 10
+        }
+      },
+      {
+        "fingerprint": "0xc250895",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 8,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 8
+        }
+      },
+      {
+        "fingerprint": "0x40345c2",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 7,
+        "players": [
+          5
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2,
+          "INSUFFICIENT_OBSERVATIONS": 4,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0xb04b8f7",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 7,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 7
+        }
+      },
+      {
+        "fingerprint": "0x77d1041",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 6,
+        "players": [
+          6
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 5,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x8403451",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 6,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 5,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0x8403425",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 4,
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0x845f1d4",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 5
+        }
+      },
+      {
+        "fingerprint": "0xa17ee74",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 5
+        }
+      },
+      {
+        "fingerprint": "0xd7527c5",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 5,
+        "players": [
+          3
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 4,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xbda28e8",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 4,
+        "players": [
+          0
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 4
+        }
+      },
+      {
+        "fingerprint": "0xe6d1f0b",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 4,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 4
+        }
+      },
+      {
+        "fingerprint": "0x2a9f6b3",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          2
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 3
+        }
+      },
+      {
+        "fingerprint": "0x4ba5d25",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          0
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x689ec1",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          3
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 3
+        }
+      },
+      {
+        "fingerprint": "0x806c2ac",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          1
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 3
+        }
+      },
+      {
+        "fingerprint": "0x833f1d4",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          4
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 3
+        }
+      },
+      {
+        "fingerprint": "0x84ff1d4",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          4
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 3
+        }
+      },
+      {
+        "fingerprint": "0x8697841",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          4
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x8697847",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 3
+        }
+      },
+      {
+        "fingerprint": "0xb04b8f1",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 3,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 3
+        }
+      },
+      {
+        "fingerprint": "0x1d2f61f",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 2
+        }
+      },
+      {
+        "fingerprint": "0x1d2fc1f",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x2049bbb",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          2
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x5685f1b",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2
+        }
+      },
+      {
+        "fingerprint": "0x77d1042",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          3
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          5,
+          6
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          0
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2
+        }
+      },
+      {
+        "fingerprint": "0x835e2b4",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          0
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 2
+        }
+      },
+      {
+        "fingerprint": "0x8403457",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          5
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x8697835",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1,
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x8bc80f9",
+        "slotCandidate": 8,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          0
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0x8f69c14",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xab9c0a5",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xcd0ee45",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xce2f589",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          1
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xd7527c3",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          3
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1,
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xfb93891",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          8
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xfd2d9b4",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 2
+        }
+      },
+      {
+        "fingerprint": "0xff688e4",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 2,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1,
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x208aad5",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          1
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x26a2bab",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x26d72bb",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x4b8035",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x4f1364",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x607e524",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x607e524",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x6364f24",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0x6496ea8",
+        "slotCandidate": 6,
+        "nameHypothesis": "SummonerFlash",
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x6496ea8",
+        "slotCandidate": 8,
+        "nameHypothesis": "SummonerFlash",
+        "packets": 1,
+        "players": [
+          0
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      },
+      {
+        "fingerprint": "0x6496ea8",
+        "slotCandidate": 9,
+        "nameHypothesis": "SummonerFlash",
+        "packets": 1,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x78b982c",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0x8697842",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x879d445",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x8a8bae4",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0x8f3af0b",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xa9306a0",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xac05433",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xac05433",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xac05440",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          3
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xb04b805",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "COINCIDENT_ORIGIN_CORROBORATED": 1
+        }
+      },
+      {
+        "fingerprint": "0xb04b8f2",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xc194be5",
+        "slotCandidate": 5,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          9
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xc850825",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          6
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xdcce223",
+        "slotCandidate": 9,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          4
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xe1aae0b",
+        "slotCandidate": 11,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          2
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xf8e27d3",
+        "slotCandidate": 4,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          3
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xf8e27d3",
+        "slotCandidate": 6,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          7
+        ],
+        "classes": {
+          "INSUFFICIENT_OBSERVATIONS": 1
+        }
+      },
+      {
+        "fingerprint": "0xfb93891",
+        "slotCandidate": 7,
+        "nameHypothesis": null,
+        "packets": 1,
+        "players": [
+          6
+        ],
+        "classes": {
+          "ORIGIN_MISMATCH_AT_EMBEDDED_TIME": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 /** Format v1: seconds, Riot planar world coordinates; no ROFL protocol types. */
 export interface WorldPoint { x: number; y: number }
-export interface PositionSample { timestamp: number; x: number; y: number; speed?: number; /** Commanded route, including origin. Destinations are not timestamped observations. */ path?: WorldPoint[] }
+export interface PositionSample { timestamp: number; x: number; y: number; speed?: number; positionOnly?:boolean; positionSource?:string; /** Commanded route, including origin. Destinations are not timestamped observations. */ path?: WorldPoint[] }
 export interface Player { id: number; championName: string; championId?: number; displayName?:string; team: 'BLUE' | 'RED'; role: string; finalStats?: {kills?:number;deaths?:number;assists?:number;level?:number;totalGold?:number;minionKills?:number;neutralMinionKills?:number} }
 export interface Track { playerId: number; samples: PositionSample[] }
 export interface WorldBounds { minX: number; maxX: number; minY: number; maxY: number }
@@ -23,5 +23,5 @@ export interface Replay {
   tracks: Track[];
   events: GameEvent[];
   mapEntities?:MapEntity[];
-  diagnostics: { movementPackets: number; sampleCount: number; opcodeHistogram: Record<string, number> };
+  diagnostics: { movementPackets: number; sampleCount: number; supplementalPositionSamples?: number; opcodeHistogram: Record<string, number> };
 }

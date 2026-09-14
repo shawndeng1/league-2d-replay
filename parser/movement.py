@@ -9,7 +9,7 @@ import math
 import struct
 
 
-def parse_movement_payloads(payload: bytes) -> list[tuple[int, float, list[dict]]]:
+def parse_movement_payloads(payload: bytes, *, expected_count: int | None = None) -> list[tuple[int, float, list[dict]]]:
     cursor = 0
 
     def read(fmt):
@@ -44,4 +44,6 @@ def parse_movement_payloads(payload: bytes) -> list[tuple[int, float, list[dict]
                     previous[axis] = read('<h')[0]
             path.append({'x': float(previous[0]*2+7358), 'y': float(previous[1]*2+7412)})
         records.append((entity, speed, path))
+    if expected_count is not None and len(records) != expected_count:
+        raise ValueError('Movement header record count disagrees with decoded paths.')
     return records

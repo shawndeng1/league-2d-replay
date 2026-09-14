@@ -1,0 +1,395 @@
+{
+  "source": "Consecutive actual samples from five cached 16.18 replays; candidates are not confirmed bugs.",
+  "cases": [
+    {
+      "replayId": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+      "champion": "Amumu",
+      "kind": "BACKWARD_CORRECTION",
+      "samples": [
+        {
+          "timestamp": 905.651756,
+          "x": 8790,
+          "y": 9032,
+          "speed": 380,
+          "path": [
+            {
+              "x": 8790,
+              "y": 9032
+            },
+            {
+              "x": 9292,
+              "y": 8866
+            }
+          ]
+        },
+        {
+          "timestamp": 906.453756,
+          "x": 7886,
+          "y": 9312,
+          "speed": 380,
+          "path": [
+            {
+              "x": 7886,
+              "y": 9312
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+      "champion": "Amumu",
+      "kind": "HOLD_THEN_RELOCATION",
+      "samples": [
+        {
+          "timestamp": 1451.828855,
+          "x": 14078,
+          "y": 7096,
+          "speed": 395.2,
+          "path": [
+            {
+              "x": 14078,
+              "y": 7096
+            }
+          ]
+        },
+        {
+          "timestamp": 1459.853855,
+          "x": 394,
+          "y": 462,
+          "speed": 395.2,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+      "champion": "Fiora",
+      "kind": "BACKWARD_CORRECTION",
+      "samples": [
+        {
+          "timestamp": 238.013515,
+          "x": 12136,
+          "y": 14134,
+          "speed": 518.031,
+          "path": [
+            {
+              "x": 12136,
+              "y": 14134
+            },
+            {
+              "x": 3374,
+              "y": 13106
+            },
+            {
+              "x": 1378,
+              "y": 11568
+            }
+          ]
+        },
+        {
+          "timestamp": 257.721633,
+          "x": 3460,
+          "y": 13108,
+          "speed": 345,
+          "path": [
+            {
+              "x": 3460,
+              "y": 13108
+            },
+            {
+              "x": 3056,
+              "y": 12638
+            },
+            {
+              "x": 1824,
+              "y": 11206
+            },
+            {
+              "x": 1824,
+              "y": 11106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+      "champion": "Zed",
+      "kind": "HOLD_THEN_RELOCATION",
+      "samples": [
+        {
+          "timestamp": 1020.862877,
+          "x": 13630,
+          "y": 4006,
+          "speed": 390,
+          "path": [
+            {
+              "x": 13630,
+              "y": 4006
+            }
+          ]
+        },
+        {
+          "timestamp": 1028.845877,
+          "x": 394,
+          "y": 462,
+          "speed": 727.25,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+      "champion": "Amumu",
+      "kind": "BACKWARD_CORRECTION",
+      "samples": [
+        {
+          "timestamp": 1100.239441,
+          "x": 6764,
+          "y": 9988,
+          "speed": 388.8,
+          "path": [
+            {
+              "x": 6764,
+              "y": 9988
+            },
+            {
+              "x": 6668,
+              "y": 10014
+            },
+            {
+              "x": 6324,
+              "y": 10106
+            },
+            {
+              "x": 6274,
+              "y": 10206
+            },
+            {
+              "x": 6274,
+              "y": 10306
+            }
+          ]
+        },
+        {
+          "timestamp": 1100.974441,
+          "x": 7102,
+          "y": 10900,
+          "speed": 374.4,
+          "path": [
+            {
+              "x": 7102,
+              "y": 10900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+      "champion": "MonkeyKing",
+      "kind": "HOLD_THEN_RELOCATION",
+      "samples": [
+        {
+          "timestamp": 1375.258321,
+          "x": 1230,
+          "y": 10208,
+          "speed": 405,
+          "path": [
+            {
+              "x": 1230,
+              "y": 10208
+            }
+          ]
+        },
+        {
+          "timestamp": 1383.307692,
+          "x": 14340,
+          "y": 14390,
+          "speed": 385,
+          "path": [
+            {
+              "x": 14340,
+              "y": 14390
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+      "champion": "Darius",
+      "kind": "BACKWARD_CORRECTION",
+      "samples": [
+        {
+          "timestamp": 1196.577444,
+          "x": 7570,
+          "y": 7440,
+          "speed": 800.3906,
+          "path": [
+            {
+              "x": 7570,
+              "y": 7440
+            },
+            {
+              "x": 6932,
+              "y": 6840
+            },
+            {
+              "x": 4924,
+              "y": 4958
+            },
+            {
+              "x": 4642,
+              "y": 4424
+            }
+          ]
+        },
+        {
+          "timestamp": 1197.479444,
+          "x": 8162,
+          "y": 7966,
+          "speed": 937.5,
+          "path": [
+            {
+              "x": 8162,
+              "y": 7966
+            },
+            {
+              "x": 7368,
+              "y": 7230
+            },
+            {
+              "x": 4924,
+              "y": 4958
+            },
+            {
+              "x": 4642,
+              "y": 4424
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+      "champion": "Jax",
+      "kind": "HOLD_THEN_RELOCATION",
+      "samples": [
+        {
+          "timestamp": 1163.339601,
+          "x": 1830,
+          "y": 5154,
+          "speed": 395,
+          "path": [
+            {
+              "x": 1830,
+              "y": 5154
+            }
+          ]
+        },
+        {
+          "timestamp": 1171.369444,
+          "x": 14340,
+          "y": 14390,
+          "speed": 395,
+          "path": [
+            {
+              "x": 14340,
+              "y": 14390
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+      "champion": "Malphite",
+      "kind": "BACKWARD_CORRECTION",
+      "samples": [
+        {
+          "timestamp": 264.916508,
+          "x": 636,
+          "y": 1568,
+          "speed": 531.5,
+          "path": [
+            {
+              "x": 636,
+              "y": 1568
+            },
+            {
+              "x": 1774,
+              "y": 11106
+            },
+            {
+              "x": 3062,
+              "y": 13348
+            }
+          ]
+        },
+        {
+          "timestamp": 286.780514,
+          "x": 1824,
+          "y": 11200,
+          "speed": 335,
+          "path": [
+            {
+              "x": 1824,
+              "y": 11200
+            },
+            {
+              "x": 1824,
+              "y": 11256
+            },
+            {
+              "x": 3236,
+              "y": 12868
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "replayId": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+      "champion": "TwistedFate",
+      "kind": "HOLD_THEN_RELOCATION",
+      "samples": [
+        {
+          "timestamp": 1045.394928,
+          "x": 13536,
+          "y": 5630,
+          "speed": 408.4966,
+          "path": [
+            {
+              "x": 13536,
+              "y": 5630
+            }
+          ]
+        },
+        {
+          "timestamp": 1053.423806,
+          "x": 394,
+          "y": 462,
+          "speed": 425.982,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
