@@ -1,0 +1,5350 @@
+[
+  {
+    "file": "NA1-5640196741.rofl",
+    "sha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "events": [
+      {
+        "id": "dragon-402443-red-0d08c4f3a165",
+        "timestamp": 402.442898,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 402.4428977050802,
+          "confidence": "VERIFIED"
+        },
+        "x": 9837.673828125,
+        "y": 4397.76123046875,
+        "mapEntityId": "objective-40002fd3"
+      },
+      {
+        "id": "tower-687356-400000a4-a906f695b217",
+        "timestamp": 687.356186,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 28,
+          "rawTimestamp": 687.3561855468798,
+          "entityId": 1073741988,
+          "killerEntityId": 1073742001,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742001,
+          "creditOpcode": "0x0406"
+        },
+        "x": 13866.0,
+        "y": 4505.0,
+        "lane": "BOTTOM",
+        "tier": "OUTER",
+        "mapEntityId": "tower-400000a4"
+      },
+      {
+        "id": "dragon-767133-blue-d543534ee3c4",
+        "timestamp": 767.132833,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 10,
+          "rawTimestamp": 767.1328334960967,
+          "confidence": "VERIFIED"
+        },
+        "x": 9837.673828125,
+        "y": 4397.76123046875,
+        "mapEntityId": "objective-4000836b"
+      },
+      {
+        "id": "tower-841172-400000a3-6220aa1c2d23",
+        "timestamp": 841.17169,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 841.1716899414064,
+          "entityId": 1073741987,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        },
+        "x": 5846.0,
+        "y": 6396.0,
+        "lane": "MIDDLE",
+        "tier": "OUTER",
+        "mapEntityId": "tower-400000a3"
+      },
+      {
+        "id": "rift_herald-1080885-4000aa79-4a90dadcbef8",
+        "timestamp": 1080.885009,
+        "type": "OBJECTIVE_KILL",
+        "objective": "RIFT_HERALD",
+        "killerTeam": "RED",
+        "killerPlayerId": 6,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 1080.8850087890623,
+          "entityId": 1073785465,
+          "killerEntityId": 1073742004,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        },
+        "x": 4938.71875,
+        "y": 10383.97265625,
+        "mapEntityId": "objective-4000aa79"
+      },
+      {
+        "id": "dragon-1093803-blue-13212e360142",
+        "timestamp": 1093.803009,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 10,
+          "rawTimestamp": 1093.8030087890565,
+          "confidence": "VERIFIED"
+        },
+        "x": 9837.673828125,
+        "y": 4397.76123046875,
+        "mapEntityId": "objective-4000c9eb"
+      },
+      {
+        "id": "tower-1178374-400000a0-d8dae5e0e94b",
+        "timestamp": 1178.373686,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1178.3736855468712,
+          "entityId": 1073741984,
+          "killerEntityId": 1073742001,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742001,
+          "creditOpcode": "0x0406"
+        },
+        "x": 8955.0,
+        "y": 8510.0,
+        "lane": "MIDDLE",
+        "tier": "OUTER",
+        "mapEntityId": "tower-400000a0"
+      },
+      {
+        "id": "tower-1207896-400000a1-ffaf9d019e88",
+        "timestamp": 1207.8964,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 28,
+          "rawTimestamp": 1207.8964003906215,
+          "entityId": 1073741985,
+          "killerEntityId": 1073742000,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742000,
+          "creditOpcode": "0x0406"
+        },
+        "x": 4318.0,
+        "y": 13875.0,
+        "lane": "TOP",
+        "tier": "OUTER",
+        "mapEntityId": "tower-400000a1"
+      },
+      {
+        "id": "tower-1302305-400000a6-0d3d4879e1a5",
+        "timestamp": 1302.304992,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 29,
+          "rawTimestamp": 1302.3049921874947,
+          "entityId": 1073741990,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        },
+        "x": 10504.0,
+        "y": 1029.0,
+        "lane": "BOTTOM",
+        "tier": "OUTER",
+        "mapEntityId": "tower-400000a6"
+      },
+      {
+        "id": "tower-1334238-4000008c-e86ade00ca70",
+        "timestamp": 1334.237894,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 27,
+          "rawTimestamp": 1334.237893554682,
+          "entityId": 1073741964,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        },
+        "x": 981.0,
+        "y": 10441.0,
+        "lane": "TOP",
+        "tier": "OUTER",
+        "mapEntityId": "tower-4000008c"
+      },
+      {
+        "id": "dragon-1418763-red-538ceb17df9f",
+        "timestamp": 1418.762613,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 1418.762613281246,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-1459849-40000093-4559ba280135",
+        "timestamp": 1459.848585,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1459.8485849609287,
+          "entityId": 1073741971,
+          "killerEntityId": 1073741999,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741999,
+          "creditOpcode": "0x0406"
+        },
+        "x": 9767.0,
+        "y": 10113.0,
+        "lane": "MIDDLE",
+        "tier": "INNER",
+        "mapEntityId": "tower-40000093"
+      },
+      {
+        "id": "baron-1470800-4000eaac-98f3ad12cf0b",
+        "timestamp": 1470.800284,
+        "type": "OBJECTIVE_KILL",
+        "objective": "BARON",
+        "killerTeam": "RED",
+        "killerPlayerId": 6,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 1470.8002841796874,
+          "entityId": 1073801900,
+          "killerEntityId": 1073742004,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        },
+        "x": 5007.0,
+        "y": 10471.0,
+        "mapEntityId": "objective-4000eaac"
+      },
+      {
+        "id": "tower-1478795-400000ab-980947afbfdb",
+        "timestamp": 1478.795284,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 30,
+          "rawTimestamp": 1478.7952841796844,
+          "entityId": 1073741995,
+          "killerEntityId": 1073813695,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 0,
+          "creditOpcode": "0x0406"
+        },
+        "x": 1512.0,
+        "y": 6699.0,
+        "lane": "TOP",
+        "tier": "INNER",
+        "mapEntityId": "tower-400000ab"
+      },
+      {
+        "id": "tower-1647817-4000008d-f6c7e2d76adb",
+        "timestamp": 1647.817455,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 30,
+          "rawTimestamp": 1647.8174550781132,
+          "entityId": 1073741965,
+          "killerEntityId": 1073824430,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 0,
+          "creditOpcode": "0x0406"
+        },
+        "x": 5048.0,
+        "y": 4812.0,
+        "lane": "MIDDLE",
+        "tier": "INNER",
+        "mapEntityId": "tower-4000008d"
+      },
+      {
+        "id": "tower-1678699-4000008e-5cd23dd4b0c2",
+        "timestamp": 1678.699047,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1678.6990468749877,
+          "entityId": 1073741966,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        },
+        "x": 3651.0,
+        "y": 3696.0,
+        "lane": "MIDDLE",
+        "tier": "INHIBITOR",
+        "mapEntityId": "tower-4000008e"
+      },
+      {
+        "id": "dragon-1749739-red-39d87ca9e584",
+        "timestamp": 1749.739235,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 1749.7392353515581,
+          "confidence": "VERIFIED"
+        },
+        "x": 9866.67578125,
+        "y": 4609.53076171875,
+        "mapEntityId": "objective-40015768"
+      },
+      {
+        "id": "baron-1917455-40016d73-e2a355913571",
+        "timestamp": 1917.454806,
+        "type": "OBJECTIVE_KILL",
+        "objective": "BARON",
+        "killerTeam": "RED",
+        "killerPlayerId": 6,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 1917.4548056640501,
+          "entityId": 1073835379,
+          "killerEntityId": 1073742004,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        },
+        "x": 5007.0,
+        "y": 10471.0,
+        "mapEntityId": "objective-40016d73"
+      },
+      {
+        "id": "tower-2000181-400000a2-fb0c613e812f",
+        "timestamp": 2000.181168,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 2000.1811679687419,
+          "entityId": 1073741986,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        },
+        "x": 1169.0,
+        "y": 4287.0,
+        "lane": "TOP",
+        "tier": "INHIBITOR",
+        "mapEntityId": "tower-400000a2"
+      },
+      {
+        "id": "tower-2017964-40000094-18d90e188977",
+        "timestamp": 2017.964285,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 28,
+          "rawTimestamp": 2017.9642851562462,
+          "entityId": 1073741972,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        },
+        "x": 2177.0,
+        "y": 1807.0,
+        "lane": "MIDDLE",
+        "tier": "NEXUS",
+        "mapEntityId": "tower-40000094"
+      },
+      {
+        "id": "dragon-2078977-red-dfb20802f648",
+        "timestamp": 2078.976703,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 12,
+          "rawTimestamp": 2078.976703124996,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-2114063-40000088-0c45d96dcabd",
+        "timestamp": 2114.063361,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 2114.0633613281198,
+          "entityId": 1073741960,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        },
+        "x": 6919.0,
+        "y": 1483.0,
+        "lane": "BOTTOM",
+        "tier": "INNER",
+        "mapEntityId": "tower-40000088"
+      },
+      {
+        "id": "tower-2151489-4000008b-2191921b71bd",
+        "timestamp": 2151.488668,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 2151.48866796874,
+          "entityId": 1073741963,
+          "killerEntityId": 1073742007,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742007,
+          "creditOpcode": "0x0406"
+        },
+        "x": 4281.0,
+        "y": 1253.0,
+        "lane": "BOTTOM",
+        "tier": "INHIBITOR",
+        "mapEntityId": "tower-4000008b"
+      },
+      {
+        "id": "tower-2172543-4000009a-4b6f86a24175",
+        "timestamp": 2172.542973,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 28,
+          "rawTimestamp": 2172.5429726562443,
+          "entityId": 1073741978,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        },
+        "x": 1748.0,
+        "y": 2270.0,
+        "lane": "MIDDLE",
+        "tier": "NEXUS",
+        "mapEntityId": "tower-4000009a"
+      }
+    ],
+    "neutralRemovals": [
+      [
+        402.4428977050802,
+        1073754067
+      ],
+      [
+        767.1328334960967,
+        1073775467
+      ],
+      [
+        1080.8850087890623,
+        1073785465
+      ],
+      [
+        1093.8030087890565,
+        1073793515
+      ],
+      [
+        1418.762613281246,
+        1073811943
+      ],
+      [
+        1749.7392353515581,
+        1073829736
+      ],
+      [
+        2078.976703124996,
+        1073849620
+      ]
+    ],
+    "packets": [
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "f41cf000eb39cbcb276320205add1fdebb40d852455bd95bde32d850d345d340d825db5bda30dc32d95b4545db2448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "341df74deb39cb293f885df90ffc6a8d031a098dbb40d852455bd35bd932db50d945d940d125da5bd330d132d95b4545da2448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "fc59f60deb2dcbf73f885d5e0ffce33428ef4c3d383d3d8f3838ef054a4c57674cedaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "34ddf7ceeb39cbf73f885d5e0f036a03a9aa950baaaaaaaa3bfacacaba95caa495ba6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "54c9f18eeb39cb293f885df90ffc6a8d031a098da9aa951b2bdacacaba3baacaba95baa495ba6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "f458f78feb39cbcbe667a66318dd1fdea0ef4c8fed387938efede6574c05674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "34c4f163eb39cbcb276320205add1fdea9aa95cacaeaeacaea1bdacaca95caa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "f44af123eb39cbd20300fc0e877a77fa28ef4c053d3d57798f05793d574ce6674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "545cf1a4eb39cbc827e1a7622362a2205add1fde28ef4cef05573d3def050505ed4c4a674cedaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "34cdf664eb39cbf73f885d5e0f036a03a9aa95bada1b2b2bca2bdafaca95caa495ca6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "f4d1f024eb39cb293f885df90ffc6a8d031a098d99aa950bfadaaa3bca2b1bea95baa495aa6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "b418f1a5eb39cbcbe667a66318dd1fdebb40d852455bdc5bd832dc50d845d040d225d25bdb30d332d95b4545d22448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "34c4f661eb39cbcb276320205add1fde99aa95dabacadaca0b2bcafa95caa495aa6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "f413f721eb39cbbb40d852455bd95bd932da50d945da40d325dc5bd830db32d95b4545d82448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "fcc8f122eb2dcbcb2763a767d9dd1fdea9aa95baeaaacaaacaeafacaca95daa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "3c5af1e3eb2dcbd20300fc0d777487fb28ef4ced4a4a4a4a054aed05ed4c57674cedaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "f44af6a3eb39cbce0300fc91068a8908897405fb28ef4ce657384ae60557e6054a4c4a674cedaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "fc51f767eb2dcbf73f885d5e0ffce33428ef4c05ed3d79793dede6ed4a4c57674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "5cccf727eb2dcbcb2763a767d9dd1fde99aa95ea3bfafaea2bbabafa95daa495aa6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "f4c8f1f8eb39cbc827e1a7622362a2205add1fdea9aa95daaa2b0bea0baacacaca95baa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "bc5cf1b8eb2dcbcb2763a767d9dd1fde28ef4ce679e68f8fed053879574c57674cefaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "b40af178eb39cbd20300fc0e877a77fac440d852455bd25bdc32d150d845d940d029db3cde3ad9354559d045482445da"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "341ff1f9eb39cbbb40d852455bda5bd832de50de45d040de29d13cda3ad835da594545d82448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "b445f065eb39cbf73f885d5e0f036a0328ef4c054a57e63d793ded054a4ced674cedaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "168ef0607448f2adc8480d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "368ef0437b48f24255480e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "368ef21dab4852579f480984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "168ef0e22848f04ac8480884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "768ef0f9ae48f00948480b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "168e52c0814852f07a481784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "468e522d424852bd11481684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "068ef07c7a48f2b5fb481184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "368e52577848529026481384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "668ef0c1744852af29481284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "668e523afb485253ae481d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "768ef2075c48f0f7fb481f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "768e524f1c48524872481e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "468e73b74848718a48481984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "768e52312a485211c1482584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "068ef0cd81485256c3482484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "168ef23d3048f043c1482784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "368ef0b1cc48f059fb482684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "168e5256dc48f0297b482184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "768e5200c14852678b482084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "468e529f3048f25c55482384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "068e52f02f48524638482284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "768e52cb284852db9c482c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "668ef2454848f08856482e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741960,
+        "payloadHex": "7c8ef0607448f2adc84862de30cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741963,
+        "payloadHex": "3a8ef0437b48f242554862de30cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741964,
+        "payloadHex": "708ef21dab4852579f4862de30cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741965,
+        "payloadHex": "4c8ef0e22848f04ac84862de30cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741966,
+        "payloadHex": "608ef0f9ae48f009484862de30cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741970,
+        "payloadHex": "7c8e52c0814852f07a4862de30cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741971,
+        "payloadHex": "6a8e522d424852bd114862de30cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741972,
+        "payloadHex": "7a8ef07c7a48f2b5fb4862de30cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741974,
+        "payloadHex": "1c8e525778485290264862de30cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741975,
+        "payloadHex": "308ef0c1744852af294862de30cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741976,
+        "payloadHex": "3a8e523afb485253ae4862de30cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741978,
+        "payloadHex": "628ef2075c48f0f7fb4862de30cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741979,
+        "payloadHex": "708e524f1c485248724862de30cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741980,
+        "payloadHex": "1c8e73b74848718a484862de30cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741984,
+        "payloadHex": "008e52312a485211c14862de30cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741985,
+        "payloadHex": "7a8ef0cd81485256c34862de30cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741986,
+        "payloadHex": "428ef23d3048f043c14862de30cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741987,
+        "payloadHex": "0c8ef0b1cc48f059fb4862de30cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741988,
+        "payloadHex": "6a8e5256dc48f0297b4862de30cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741989,
+        "payloadHex": "0a8e5200c14852678b4862de30cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741990,
+        "payloadHex": "008e529f3048f25c554862de30cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741991,
+        "payloadHex": "0c8e52f02f485246384862de30cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741993,
+        "payloadHex": "6a8e52cb284852db9c4862de30cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.006561279296875,
+        "param": 1073741995,
+        "payloadHex": "1a8ef2454848f088564862de30cf2e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741960,
+        "payloadHex": "7a8ef0607448f2adc848145850cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741963,
+        "payloadHex": "108ef0437b48f2425548145850cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741964,
+        "payloadHex": "708ef21dab4852579f48145850cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741965,
+        "payloadHex": "6a8ef0e22848f04ac848145850cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741966,
+        "payloadHex": "4c8ef0f9ae48f0094848145850cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741970,
+        "payloadHex": "0a8e52c0814852f07a48145850cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741971,
+        "payloadHex": "608e522d424852bd1148145850cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741972,
+        "payloadHex": "628ef07c7a48f2b5fb48145850cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741974,
+        "payloadHex": "308e5257784852902648145850cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741975,
+        "payloadHex": "608ef0c1744852af2948145850cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741976,
+        "payloadHex": "428e523afb485253ae48145850cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741978,
+        "payloadHex": "008ef2075c48f0f7fb48145850cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741979,
+        "payloadHex": "6c8e524f1c4852487248145850cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741980,
+        "payloadHex": "1c8e73b74848718a4848145850cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741984,
+        "payloadHex": "728e52312a485211c148145850cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741985,
+        "payloadHex": "328ef0cd81485256c348145850cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741986,
+        "payloadHex": "6c8ef23d3048f043c148145850cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741987,
+        "payloadHex": "308ef0b1cc48f059fb48145850cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741988,
+        "payloadHex": "308e5256dc48f0297b48145850cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741989,
+        "payloadHex": "6a8e5200c14852678b48145850cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741990,
+        "payloadHex": "0a8e529f3048f25c5548145850cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741991,
+        "payloadHex": "0c8e52f02f4852463848145850cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741993,
+        "payloadHex": "3a8e52cb284852db9c48145850cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.03295135498047,
+        "param": 1073741995,
+        "payloadHex": "7c8ef2454848f0885648145850cf2e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 300.1271057128906,
+        "param": 1073754067,
+        "payloadHex": "b18db8ccf3ab4d969db4b07bd2016de1b5012a77d0bde1c52ad6d10151b251732f863c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b270fe77bc6094f40477b2876081b248467b090505d0110db8c0cc1905b8c0f5d8f972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 300.1271057128906,
+        "param": 1073754067,
+        "payloadHex": "428e5202b17ff0cf21a58e58ba0f56da"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 360.1597900390625,
+        "param": 1073754067,
+        "payloadHex": "9c0e3e9cb3b84d969db4b05566db5fa09fdb50728e89a000503461db474c47b82f863c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a45dce86af25c3c92f2736a6a596d1dd46d95d7a092466a822f2fef155a189946c32f1899eb3f9272e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 360.1597900390625,
+        "param": 1073754067,
+        "payloadHex": "008e5202b17ff0cf21a5335b630f56da"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 720.2789306640625,
+        "param": 1073775467,
+        "payloadHex": "948eb88cf3be4d96cd03fab04d66db5fa09fdb50728e89a0500bdb474c47b8a1358e4565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a0231e97de9b214776094f40477b2876081b2482273090505e011c0b8b8ccf505f9c0d872e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 720.2789306640625,
+        "param": 1073775467,
+        "payloadHex": "108e5202b17ff0cf21a5d59b434f6e0387"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 900.349853515625,
+        "param": 1073785465,
+        "payloadHex": "b50ebf8cf3b64d96e99ffa7fbe3c3e38143e0016f94218fd100a1a867a8670bdd82a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d721bcfe805f21ad392f20573f78b306d1d6a0859687388cc84ec90c0b80584d0e05cd40d72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 900.349853515625,
+        "param": 1073785465,
+        "payloadHex": "328ef0d19028526939ac37daf74f7c5187"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 960.380126953125,
+        "param": 1073785465,
+        "payloadHex": "8d0dbbecb3b84d96e99ffa7f4daabf95a0bf0b6b341961db50829f478d47b8bdd82a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d7209c48c85c79762d7c7851e5b1679cd4fa5d2c9687388cc84ec90c0b80584d0e05cd40d72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 960.380126953125,
+        "param": 1073785465,
+        "payloadHex": "6a8ef0d19028526939ac4b5a304f7c5187"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1020.4051513671875,
+        "param": 1073785465,
+        "payloadHex": "948c789cb3ab4d96e99ffa7f4a76ec91e1ec7c17d660d1012a50b551165173bdd82a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d720231e9b9e9875a77b27084fe6414ce60b5ceb08e0a1450879850b9d3fe40454936a70c72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1020.4051513671875,
+        "param": 1073785465,
+        "payloadHex": "128ef0d19028526939acd0857c4f7c5187"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1080.43603515625,
+        "param": 1073785465,
+        "payloadHex": "b1cebb8e93be4d96e99ffa7f4daabf95a0bf0b6b341961db50829f478d47b8bdd82a45e01dc47b29aa1689b7832f3a8caf6c4a28d20a63de1fb77c3c491aea093f4b8198026d7209c48c85c79762d7c7851e5b1679cd4fa5d2c98e7388cc84ec90c0b80584d0e05cd40d72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1080.43603515625,
+        "param": 1073793515,
+        "payloadHex": "b50ebe9eb3aa4d96cd1dfcb07bd2016de1b5012a77d0bde1d12a01d68d51b2517323c2b44565b37d899256cf7be550b13a651a377cf52138630cc9094a98359523095c10a93c527e2a45dce86af25c3c92f273556a1d6d6ad46d9559a0928e7b09dc050d1105b8c0ccd005b8c0f5d8f972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1080.43603515625,
+        "param": 1073785465,
+        "payloadHex": "3a8ef0518cd25237750653987e4f7c5187"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1080.43603515625,
+        "param": 1073793515,
+        "payloadHex": "1a8e5202b17ff0cf21a553987e4f6e1686"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1200.483154296875,
+        "param": 1073801900,
+        "payloadHex": "9b0e7accf3b24d964fa1fca2c03c3e38145e10fdf3060a184b450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241494c4aa85d097a5d7cd7ecc2e14508798ec36497a237276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1200.483154296875,
+        "param": 1073801900,
+        "payloadHex": "608ef042fa4852574248b218ba4f295086"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1260.485107421875,
+        "param": 1073801900,
+        "payloadHex": "990cb9cc33b64d964fa1fca2c03c3e38145e10fdf3060a184b450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e4141498282414b394f4b277ac60b5ceb0cc5f88f584f99005b8c0447276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1260.485107421875,
+        "param": 1073801900,
+        "payloadHex": "028ef042fa4852574248be78a44f295086"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1320.4921875,
+        "param": 1073801900,
+        "payloadHex": "8d0dbf8c33bd4d964fa1fca278aabf95a01e50db8e890a184b450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241490cfa005951a6a926dfd205f88f584f99005b8c0447276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1320.4921875,
+        "param": 1073801900,
+        "payloadHex": "1c8ef042fa48525742486c18a64f295086"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1380.5206298828125,
+        "param": 1073801900,
+        "payloadHex": "898fbe9c93b04d964fa1fca2c03c3e38145e10fdf3060a184b450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241490cfa005951a6a926dfd205f88f584f99005b8c0447276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1380.5206298828125,
+        "param": 1073801900,
+        "payloadHex": "1c8ef042fa4852574248a138614f295086"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1440.5255126953125,
+        "param": 1073801900,
+        "payloadHex": "918c3aec33bb4d964fa1fca278aabf95a01e50db8e890a184b450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241494c4aa85d097a5d7cd7e204485eb43921a2f18994a7276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1440.5255126953125,
+        "param": 1073801900,
+        "payloadHex": "7a8ef042fa4852574248ab58634f295086"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1740.5955810546875,
+        "param": 1073829736,
+        "payloadHex": "8b0c7bceb3b84d96c75300b05566db5fa09fdb50728e89a06150db34c5474c47b89c090e45541ecd896844ce7bb7832f3a7f53457c28d20a6347dc684a98359523095c10a93c527e2a6bca8ca5c73ae8d7c71e41a54fcda506cdd0c9aad726db8349be980c4936057a2398453649fe2972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1740.5955810546875,
+        "param": 1073829736,
+        "payloadHex": "728e5208bafff0c72f39187b954f6d2b80"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1860.6392822265625,
+        "param": 1073835379,
+        "payloadHex": "890f3a8c33aa4d96ddab00a21976ec91e1232a01d0bda47864450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241494c4aa85d097a5d7cd7eaa4485eb43921a2f18994a7276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1860.6392822265625,
+        "param": 1073835379,
+        "payloadHex": "308ef042fa4852574248f23b564f765f80"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1920.6610107421875,
+        "param": 1073835379,
+        "payloadHex": "108ef042fa4852574248069a504f765f80"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640893952.rofl",
+    "sha256": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "events": [
+      {
+        "id": "dragon-524301-red-0ce1319d134f",
+        "timestamp": 524.301147,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 524.3011472167994,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-626931-400000a6-89c889ff34b7",
+        "timestamp": 626.931447,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 626.9314467773485,
+          "entityId": 1073741990,
+          "killerEntityId": 1073742006,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742006,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-816364-40000088-299422d65ee0",
+        "timestamp": 816.363708,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 29,
+          "rawTimestamp": 816.3637080078136,
+          "entityId": 1073741960,
+          "killerEntityId": 1073742006,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742006,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-858653-red-d796e2e30fa1",
+        "timestamp": 858.652553,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 858.6525527343782,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-899425-400000a3-b82dbe107f72",
+        "timestamp": 899.424779,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 899.424778808599,
+          "entityId": 1073741987,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "rift_herald-939549-40008bf2-a0660f8e954a",
+        "timestamp": 939.548953,
+        "type": "OBJECTIVE_KILL",
+        "objective": "RIFT_HERALD",
+        "killerTeam": "BLUE",
+        "killerPlayerId": 0,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 939.5489526367204,
+          "entityId": 1073777650,
+          "killerEntityId": 1073741998,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        }
+      },
+      {
+        "id": "tower-1007671-4000008c-4352ce665933",
+        "timestamp": 1007.671499,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 29,
+          "rawTimestamp": 1007.6714990234406,
+          "entityId": 1073741964,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1016033-4000008b-096f335dcb2a",
+        "timestamp": 1016.033499,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 32,
+          "rawTimestamp": 1016.033499023442,
+          "entityId": 1073741963,
+          "killerEntityId": 1073742006,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742006,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1082752-4000008d-4ac76d54bb0e",
+        "timestamp": 1082.751777,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1082.751777343749,
+          "entityId": 1073741965,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1122266-400000ab-dc6b585ee35f",
+        "timestamp": 1122.266261,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 29,
+          "rawTimestamp": 1122.2662607421823,
+          "entityId": 1073741995,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1131467-40000094-58c4262aa61c",
+        "timestamp": 1131.467261,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1131.4672607421785,
+          "entityId": 1073741972,
+          "killerEntityId": 1073742007,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742007,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1152783-400000a2-3fcc62f9472f",
+        "timestamp": 1152.782601,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1152.7826005859317,
+          "entityId": 1073741986,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1258941-4000008e-3bf7eeca39a8",
+        "timestamp": 1258.941319,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 32,
+          "rawTimestamp": 1258.9413193359246,
+          "entityId": 1073741966,
+          "killerEntityId": 1073742006,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742006,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-1265828-red-8eb3a236b8cc",
+        "timestamp": 1265.827887,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 1265.8278867187473,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-1311746-4000009a-18ed8c4fa9fd",
+        "timestamp": 1311.745826,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1311.7458261718655,
+          "entityId": 1073741978,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1318362-40000094-c015350d66f4",
+        "timestamp": 1318.361826,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 28,
+          "rawTimestamp": 1318.3618261718623,
+          "entityId": 1073741972,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        }
+      }
+    ],
+    "neutralRemovals": [
+      [
+        524.3011472167994,
+        1073751658
+      ],
+      [
+        821.0577080078144,
+        1073774156
+      ],
+      [
+        858.6525527343782,
+        1073773878
+      ],
+      [
+        939.5489526367204,
+        1073777650
+      ],
+      [
+        1106.7677773437379,
+        1073788027
+      ],
+      [
+        1187.9594443359292,
+        1073741999
+      ],
+      [
+        1198.1594443359245,
+        1073741999
+      ],
+      [
+        1232.2403193359366,
+        1073794530
+      ],
+      [
+        1248.7343193359295,
+        1073795501
+      ],
+      [
+        1265.8278867187473,
+        1073789710
+      ],
+      [
+        1293.3358261718736,
+        1073797500
+      ],
+      [
+        1328.2414374999962,
+        1073799905
+      ],
+      [
+        1347.183437499988,
+        1073800528
+      ]
+    ],
+    "packets": [
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "f40af600eb39cbd20300fc91060687fbbb40d852455bd95bde32d850d345d340d825db5bda30dc32d95b4545db2448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "b40df14deb39cb293f885df90ffc6a8d031a098dbb40d852455bd35bd932db50d945d940d125da5bd330d132d95b4545da2448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "fc5cf60deb2dcbcb2763a767d9dd1fde28ef4c3d383d3d8f3838ef054a4c57674cedaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "3411f6ceeb39cbf73f885d5e0f036a03bb40d852455bd35bd832d850d845d840de25d25bdb30db32da5b4545db2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "341cf18eeb39cbc827e1a7622362a2205add1fdebb40d852455bd15bdc32d950db45db40da25de5bd830db32da5b4545da2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "f44df18feb39cbf73fd55d340fae505ea0ef4c8fed387938efede6574c05674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "b4cef163eb39cbd20300fc91060687fba9aa95cacaeaeacaea1bdacaca95caa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "f452f623eb39cbd20300fc0e877a77fa28ef4c053d3d57798f05793d574ce6674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "541ef7a4eb39cbce0300fc91068a8908897405fbbb40d852455bd85bd232d950d345d340d829d23cd23ad235db594545da2448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "b44cf064eb39cbcb276320205add1fde28ef4c4a57798f8fed8f5705ed4ced674cedaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "545df724eb39cb293f885df90ffc6a8d031a098da0ef4c3d0557ef38ed8f79e64c4a674cefaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "5410f0a5eb39cbcbe667a66318dd1fdebb40d852455bdc5bd832dc50d845d040d225d25bdb30d332d95b4545d22448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "b4ccf761eb39cbcb276320205add1fde99aa95dabacadaca0b2bcafa95caa495aa6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "b41bf721eb39cbbb40d852455bd95bd932da50d945da40d325dc5bd830db32d95b4545d82448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "bc44f122eb2dcbcb2763a767d9dd1fde28ef4c4ae6efedefede605eded4c57674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "3c4df6e3eb2dcbf73f885d5e0ffce33428ef4ced4a4a4a4a054aed05ed4c57674cedaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "f4c8f0a3eb39cbc827e1a7622362a2205add1fdea9aa95eada3bbaeafadaeafaba95baa495ca6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "5c0af667eb2dcbd20300fc0d777487fbbb40d852455bd25bdb32d350d145d140d325db5bd030db32da5b4545d92448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "5cd8f627eb2dcbcb2763a767d9dd1fde99aa95ea3bfafaea2bbabafa95daa495aa6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "b40df1f8eb39cb293f885df90ffc6a8d031a098dbb40d852455bd95bd832dc50d345d040d329d83cdb3adb35db594545da2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "3c06f1b8eb2dcbd20300fc0d777487fbbb40d852455bd05bd132d050dc45dc40db25d25bde30d132d95b4545d92448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "b4cdf678eb39cbf73fd55d340fae505e99aa95fa2b1baadaeaca3bda95eaa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "340bf1f9eb39cbbb40d852455bda5bd832de50de45d040de29d13cda3ad835da594545d82448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "b451f765eb39cbf73f885d5e0f036a0328ef4c054a57e63d793ded054a4ced674cedaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "668ef0607448f2adc8480d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "468ef0437b48f24255480e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "668ef21dab4852579f480984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "768ef0e22848f04ac8480884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "768ef0f9ae48f00948480b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "468e52c0814852f07a481784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "068e522d424852bd11481684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "768ef07c7a48f2b5fb481184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "668e52577848529026481384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "468ef0c1744852af29481284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "168e523afb485253ae481d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "068ef2075c48f0f7fb481f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "368e524f1c48524872481e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "068e73b74848718a48481984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "668e52312a485211c1482584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "668ef0cd81485256c3482484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "368ef23d3048f043c1482784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "168ef0b1cc48f059fb482684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "168e5256dc48f0297b482184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "168e5200c14852678b482084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "368e529f3048f25c55482384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "068e52f02f48524638482284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "068e52cb284852db9c482c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "068ef2454848f08856482e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741960,
+        "payloadHex": "7a8ef0607448f2adc848b85e30cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741963,
+        "payloadHex": "1a8ef0437b48f2425548b85e30cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741964,
+        "payloadHex": "708ef21dab4852579f48b85e30cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741965,
+        "payloadHex": "3c8ef0e22848f04ac848b85e30cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741966,
+        "payloadHex": "008ef0f9ae48f0094848b85e30cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741970,
+        "payloadHex": "4a8e52c0814852f07a48b85e30cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741971,
+        "payloadHex": "628e522d424852bd1148b85e30cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741972,
+        "payloadHex": "4a8ef07c7a48f2b5fb48b85e30cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741974,
+        "payloadHex": "108e5257784852902648b85e30cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741975,
+        "payloadHex": "4c8ef0c1744852af2948b85e30cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741976,
+        "payloadHex": "108e523afb485253ae48b85e30cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741978,
+        "payloadHex": "108ef2075c48f0f7fb48b85e30cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741979,
+        "payloadHex": "108e524f1c4852487248b85e30cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741980,
+        "payloadHex": "308e73b74848718a4848b85e30cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741984,
+        "payloadHex": "708e52312a485211c148b85e30cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741985,
+        "payloadHex": "3c8ef0cd81485256c348b85e30cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741986,
+        "payloadHex": "408ef23d3048f043c148b85e30cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741987,
+        "payloadHex": "728ef0b1cc48f059fb48b85e30cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741988,
+        "payloadHex": "728e5256dc48f0297b48b85e30cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741989,
+        "payloadHex": "3c8e5200c14852678b48b85e30cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741990,
+        "payloadHex": "728e529f3048f25c5548b85e30cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741991,
+        "payloadHex": "428e52f02f4852463848b85e30cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741993,
+        "payloadHex": "7c8e52cb284852db9c48b85e30cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00835418701172,
+        "param": 1073741995,
+        "payloadHex": "1a8ef2454848f0885648b85e30cf2e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741960,
+        "payloadHex": "0c8ef0607448f2adc848f9de50cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741963,
+        "payloadHex": "728ef0437b48f2425548f9de50cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741964,
+        "payloadHex": "0a8ef21dab4852579f48f9de50cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741965,
+        "payloadHex": "328ef0e22848f04ac848f9de50cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741966,
+        "payloadHex": "0c8ef0f9ae48f0094848f9de50cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741970,
+        "payloadHex": "1c8e52c0814852f07a48f9de50cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741971,
+        "payloadHex": "0a8e522d424852bd1148f9de50cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741972,
+        "payloadHex": "708ef07c7a48f2b5fb48f9de50cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741974,
+        "payloadHex": "708e5257784852902648f9de50cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741975,
+        "payloadHex": "708ef0c1744852af2948f9de50cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741976,
+        "payloadHex": "1a8e523afb485253ae48f9de50cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741978,
+        "payloadHex": "128ef2075c48f0f7fb48f9de50cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741979,
+        "payloadHex": "0a8e524f1c4852487248f9de50cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741980,
+        "payloadHex": "7a8e73b74848718a4848f9de50cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741984,
+        "payloadHex": "6c8e52312a485211c148f9de50cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741985,
+        "payloadHex": "108ef0cd81485256c348f9de50cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741986,
+        "payloadHex": "0a8ef23d3048f043c148f9de50cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741987,
+        "payloadHex": "6a8ef0b1cc48f059fb48f9de50cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741988,
+        "payloadHex": "6c8e5256dc48f0297b48f9de50cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741989,
+        "payloadHex": "4a8e5200c14852678b48f9de50cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741990,
+        "payloadHex": "608e529f3048f25c5548f9de50cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741991,
+        "payloadHex": "428e52f02f4852463848f9de50cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741993,
+        "payloadHex": "608e52cb284852db9c48f9de50cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.01276397705078,
+        "param": 1073741995,
+        "payloadHex": "328ef2454848f0885648f9de50cf2e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 300.0561218261719,
+        "param": 1073751658,
+        "payloadHex": "8d0fbbccb3bb4d96cb8eb0be66db5fa09fdb50728e89a0c561ae346186c5474c47b813cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a81ca8ca5c73ae8d7c71e41a52dcdc9064fd098aac9d741468309dc05c811d0b80dcc1d05d0c0dcd8b8f9f572e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 300.0561218261719,
+        "param": 1073751658,
+        "payloadHex": "1a8e5202b17ff0cf21a5001eba0f6fc9"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 360.0823059082031,
+        "param": 1073751658,
+        "payloadHex": "9b0fb99c33ae4d96cb8eb01ad2016de1b5012a77d0bde18dd14dd6d10b8d51b2517313cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2ad031e97de9b8a570fe6370b86094f40477b2876081b248468309dc05c811d0b80dcc1d05d0c0dcd8b8f9f572e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 360.0823059082031,
+        "param": 1073751658,
+        "payloadHex": "108e5202b17ff0cf21a5f9d9630f6fc9"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 420.1748962402344,
+        "param": 1073751658,
+        "payloadHex": "990c38cc33ae4d96cb8eb01ad2016de1b5012a77d0bde18dd14dd6d10b8d51b2517313cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2ad031e97de9b8a570fe6370b86094f40477b2876081b248469d821b2f9b15ef185a466e2fef991b3f1892eb72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 420.1748962402344,
+        "param": 1073751658,
+        "payloadHex": "608e5202b17ff0cf21a577daeb0f6fc9"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18975830078125,
+        "param": 1073751658,
+        "payloadHex": "990d7a8c33ac4d96cb8eb01ad2016de1b5012a77d0bde18dd14dd6d10b8d51b2517313cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a81ca8ca5c73ae8d7c71e41a52dcdc9064fd098aac9d7416b668349be980c4936057a2398294561fe45552972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 480.18975830078125,
+        "param": 1073751658,
+        "payloadHex": "4a8e5202b17ff0cf21a5c95a500f6fc9"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 840.3023681640625,
+        "param": 1073773878,
+        "payloadHex": "910e3f8e33b54d9663ebf8b0a4fbfdf7141afd1004f306141c021808f9181c0286768670e7d2d94565b37d899256cf7be550b13afd6b377cf5213863de3d094a98359523095c10a93c527e2a10dce86af25c3c92f273556a0a6d59d41d95c9a05992550a6856821b2f9b15ef185a46e02fef991b3f9b9218eb72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 840.3023681640625,
+        "param": 1073773878,
+        "payloadHex": "708e5202b17ff0cf21a5b51bcb4f337f84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 900.3161010742188,
+        "param": 1073777650,
+        "payloadHex": "b38e389cf3aa4d96db25fa7f4a76ec91e1ec7c17d660d1012a50b551165173ae6d2a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d720231e9b9e9875a77b27084fe6414ce60b5ceb068748546432b1a99182f43ef7d13d75a72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 900.3161010742188,
+        "param": 1073777650,
+        "payloadHex": "3c8ef0d19028526939ac0d5bf74f771287"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1200.4349365234375,
+        "param": 1073789710,
+        "payloadHex": "b3cf3bccb3aa4d9613e3fab07bd2016de1b5012a77d0bde1d12a01d68d51b251737dcc744565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a6bca8ca5c73ae8d7c71e41a54fcda506cdd0c9aad7cc6a821b2f5a152f189946ef2f1899eb3f9272e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1200.4349365234375,
+        "param": 1073789710,
+        "payloadHex": "6a8e5202b17ff0cf21a51198ba4f0b7387"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1260.439697265625,
+        "param": 1073789710,
+        "payloadHex": "b10e3e8ef3ae4d9613e3fab07bd2016de1b5012a77d0bde1d12a01d68d51b251737dcc744565b37d899256cf7be550b13a31b6377cf5213863eac9094a98359523095c10a93c527e2a45dce86af25c3c92f273556a1d6d6ad46d9559a092206a821b2f5a152f189946ef2f1899eb3f9272e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1260.439697265625,
+        "param": 1073789710,
+        "payloadHex": "3c8e5202b17ff0cf21a5dbb8a44f0b7387"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640901584.rofl",
+    "sha256": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "events": [
+      {
+        "id": "dragon-563691-blue-1f39bc33720b",
+        "timestamp": 563.691267,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 10,
+          "rawTimestamp": 563.6912670898479,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-804206-400000a4-52923ea3ff06",
+        "timestamp": 804.205917,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 13,
+          "rawTimestamp": 804.2059169921918,
+          "entityId": 1073741988,
+          "killerEntityId": 1073742001,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742001,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-867842-4000008c-a9636f7d33a9",
+        "timestamp": 867.841805,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 867.8418051757861,
+          "entityId": 1073741964,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-962126-blue-e55a1daf5f50",
+        "timestamp": 962.126388,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 10,
+          "rawTimestamp": 962.1263876953128,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-1164862-4000009b-2bc556d6aee0",
+        "timestamp": 1164.862128,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 29,
+          "rawTimestamp": 1164.8621279296767,
+          "entityId": 1073741979,
+          "killerEntityId": 1073742000,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742000,
+          "creditOpcode": "0x0406"
+        }
+      }
+    ],
+    "neutralRemovals": [
+      [
+        563.6912670898479,
+        1073750588
+      ],
+      [
+        962.1263876953128,
+        1073771611
+      ],
+      [
+        975.2523876953152,
+        1073775876
+      ],
+      [
+        989.8253876953178,
+        1073775840
+      ],
+      [
+        990.4932329101563,
+        1073776042
+      ],
+      [
+        991.0612329101564,
+        1073776192
+      ],
+      [
+        999.2262329101578,
+        1073775853
+      ],
+      [
+        999.8942329101579,
+        1073776017
+      ],
+      [
+        1000.9962329101581,
+        1073776236
+      ],
+      [
+        1005.982232910159,
+        1073776251
+      ],
+      [
+        1018.2862329101613,
+        1073775870
+      ],
+      [
+        1020.0902329101616,
+        1073776036
+      ],
+      [
+        1022.9668774414067,
+        1073776227
+      ],
+      [
+        1040.9798774413991,
+        1073776215
+      ],
+      [
+        1045.3988774413974,
+        1073778291
+      ],
+      [
+        1072.6826513671772,
+        1073780585
+      ],
+      [
+        1074.3526513671763,
+        1073777687
+      ],
+      [
+        1101.81146484374,
+        1073777941
+      ],
+      [
+        1114.5026533203104,
+        1073782070
+      ],
+      [
+        1118.5446533203087,
+        1073775781
+      ],
+      [
+        1149.9591279296833,
+        1073783989
+      ],
+      [
+        1150.460127929683,
+        1073775847
+      ],
+      [
+        1157.1571279296802,
+        1073776001
+      ],
+      [
+        1157.1571279296802,
+        1073776011
+      ],
+      [
+        1158.7271279296795,
+        1073783993
+      ],
+      [
+        1163.8271279296773,
+        1073776204
+      ],
+      [
+        1169.1051279296748,
+        1073785123
+      ],
+      [
+        1170.5075927734374,
+        1073776603
+      ],
+      [
+        1171.1795927734372,
+        1073785125
+      ],
+      [
+        1177.1985927734347,
+        1073776986
+      ],
+      [
+        1180.1375927734334,
+        1073783985
+      ],
+      [
+        1180.4055927734335,
+        1073783995
+      ],
+      [
+        1183.8785927734323,
+        1073777276
+      ],
+      [
+        1185.2145927734316,
+        1073772911
+      ]
+    ],
+    "packets": [
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "b45af100eb39cbd20300fc91060687fb28ef4c5738ef3d3defed4a8f574ced674cefaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "545cf74deb39cbc827e1a7622362a2205add1fde28ef4c3d57ed5757794a3d79574c4a674cefaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "fc08f70deb2dcbcb2763a767d9dd1fdebb40d852455bd35bde32d350d345dc40de25de5bd830d232da5b4545d92448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "340af6ceeb39cbd20300fc91060687fbbb40d852455bd35bd832d850d845d840de25d25bdb30db32da5b4545db2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "f4c5f18eeb39cb293f885df90ffc6a8d031a098da9aa951b2bdacacaba3baacaba95baa495ba6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "f40cf78feb39cbcbe667a66318dd1fdec440d852455bdc5bdb32de50d145de40d829db3cd03ad9354559d245482445da"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "f449f063eb39cbf73f885d5e0f036a0328ef4cedede6e6ede67957eded4ced674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "541cf723eb39cbcbe667a66318dd1fdebb40d852455bd25bd332d350d945d140dc25d25bd130d332d95b4545d02448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "540df0a4eb39cb293f885df90ffc6a8d031a098dbb40d852455bd85bd232d950d345d340d829d23cd23ad235db594545da2448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "f45df664eb39cbf73f885d5e0f036a0328ef4c4a57798f8fed8f5705ed4ced674cedaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "34c8f724eb39cbc827e1a7622362a2205add1fde99aa950bfadaaa3bca2b1bea95baa495aa6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "b4c4f1a5eb39cbcbe667a66318dd1fdea9aa952baa2baaeafafaca0bda95faa495ba6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "f411f061eb39cbf73f885d5e0f036a03c440d852455bd95bda32db50d945db40d329dc3cdb3ad2354559db45482445d8"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "54c7f021eb39cba9aa95dadabadaba0b2baacada95aaa495ba6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "bc52f622eb2dcbd20300fc0d777487fb28ef4c4ae6efedefede605eded4c57674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "fc0cf0e3eb2dcbcb2763a767d9dd1fdebb40d852455bdb5bda32da50da45da40d229da3cdb3ad235db594545d92448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "341df0a3eb39cb293f885df90ffc6a8d031a098dbb40d852455bd05bd932de50da45d040d225d95bd030d232da5b4545da2448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "3c48f067eb2dcbcb2763a767d9dd1fde28ef4c05ed3d79793dede6ed4a4c57674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "5c0df127eb2dcbf73f885d5e0ffce334c440d852455bd05bde32d250d245d040dc29da3cda3ad2354559d945482445d8"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "5418f7f8eb39cbc827e1a7622362a2205add1fdebb40d852455bd95bd832dc50d345d040d329d83cdb3adb35db594545da2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "3c06f6b8eb2dcbd20300fc0d777487fbbb40d852455bd05bd132d050dc45dc40db25d25bde30d132d95b4545d92448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "b44ef078eb39cbd20300fc0e877a77faa0ef4c058f79ef57e6ed38574ce6674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "344ff0f9eb39cb28ef4c4aef3838e638794aef4a4cef674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "34cdf065eb39cbf73f885d5e0f036a03a9aa95fabadaea0b1b0bcafaba95caa495ca6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "668ef0607448f2adc8480d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "068ef0437b48f24255480e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "068ef21dab4852579f480984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "768ef0e22848f04ac8480884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "068ef0f9ae48f00948480b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "368e52c0814852f07a481784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "368e522d424852bd11481684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "668ef07c7a48f2b5fb481184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "368e52577848529026481384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "068ef0c1744852af29481284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "768e523afb485253ae481d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "468ef2075c48f0f7fb481f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "768e524f1c48524872481e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "668e73b74848718a48481984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "068e52312a485211c1482584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "768ef0cd81485256c3482484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "668ef23d3048f043c1482784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "368ef0b1cc48f059fb482684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "068e5256dc48f0297b482184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "168e5200c14852678b482084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "068e529f3048f25c55482384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "368e52f02f48524638482284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "168e52cb284852db9c482c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "068ef2454848f08856482e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741960,
+        "payloadHex": "4a8ef0607448f2adc8480bde30cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741963,
+        "payloadHex": "7a8ef0437b48f24255480bde30cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741964,
+        "payloadHex": "3a8ef21dab4852579f480bde30cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741965,
+        "payloadHex": "1a8ef0e22848f04ac8480bde30cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741966,
+        "payloadHex": "3c8ef0f9ae48f00948480bde30cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741970,
+        "payloadHex": "6a8e52c0814852f07a480bde30cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741971,
+        "payloadHex": "6a8e522d424852bd11480bde30cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741972,
+        "payloadHex": "6c8ef07c7a48f2b5fb480bde30cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741974,
+        "payloadHex": "4a8e52577848529026480bde30cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741975,
+        "payloadHex": "708ef0c1744852af29480bde30cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741976,
+        "payloadHex": "6c8e523afb485253ae480bde30cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741978,
+        "payloadHex": "0a8ef2075c48f0f7fb480bde30cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741979,
+        "payloadHex": "308e524f1c48524872480bde30cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741980,
+        "payloadHex": "7a8e73b74848718a48480bde30cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741984,
+        "payloadHex": "4c8e52312a485211c1480bde30cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741985,
+        "payloadHex": "428ef0cd81485256c3480bde30cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741986,
+        "payloadHex": "728ef23d3048f043c1480bde30cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741987,
+        "payloadHex": "408ef0b1cc48f059fb480bde30cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741988,
+        "payloadHex": "008e5256dc48f0297b480bde30cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741989,
+        "payloadHex": "108e5200c14852678b480bde30cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741990,
+        "payloadHex": "0c8e529f3048f25c55480bde30cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741991,
+        "payloadHex": "6a8e52f02f48524638480bde30cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741993,
+        "payloadHex": "428e52cb284852db9c480bde30cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.00617599487305,
+        "param": 1073741995,
+        "payloadHex": "708ef2454848f08856480bde30cf2e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741960,
+        "payloadHex": "0a8ef0607448f2adc848f65f50cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741963,
+        "payloadHex": "6a8ef0437b48f2425548f65f50cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741964,
+        "payloadHex": "028ef21dab4852579f48f65f50cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741965,
+        "payloadHex": "7c8ef0e22848f04ac848f65f50cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741966,
+        "payloadHex": "0c8ef0f9ae48f0094848f65f50cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741970,
+        "payloadHex": "6a8e52c0814852f07a48f65f50cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741971,
+        "payloadHex": "7c8e522d424852bd1148f65f50cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741972,
+        "payloadHex": "408ef07c7a48f2b5fb48f65f50cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741974,
+        "payloadHex": "6a8e5257784852902648f65f50cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741975,
+        "payloadHex": "4c8ef0c1744852af2948f65f50cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741976,
+        "payloadHex": "1c8e523afb485253ae48f65f50cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741978,
+        "payloadHex": "3a8ef2075c48f0f7fb48f65f50cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741979,
+        "payloadHex": "628e524f1c4852487248f65f50cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741980,
+        "payloadHex": "7c8e73b74848718a4848f65f50cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741984,
+        "payloadHex": "328e52312a485211c148f65f50cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741985,
+        "payloadHex": "3a8ef0cd81485256c348f65f50cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741986,
+        "payloadHex": "408ef23d3048f043c148f65f50cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741987,
+        "payloadHex": "1a8ef0b1cc48f059fb48f65f50cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741988,
+        "payloadHex": "6c8e5256dc48f0297b48f65f50cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741989,
+        "payloadHex": "108e5200c14852678b48f65f50cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741990,
+        "payloadHex": "7c8e529f3048f25c5548f65f50cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741991,
+        "payloadHex": "728e52f02f4852463848f65f50cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741993,
+        "payloadHex": "6c8e52cb284852db9c48f65f50cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.00858306884766,
+        "param": 1073741995,
+        "payloadHex": "4c8ef2454848f0885648f65f50cf2e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 300.13037109375,
+        "param": 1073750588,
+        "payloadHex": "9c0eb8ecf3ac4d966f7eb04ad2016de1b5012a77d0bde12a7c0151b2517345cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a0231e97de9b214776094f40477b2876081b2484673090505e011c0b8b8ccf505f9c0d872e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 300.13037109375,
+        "param": 1073750588,
+        "payloadHex": "1a8e5202b17ff0cf21a56058ba0f39c1"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 360.1636657714844,
+        "param": 1073750588,
+        "payloadHex": "9dcd39ec33ab4d966f7eb04ad2016de1b5012a77d0bde12a7c0151b2517345cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a0231e97de9b214776094f40477b2876081b2484674822f2f7d1599181846eb2f92993f72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 360.1636657714844,
+        "param": 1073750588,
+        "payloadHex": "1a8e5202b17ff0cf21a5135b630f39c1"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 420.17877197265625,
+        "param": 1073750588,
+        "payloadHex": "940f399c93b84d966f7eb04d66db5fa09fdb50728e89a0500bdb474c47b845cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a0231e97de9b214776094f40477b2876081b2484674822f2f7d1599181846eb2f92993f72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 420.17877197265625,
+        "param": 1073750588,
+        "payloadHex": "0a8e5202b17ff0cf21a5d7daeb0f39c1"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18133544921875,
+        "param": 1073750588,
+        "payloadHex": "8c0cb88cb3b54d966f7eb0befbfdf7141afd1004f306141000fd8676867045cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a0231e97de9b214776094f40477b2876081b2486b73090505e011c0b8b8ccf505f9c0d872e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 480.18133544921875,
+        "param": 1073750588,
+        "payloadHex": "108e5202b17ff0cf21a5c21a500f39c1"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.2024536132812,
+        "param": 1073750588,
+        "payloadHex": "9b8d38cc33aa4d966f7eb04ad2016de1b5012a77d0bde12a7c0151b2517345cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a0231e97de9b214776094f40477b2876081b2486b74822f2f7d1599181846eb2f92993f72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 540.2024536132812,
+        "param": 1073750588,
+        "payloadHex": "328e5202b17ff0cf21a592591e4f39c1"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 900.2820434570312,
+        "param": 1073771611,
+        "payloadHex": "910e39ec33b24d96adc7f8b0bafbfdf7141afd1004f306141810fdf902867686704cfd214565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b8feb277706094f40477b2876081b248686a821b2f5a152f189946ef2f1899eb3f9272e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 900.2820434570312,
+        "param": 1073771611,
+        "payloadHex": "708e5202b17ff0cf21a598dbf74f5e6d84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 960.288818359375,
+        "param": 1073771611,
+        "payloadHex": "b58ebeee93b44d96adc7f8b0bafbfdf7141afd1004f306141810fdf902867686704cfd214535f6b689d065507bb7832f3a8527217c28d20a63bf0ce84a98359523095c10a93c527e2a45dce86af25c3c92f273556a1d6d6ad46d9559a092687b09dc050d1105b8c0ccd005b8c0f5d8f972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 960.288818359375,
+        "param": 1073771611,
+        "payloadHex": "3c8e5299324ef03b7f703ddb304f5e6d84"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640933743.rofl",
+    "sha256": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "events": [
+      {
+        "id": "dragon-572788-red-103dbb8f7cac",
+        "timestamp": 572.787901,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 572.7879013671879,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-828015-4000008c-c1587c57cfef",
+        "timestamp": 828.014571,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 828.0145712890657,
+          "entityId": 1073741964,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-950432-red-df8e386750b8",
+        "timestamp": 950.432013,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 950.4320131835974,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-1012729-400000a1-3c2bc752ad2f",
+        "timestamp": 1012.729464,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1012.7294643554726,
+          "entityId": 1073741985,
+          "killerEntityId": 1073741998,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741998,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "rift_herald-1082159-40007dd6-6dea9d2d092b",
+        "timestamp": 1082.159441,
+        "type": "OBJECTIVE_KILL",
+        "objective": "RIFT_HERALD",
+        "killerTeam": "RED",
+        "killerPlayerId": 6,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 1082.1594414062492,
+          "entityId": 1073774038,
+          "killerEntityId": 1073742004,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        }
+      },
+      {
+        "id": "tower-1156327-400000a3-df1974acabd7",
+        "timestamp": 1156.327227,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1156.3272265624933,
+          "entityId": 1073741987,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-1265173-red-9b5b8051dd55",
+        "timestamp": 1265.173124,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 11,
+          "rawTimestamp": 1265.1731240234353,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "baron-1274612-4000b0e1-84ac91c5700a",
+        "timestamp": 1274.612124,
+        "type": "OBJECTIVE_KILL",
+        "objective": "BARON",
+        "killerTeam": "BLUE",
+        "killerPlayerId": 1,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 1274.612124023431,
+          "entityId": 1073787105,
+          "killerEntityId": 1073741999,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        }
+      },
+      {
+        "id": "tower-1381203-400000a0-a1eea3b2b741",
+        "timestamp": 1381.202692,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1381.202692382812,
+          "entityId": 1073741984,
+          "killerEntityId": 1073742001,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742001,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1404000-400000a4-f983b0f292fe",
+        "timestamp": 1403.999692,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 32,
+          "rawTimestamp": 1403.9996923828016,
+          "entityId": 1073741988,
+          "killerEntityId": 1073742001,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742001,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1551822-400000a6-e36e37e98aa6",
+        "timestamp": 1551.822155,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1551.822155273428,
+          "entityId": 1073741990,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1599697-4000008d-facb5065792d",
+        "timestamp": 1599.697271,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 29,
+          "rawTimestamp": 1599.6972714843705,
+          "entityId": 1073741965,
+          "killerEntityId": 1073742003,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742003,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1606585-40000088-87469e9a470d",
+        "timestamp": 1606.585271,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1606.585271484368,
+          "entityId": 1073741960,
+          "killerEntityId": 1073742005,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742005,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-1671641-red-aa9eed25ea13",
+        "timestamp": 1671.640761,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 12,
+          "rawTimestamp": 1671.6407607421784,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-1925038-400000ab-6bb8bc862b9f",
+        "timestamp": 1925.038459,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 30,
+          "rawTimestamp": 1925.038458984373,
+          "entityId": 1073741995,
+          "killerEntityId": 1073823432,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 0,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-2081895-4000008e-4398b585fd25",
+        "timestamp": 2081.895348,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 2081.8953476562447,
+          "entityId": 1073741966,
+          "killerEntityId": 1073742006,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742006,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "baron-2086375-40010c50-19ae0b504aa6",
+        "timestamp": 2086.375348,
+        "type": "OBJECTIVE_KILL",
+        "objective": "BARON",
+        "killerTeam": "RED",
+        "killerPlayerId": 6,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 2086.3753476562424,
+          "entityId": 1073810512,
+          "killerEntityId": 1073742004,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        }
+      },
+      {
+        "id": "tower-2093523-4000009a-c30b673af33e",
+        "timestamp": 2093.523348,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 2093.523347656239,
+          "entityId": 1073741978,
+          "killerEntityId": 1073742006,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742006,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-2096863-40000094-d0b54cc557b5",
+        "timestamp": 2096.863348,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "BLUE",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 2096.8633476562372,
+          "entityId": 1073741972,
+          "killerEntityId": 1073742006,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742006,
+          "creditOpcode": "0x0406"
+        }
+      }
+    ],
+    "neutralRemovals": [
+      [
+        572.7879013671879,
+        1073750965
+      ],
+      [
+        950.4320131835974,
+        1073772835
+      ],
+      [
+        1082.1594414062492,
+        1073774038
+      ],
+      [
+        1265.1731240234353,
+        1073790036
+      ],
+      [
+        1671.6407607421784,
+        1073807853
+      ]
+    ],
+    "packets": [
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "b418f000eb39cbcb276320205add1fdebb40d852455bd95bde32d850d345d340d825db5bda30dc32d95b4545db2448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "34ddf14deb39cb293f885df90ffc6a8d031a098da9aa950bdacadada1bba0b1bda95baa495aa6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "bcc5f60deb2dcbf73f885d5e0ffce334a9aa950b3b0b0b2b3b3baafaba95daa495ca6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "f450f7ceeb39cbcb276320205add1fde28ef4c3defefefef3805eded4a4ced674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "f418f68eeb39cbc827e1a7622362a2205add1fdebb40d852455bd15bdc32d950db45db40da25de5bd830db32da5b4545da2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "b4c4f68feb39cbcbe667a66318dd1fde99aa952bca3b1b3baacaeada95faa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "340ef063eb39cbd20300fc91060687fbbb40d852455bdb5bdb32d050d045db40d029d13cd93adb35db594545db2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "b41cf023eb39cbcbe667a66318dd1fdebb40d852455bd25bd332d350d945d140dc25d25bd130d332d95b4545d02448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "340df6a4eb39cb293f885df90ffc6a8d031a098dbb40d852455bd85bd232d950d345d340d829d23cd23ad235db594545da2448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "b451f764eb39cbf73f885d5e0f036a0328ef4c4a57798f8fed8f5705ed4ced674cedaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "544cf024eb39cbc827e1a7622362a2205add1fdea0ef4c3d0557ef38ed8f79e64c4a674cefaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "b459f1a5eb39cbf73fd55d340fae505e28ef4c8fef8fefe60505ed3d574c05674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "b448f061eb39cbcb276320205add1fdea0ef4c574aed57ed3d8fed054ced674cefaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "f4cff021eb39cba9aa95dadabadaba0b2baacada95aaa495ba6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "5cc5f622eb2dcbf73f885d5e0ffce334a9aa95baeaaacaaacaeafacaca95daa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "bc09f7e3eb2dcbf73f885d5e0ffce334bb40d852455bdb5bda32da50da45da40d229da3cdb3ad235db594545d92448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "f404f0a3eb39cbc827e1a7622362a2205add1fdebb40d852455bd05bd932de50da45d040d225d95bd030d232da5b4545da2448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "bc4df167eb2dcbf73f885d5e0ffce33428ef4c05ed3d79793dede6ed4a4c57674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "3c51f127eb2dcbf73f885d5e0ffce334a0ef4ce6380505e68f4a4a054c57674cefaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "341af1f8eb39cbce0300fc91068a8908897405fbbb40d852455bd95bd832dc50d345d040d329d83cdb3adb35db594545da2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "bc08f0b8eb2dcbcb2763a767d9dd1fdebb40d852455bd05bd132d050dc45dc40db25d25bde30d132d95b4545d92448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "341df778eb39cbf73fd55d340fae505ec440d852455bd25bdc32d150d845d940d029db3cde3ad9354559d045482445da"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "b44ff6f9eb39cb28ef4c4aef3838e638794aef4a4cef674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "34c4f165eb39cbcb276320205add1fdea9aa95fabadaea0b1b0bcafaba95caa495ca6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "068ef0607448f2adc8480d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "768ef0437b48f24255480e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "468ef21dab4852579f480984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "168ef0e22848f04ac8480884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "068ef0f9ae48f00948480b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "368e52c0814852f07a481784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "768e522d424852bd11481684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "668ef07c7a48f2b5fb481184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "068e52577848529026481384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "768ef0c1744852af29481284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "468e523afb485253ae481d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "668ef2075c48f0f7fb481f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "468e524f1c48524872481e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "768e73b74848718a48481984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "468e52312a485211c1482584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "368ef0cd81485256c3482484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "668ef23d3048f043c1482784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "368ef0b1cc48f059fb482684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "668e5256dc48f0297b482184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "368e5200c14852678b482084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "768e529f3048f25c55482384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "768e52f02f48524638482284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "768e52cb284852db9c482c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "368ef2454848f08856482e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741960,
+        "payloadHex": "1a8ef0607448f2adc848d95b30cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741963,
+        "payloadHex": "308ef0437b48f2425548d95b30cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741964,
+        "payloadHex": "4a8ef21dab4852579f48d95b30cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741965,
+        "payloadHex": "4c8ef0e22848f04ac848d95b30cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741966,
+        "payloadHex": "6a8ef0f9ae48f0094848d95b30cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741970,
+        "payloadHex": "028e52c0814852f07a48d95b30cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741971,
+        "payloadHex": "708e522d424852bd1148d95b30cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741972,
+        "payloadHex": "7a8ef07c7a48f2b5fb48d95b30cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741974,
+        "payloadHex": "1c8e5257784852902648d95b30cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741975,
+        "payloadHex": "0a8ef0c1744852af2948d95b30cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741976,
+        "payloadHex": "608e523afb485253ae48d95b30cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741978,
+        "payloadHex": "628ef2075c48f0f7fb48d95b30cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741979,
+        "payloadHex": "3c8e524f1c4852487248d95b30cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741980,
+        "payloadHex": "728e73b74848718a4848d95b30cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741984,
+        "payloadHex": "4a8e52312a485211c148d95b30cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741985,
+        "payloadHex": "308ef0cd81485256c348d95b30cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741986,
+        "payloadHex": "3a8ef23d3048f043c148d95b30cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741987,
+        "payloadHex": "1c8ef0b1cc48f059fb48d95b30cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741988,
+        "payloadHex": "4a8e5256dc48f0297b48d95b30cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741989,
+        "payloadHex": "7c8e5200c14852678b48d95b30cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741990,
+        "payloadHex": "3c8e529f3048f25c5548d95b30cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741991,
+        "payloadHex": "028e52f02f4852463848d95b30cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741993,
+        "payloadHex": "6a8e52cb284852db9c48d95b30cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.019569396972656,
+        "param": 1073741995,
+        "payloadHex": "308ef2454848f0885648d95b30cf2e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741960,
+        "payloadHex": "008ef0607448f2adc848341850cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741963,
+        "payloadHex": "608ef0437b48f2425548341850cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741964,
+        "payloadHex": "608ef21dab4852579f48341850cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741965,
+        "payloadHex": "028ef0e22848f04ac848341850cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741966,
+        "payloadHex": "328ef0f9ae48f0094848341850cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741970,
+        "payloadHex": "008e52c0814852f07a48341850cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741971,
+        "payloadHex": "6a8e522d424852bd1148341850cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741972,
+        "payloadHex": "6c8ef07c7a48f2b5fb48341850cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741974,
+        "payloadHex": "7c8e5257784852902648341850cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741975,
+        "payloadHex": "308ef0c1744852af2948341850cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741976,
+        "payloadHex": "008e523afb485253ae48341850cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741978,
+        "payloadHex": "708ef2075c48f0f7fb48341850cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741979,
+        "payloadHex": "1c8e524f1c4852487248341850cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741980,
+        "payloadHex": "6a8e73b74848718a4848341850cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741984,
+        "payloadHex": "428e52312a485211c148341850cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741985,
+        "payloadHex": "728ef0cd81485256c348341850cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741986,
+        "payloadHex": "008ef23d3048f043c148341850cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741987,
+        "payloadHex": "4a8ef0b1cc48f059fb48341850cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741988,
+        "payloadHex": "328e5256dc48f0297b48341850cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741989,
+        "payloadHex": "7a8e5200c14852678b48341850cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741990,
+        "payloadHex": "0a8e529f3048f25c5548341850cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741991,
+        "payloadHex": "008e52f02f4852463848341850cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741993,
+        "payloadHex": "7c8e52cb284852db9c48341850cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.030029296875,
+        "param": 1073741995,
+        "payloadHex": "008ef2454848f0885648341850cf2e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 300.04718017578125,
+        "param": 1073750965,
+        "payloadHex": "8d0e3a8cb3b64d966184b0bafbfdf7141afd1004f30614e310f918fd8676867058863c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a6bca8ca5c73ae8d7c71ea5a5c9cd4f06cdd039aad7466a822f2fef155a189946c32f1899eb3f9272e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 300.04718017578125,
+        "param": 1073750965,
+        "payloadHex": "108e5202b17ff0cf21a5d9deba0f30c2"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 360.06683349609375,
+        "param": 1073750965,
+        "payloadHex": "9c8f789cb3b24d966184b0bafbfdf7141afd1004f30614e310f918fd8676867058863c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b270fe77bc6094f40477b2876081b24846db8349be980c4936057a23987f36fe454972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 360.06683349609375,
+        "param": 1073750965,
+        "payloadHex": "108e5202b17ff0cf21a5b85e630f30c2"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 420.1540832519531,
+        "param": 1073750965,
+        "payloadHex": "8c0f79cc93bc4d966184b05566db5fa09fdb50728e89a000503461db474c47b858863c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b270fe77bc6094f40477b2876081b24846db8349be980c4936057a23987f36fe454972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 420.1540832519531,
+        "param": 1073750965,
+        "payloadHex": "6a8e5202b17ff0cf21a5ad1beb0f30c2"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18511962890625,
+        "param": 1073750965,
+        "payloadHex": "91cd799cb3ab4d966184b07bd2016de1b5012a77d0bde1c52ad6d10151b2517358863c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b270fe77bc6094f40477b2876081b2486bdb8349be980c4936057a23987f36fe454972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 480.18511962890625,
+        "param": 1073750965,
+        "payloadHex": "708e5202b17ff0cf21a5e31a500f30c2"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.199462890625,
+        "param": 1073750965,
+        "payloadHex": "9d8c388c33aa4d966184b07bd2016de1b5012a77d0bde1c52ad6d10151b2517358863c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b270fe77bc6094f40477b2876081b2486b6a822f2fef155a189946c32f1899eb3f9272e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 540.199462890625,
+        "param": 1073750965,
+        "payloadHex": "028e5202b17ff0cf21a56f591e4f30c2"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 900.3170776367188,
+        "param": 1073772835,
+        "payloadHex": "89ce3b8cb3ba4d963ddbf8b0be66db5fa09fdb50728e89a0c561ae346186c5474c47b87c3c344565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a81ca8ca5c73ae8d7c71e41a52dcdc9064fd098aac9d741689d821b2f9b15ef185a466e2fef991b3f1892eb72e9d872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 900.3170776367188,
+        "param": 1073774038,
+        "payloadHex": "8b0d7becf3ab4d96a3edf87f4a76ec91e1ec7c17d660d1012a50b551165173df6d2a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d7209c48c85c79762d7c7851e5b1679cd4fa5d2c9680a1450879850b9d3fe40454936a70c72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 900.3170776367188,
+        "param": 1073772835,
+        "payloadHex": "3a8e5202b17ff0cf21a5095bf74f267784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 900.3170776367188,
+        "param": 1073774038,
+        "payloadHex": "3a8ef0d19028526939ac095bf74f537e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 960.325439453125,
+        "param": 1073774038,
+        "payloadHex": "8c8eb8cc33b44d96a3edf87fbe3c3e38143e0016f94218fd100a1a867a8670df6d2a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d720231e9b9e9875a77b27084fe6414ce60b5ceb08e7388cc84ec90c0b80584d0e05cd40d72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 960.325439453125,
+        "param": 1073774038,
+        "payloadHex": "4a8ef0d19028526939ac6b5b304f537e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1020.326416015625,
+        "param": 1073774038,
+        "payloadHex": "9d8fbe9cf3bb4d96a3edf87f4daabf95a0bf0b6b341961db50829f478d47b8df6d2a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d721bcfe805f21ad392f20573f78b306d1d6a08598e7388cc84ec90c0b80584d0e05cd40d72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1020.326416015625,
+        "param": 1073774038,
+        "payloadHex": "6c8ef0d19028526939ac575b7c4f537e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1080.3350830078125,
+        "param": 1073774038,
+        "payloadHex": "9d8d7ecef3ab4d96a3edf87f4a76ec91e1ec7c17d660d1012a50b551165173df6d2a450176cf7b61d7f189b9d6503adecb794aa2252163c038377c3c491aea093f4b8198026d721bcfe805f21ad392f20573f78b306d1d6a08598e0a1450879850b9d3fe40454936a70c72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1080.3350830078125,
+        "param": 1073774038,
+        "payloadHex": "008ef0cfe83a52a28679add97e4f537e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1200.3656005859375,
+        "param": 1073787105,
+        "payloadHex": "910dba8cb3b34d96b9b9faa2c03c3e38145e10fdf306b2184b450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241494c4aa85d097a5d7cd7ecc5f88f584f99005b8c0447276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1200.3656005859375,
+        "param": 1073787105,
+        "payloadHex": "308ef042fa48525742482319ba4f646487"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1260.3818359375,
+        "param": 1073787105,
+        "payloadHex": "8cccbf8e93b44d96b9b9faa2c03c3e38145e10fdf306b2184b450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241490cfa005951a6a926dfd205f88f584f99005b8c0447276d872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1260.3818359375,
+        "param": 1073790036,
+        "payloadHex": "91cf7b8eb3ac4d969fe7fab070d2016de1b5012a77d0bde10b8dd111d6d10b8d51b25173551322458fb9f1893d41227bb7832f3a84cf337c28d20a636e9b794a98359523095c10a93c527e2a20ca8ca5c73ae8d7c71e41a52dcdc9064fd070aac9d7412d20bc8349be980c4936057a23985529454cfe45552972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1260.3818359375,
+        "param": 1073787105,
+        "payloadHex": "308ef042fa48525742484239a44f646487"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1260.3818359375,
+        "param": 1073790036,
+        "payloadHex": "1c8e52a230b8f0f54a784239a44f517d87"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1560.432861328125,
+        "param": 1073807853,
+        "payloadHex": "9c8f3acc33ad4d96d1fdfeb070d2016de1b5012a77d0bde10b8dd111d6d10b8d51b251730b0e834565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a20ca8ca5c73ae8d7c71e41a52dcdc9064fd070aac9d7412d2656821b2f9b15ef185a46e02fef991b3f9b9218eb72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1560.432861328125,
+        "param": 1073807853,
+        "payloadHex": "4a8e5202b17ff0cf21a5d5982f4f680681"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1620.4473876953125,
+        "param": 1073807853,
+        "payloadHex": "930f398eb3b44d96d1fdfeb0a4fbfdf7141afd1004f306141c021808f9181c02867686700b0e8345e318b689ebeba57bb981dc3a3371817ca2fd2f63b3ece84a98359523095c10a93c527e2a3431e97de9b8a570fe0a70b8a56094f40477b2876081b2482656821b2f9b15ef185a46e02fef991b3f9b9218eb72e9d872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1620.4473876953125,
+        "param": 1073810512,
+        "payloadHex": "930cb98c93b34d969727fea2c03c3e38145e10fdf30638dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e4141498282414b394f4b277ac60b5ceb0265f88f584f99005b8c0447276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1620.4473876953125,
+        "param": 1073807853,
+        "payloadHex": "608e52996ae9f0be5b5b8bb8e94f680681"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1620.4473876953125,
+        "param": 1073810512,
+        "payloadHex": "6c8ef042fa48525742488bb8e94f551d81"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1680.462646484375,
+        "param": 1073810512,
+        "payloadHex": "91cc3fccf3ad4d969727fea21976ec91e1232a01d0bd38dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241490cfa005951a6a926dfdaa4485eb43921a2f18994a7276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1680.462646484375,
+        "param": 1073810512,
+        "payloadHex": "628ef042fa4852574248e8d8eb4f551d81"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1740.4921875,
+        "param": 1073810512,
+        "payloadHex": "8d0dbf9c33b64d969727fea2c03c3e38145e10fdf30638dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241490cfa005951a6a926dfdaa5f88f584f99005b8c0447276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1740.4921875,
+        "param": 1073810512,
+        "payloadHex": "0c8ef042fa48525742486c78954f551d81"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1800.522216796875,
+        "param": 1073810512,
+        "payloadHex": "940e7fce93be4d969727fea278aabf95a01e50db8e8938dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241490cfa005951a6a926dfdaa2e14508798ec36497a237276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1800.522216796875,
+        "param": 1073810512,
+        "payloadHex": "328ef042fa4852574248e258974f551d81"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1860.531005859375,
+        "param": 1073810512,
+        "payloadHex": "9b0c3a9c33b84d969727fea278aabf95a01e50db8e8938dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241494c4aa85d097a5d7cd7e7b4485eb43921a2f18994a7276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1860.531005859375,
+        "param": 1073810512,
+        "payloadHex": "6a8ef042fa4852574248dc38564f551d81"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1920.5399169921875,
+        "param": 1073810512,
+        "payloadHex": "91cf799c33b64d969727fea2c03c3e38145e10fdf30638dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e4141498282414b394f4b277ac60b5ceb07b2e14508798ec36497a237276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1920.5399169921875,
+        "param": 1073810512,
+        "payloadHex": "1c8ef042fa48525742480e9b504f551d81"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1980.5511474609375,
+        "param": 1073810512,
+        "payloadHex": "9c8f78ccb3aa4d969727fea21976ec91e1232a01d0bd38dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e4141498282414b394f4b277ac60b5ceb07b2e14508798ec36497a237276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1980.5511474609375,
+        "param": 1073810512,
+        "payloadHex": "0c8ef042fa485257424827fb124f551d81"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 2040.573486328125,
+        "param": 1073810512,
+        "payloadHex": "9bcd7bccf3b44d969727fea2c03c3e38145e10fdf30638dbb0450802f57b08f53e89080860ab3333ca4a8989d14b5ee59a7c3c49281450e414149828241494c4aa85d097a5d7cd7e612e14508798ec36497a237276d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 2040.573486328125,
+        "param": 1073810512,
+        "payloadHex": "308ef042fa4852574248b5db1c4f551d81"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640962900.rofl",
+    "sha256": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "events": [
+      {
+        "id": "dragon-399091-blue-5cdf8c630818",
+        "timestamp": 399.090536,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 10,
+          "rawTimestamp": 399.09053588867346,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-747439-400000a4-7f143ed03808",
+        "timestamp": 747.438818,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 747.4388178710985,
+          "entityId": 1073741988,
+          "killerEntityId": 1073742002,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742002,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-773005-400000a1-6b9c2695c121",
+        "timestamp": 773.005466,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 32,
+          "rawTimestamp": 773.0054658203165,
+          "entityId": 1073741985,
+          "killerEntityId": 1073741998,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741998,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-789397-400000a0-ae80440a6ad9",
+        "timestamp": 789.397012,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 789.3970117187516,
+          "entityId": 1073741984,
+          "killerEntityId": 1073742000,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742000,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-844748-blue-521f0b317c68",
+        "timestamp": 844.747623,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 9,
+          "rawTimestamp": 844.7476230468758,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "rift_herald-991232-40008b23-a630fe5d9fdd",
+        "timestamp": 991.231729,
+        "type": "OBJECTIVE_KILL",
+        "objective": "RIFT_HERALD",
+        "killerTeam": "BLUE",
+        "killerPlayerId": 3,
+        "source": {
+          "opcode": "0x0119",
+          "packetSize": 136,
+          "rawTimestamp": 991.2317285156252,
+          "entityId": 1073777443,
+          "killerEntityId": 1073742001,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d"
+        }
+      },
+      {
+        "id": "tower-1016764-40000093-00f7450132a8",
+        "timestamp": 1016.763729,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 32,
+          "rawTimestamp": 1016.7637285156297,
+          "entityId": 1073741971,
+          "killerEntityId": 1073742000,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742000,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1040206-40000097-ce0af5af24a7",
+        "timestamp": 1040.206428,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 30,
+          "rawTimestamp": 1040.206428222649,
+          "entityId": 1073741975,
+          "killerEntityId": 1073785143,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741998,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "dragon-1177729-blue-52d7acd0a6ce",
+        "timestamp": 1177.729364,
+        "type": "OBJECTIVE_KILL",
+        "objective": "DRAGON",
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x002d",
+          "packetSize": 10,
+          "rawTimestamp": 1177.7293642578088,
+          "confidence": "VERIFIED"
+        }
+      },
+      {
+        "id": "tower-1265828-400000a5-d5514cbb7a07",
+        "timestamp": 1265.827928,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 32,
+          "rawTimestamp": 1265.8279277343725,
+          "entityId": 1073741989,
+          "killerEntityId": 1073742001,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742001,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1295224-4000009b-c22e3f548004",
+        "timestamp": 1295.223595,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1295.22359472656,
+          "entityId": 1073741979,
+          "killerEntityId": 1073741998,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741998,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1375130-40000096-26ffcb18f377",
+        "timestamp": 1375.130019,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1375.130018554676,
+          "entityId": 1073741974,
+          "killerEntityId": 1073741998,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741998,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1421948-40000098-73aa6b602030",
+        "timestamp": 1421.947653,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 32,
+          "rawTimestamp": 1421.947653320307,
+          "entityId": 1073741976,
+          "killerEntityId": 1073742000,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073742000,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1529139-40000092-9f92c87425a3",
+        "timestamp": 1529.138801,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1529.1388007812363,
+          "entityId": 1073741970,
+          "killerEntityId": 1073741998,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741998,
+          "creditOpcode": "0x0406"
+        }
+      },
+      {
+        "id": "tower-1533381-400000a7-191fd70db40c",
+        "timestamp": 1533.380626,
+        "type": "STRUCTURE_DESTROYED",
+        "structure": "TOWER",
+        "destroyedTeam": "RED",
+        "source": {
+          "opcode": "0x0463",
+          "packetSize": 33,
+          "rawTimestamp": 1533.3806259765613,
+          "entityId": 1073741991,
+          "killerEntityId": 1073741998,
+          "confidence": "VERIFIED",
+          "corroboratingOpcode": "0x023d",
+          "creditedEntityId": 1073741998,
+          "creditOpcode": "0x0406"
+        }
+      }
+    ],
+    "neutralRemovals": [
+      [
+        399.09053588867346,
+        1073751015
+      ],
+      [
+        844.7476230468758,
+        1073767421
+      ],
+      [
+        991.2317285156252,
+        1073777443
+      ],
+      [
+        1046.8654282226466,
+        1073741998
+      ],
+      [
+        1051.5747617187494,
+        1073741998
+      ],
+      [
+        1177.7293642578088,
+        1073791216
+      ]
+    ],
+    "packets": [
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "f44ef600eb39cbd20300fc91060687fb28ef4c5738ef3d3defed4a8f574ced674cefaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "b412f64deb39cbce0300fc91068a8908897405fbbb40d852455bd35bd932db50d945d940d125da5bd330d132d95b4545da2448d845"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "fc19f10deb2dcbf73f885d5e0ffce334bb40d852455bd35bde32d350d345dc40de25de5bd830d232da5b4545d92448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "345cf0ceeb39cbcb276320205add1fde28ef4c3defefefef3805eded4a4ced674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "b408f18eeb39cbc827e1a7622362a2205add1fdebb40d852455bd15bdc32d950db45db40da25de5bd830db32da5b4545da2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "54d0f08feb39cbcbe667a66318dd1fde99aa952bca3b1b3baacaeada95faa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "345df163eb39cbf73f885d5e0f036a0328ef4cedede6e6ede67957eded4ced674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "f448f123eb39cbcbe667a66318dd1fde28ef4c053d3d57798f05793d574ce6674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "f4dcf0a4eb39cbc827e1a7622362a2205add1fdea9aa95aafada0b0baafafafaca95baa495ca6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "541df064eb39cbf73f885d5e0f036a03bb40d852455bda5bd932d150dc45dc40db29dc3cd93ad235db594545db2448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "344ef624eb39cbce0300fc91068a8908897405fba0ef4c3d0557ef38ed8f79e64c4a674cefaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "b446f0a5eb39cbd20300fc0e877a77fa28ef4c8fef8fefe60505ed3d574c05674c4aaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "544df761eb39cbf73f885d5e0f036a03a0ef4c574aed57ed3d8fed054ced674cefaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "b41ff121eb39cbbb40d852455bd95bd932da50d945da40d325dc5bd830db32d95b4545d82448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "5c46f122eb2dcbd20300fc0d777487fb28ef4c4ae6efedefede605eded4c57674c4aaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "bc12f6e3eb2dcbd20300fc0d777487fbbb40d852455bdb5bda32da50da45da40d229da3cdb3ad235db594545d92448db45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "b4ddf6a3eb39cb293f885df90ffc6a8d031a098da9aa95eada3bbaeafadaeafaba95baa495ca6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "bccaf767eb2dcbd20300fc0d777487fba9aa95faca0b1b1b0bcaeacaba95daa495ba6495c6f5e5c694e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "3c4ef027eb2dcbd20300fc0d777487fba0ef4ce6380505e68f4a4a054c57674cefaf4c1500ff53cdea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "340cf6f8eb39cbc827e1a7622362a2205add1fdebb40d852455bd95bd832dc50d345d040d329d83cdb3adb35db594545da2448da45"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "fc45f1b8eb2dcbf73f885d5e0ffce33428ef4ce679e68f8fed053879574c57674cefaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "34cef678eb39cbd20300fc0e877a77fa99aa95fa2b1baadaeaca3bda95eaa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "54dbf7f9eb39cba9aa95baaa3b3bea3b1bbaaaba95aaa495ba6495d696b526d7e495e6f5c6c6f6e4"
+      },
+      {
+        "opcode": 1110,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "5451f665eb39cbf73f885d5e0f036a0328ef4c054a57e63d793ded054a4ced674cedaf4c9b97089b06ea4c81979b9b17ea"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741960,
+        "payloadHex": "468ef0607448f2adc8480d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741963,
+        "payloadHex": "168ef0437b48f24255480e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741964,
+        "payloadHex": "668ef21dab4852579f480984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741965,
+        "payloadHex": "168ef0e22848f04ac8480884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741966,
+        "payloadHex": "068ef0f9ae48f00948480b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741970,
+        "payloadHex": "668e52c0814852f07a481784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741971,
+        "payloadHex": "468e522d424852bd11481684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741972,
+        "payloadHex": "468ef07c7a48f2b5fb481184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741974,
+        "payloadHex": "468e52577848529026481384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741975,
+        "payloadHex": "668ef0c1744852af29481284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741976,
+        "payloadHex": "168e523afb485253ae481d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741978,
+        "payloadHex": "068ef2075c48f0f7fb481f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741979,
+        "payloadHex": "468e524f1c48524872481e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741980,
+        "payloadHex": "668e73b74848718a48481984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741984,
+        "payloadHex": "368e52312a485211c1482584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741985,
+        "payloadHex": "068ef0cd81485256c3482484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741986,
+        "payloadHex": "468ef23d3048f043c1482784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741987,
+        "payloadHex": "068ef0b1cc48f059fb482684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741988,
+        "payloadHex": "368e5256dc48f0297b482184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741989,
+        "payloadHex": "168e5200c14852678b482084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741990,
+        "payloadHex": "368e529f3048f25c55482384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741991,
+        "payloadHex": "668e52f02f48524638482284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741993,
+        "payloadHex": "468e52cb284852db9c482c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 0.0,
+        "param": 1073741995,
+        "payloadHex": "368ef2454848f08856482e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741960,
+        "payloadHex": "3a8ef0607448f2adc848839a30cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741963,
+        "payloadHex": "028ef0437b48f2425548839a30cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741964,
+        "payloadHex": "128ef21dab4852579f48839a30cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741965,
+        "payloadHex": "428ef0e22848f04ac848839a30cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741966,
+        "payloadHex": "128ef0f9ae48f0094848839a30cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741970,
+        "payloadHex": "6a8e52c0814852f07a48839a30cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741971,
+        "payloadHex": "7c8e522d424852bd1148839a30cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741972,
+        "payloadHex": "4c8ef07c7a48f2b5fb48839a30cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741974,
+        "payloadHex": "028e5257784852902648839a30cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741975,
+        "payloadHex": "628ef0c1744852af2948839a30cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741976,
+        "payloadHex": "6a8e523afb485253ae48839a30cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741978,
+        "payloadHex": "028ef2075c48f0f7fb48839a30cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741979,
+        "payloadHex": "3a8e524f1c4852487248839a30cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741980,
+        "payloadHex": "3a8e73b74848718a4848839a30cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741984,
+        "payloadHex": "008e52312a485211c148839a30cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741985,
+        "payloadHex": "3c8ef0cd81485256c348839a30cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741986,
+        "payloadHex": "7a8ef23d3048f043c148839a30cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741987,
+        "payloadHex": "728ef0b1cc48f059fb48839a30cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741988,
+        "payloadHex": "608e5256dc48f0297b48839a30cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741989,
+        "payloadHex": "308e5200c14852678b48839a30cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741990,
+        "payloadHex": "728e529f3048f25c5548839a30cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741991,
+        "payloadHex": "6c8e52f02f4852463848839a30cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741993,
+        "payloadHex": "1c8e52cb284852db9c48839a30cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 60.020694732666016,
+        "param": 1073741995,
+        "payloadHex": "008ef2454848f0885648839a30cf2e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741960,
+        "payloadHex": "6c8ef0607448f2adc848fc5b50cf0d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741963,
+        "payloadHex": "6c8ef0437b48f2425548fc5b50cf0e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741964,
+        "payloadHex": "408ef21dab4852579f48fc5b50cf0984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741965,
+        "payloadHex": "0c8ef0e22848f04ac848fc5b50cf0884"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741966,
+        "payloadHex": "3c8ef0f9ae48f0094848fc5b50cf0b84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741970,
+        "payloadHex": "408e52c0814852f07a48fc5b50cf1784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741971,
+        "payloadHex": "7c8e522d424852bd1148fc5b50cf1684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741972,
+        "payloadHex": "6c8ef07c7a48f2b5fb48fc5b50cf1184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741974,
+        "payloadHex": "408e5257784852902648fc5b50cf1384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741975,
+        "payloadHex": "428ef0c1744852af2948fc5b50cf1284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741976,
+        "payloadHex": "3c8e523afb485253ae48fc5b50cf1d84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741978,
+        "payloadHex": "4a8ef2075c48f0f7fb48fc5b50cf1f84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741979,
+        "payloadHex": "628e524f1c4852487248fc5b50cf1e84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741980,
+        "payloadHex": "0c8e73b74848718a4848fc5b50cf1984"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741984,
+        "payloadHex": "6a8e52312a485211c148fc5b50cf2584"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741985,
+        "payloadHex": "1c8ef0cd81485256c348fc5b50cf2484"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741986,
+        "payloadHex": "628ef23d3048f043c148fc5b50cf2784"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741987,
+        "payloadHex": "7c8ef0b1cc48f059fb48fc5b50cf2684"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741988,
+        "payloadHex": "1a8e5256dc48f0297b48fc5b50cf2184"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741989,
+        "payloadHex": "4a8e5200c14852678b48fc5b50cf2084"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741990,
+        "payloadHex": "328e529f3048f25c5548fc5b50cf2384"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741991,
+        "payloadHex": "728e52f02f4852463848fc5b50cf2284"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741993,
+        "payloadHex": "6a8e52cb284852db9c48fc5b50cf2c84"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 120.0400161743164,
+        "param": 1073741995,
+        "payloadHex": "108ef2454848f0885648fc5b50cf2e84"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 300.1087951660156,
+        "param": 1073751015,
+        "payloadHex": "890f38ecf3aa4d96c584b07bd2016de1b5012a77d0bde1c52ad6d10151b25173f1cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b270fe77bc6094f40477b2876081b248466a822f2fef155a189946c32f1899eb3f9272e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 300.1087951660156,
+        "param": 1073751015,
+        "payloadHex": "4a8e5202b17ff0cf21a59098ba0f62c2"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 360.140380859375,
+        "param": 1073751015,
+        "payloadHex": "b30db89c93be4d96c584b05566db5fa09fdb50728e89a000503461db474c47b8f1cd3c1a65b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a1531e97de9b270fe77bc6094f40477b2876081b248467b090505d0110db8c0cc1905b8c0f5d8f972e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 360.140380859375,
+        "param": 1073751015,
+        "payloadHex": "108e5202b17ff0cf21a5529b630f62c2"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 720.2425537109375,
+        "param": 1073767421,
+        "payloadHex": "948e3e8cb3bd4d96f185f8b00166db5fa09fdb50728e89a06b0bdb61474c47b8a9678e4565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a7bdce86af25c3c92f273596a6a6df7d4309592a022bc82ef2f2f157d18d746182feb99923f72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 720.2425537109375,
+        "param": 1073767421,
+        "payloadHex": "7a8e5202b17ff0cf21a5be18434f784284"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 780.275390625,
+        "param": 1073767421,
+        "payloadHex": "93cebf9cf3ab4d96f185f8b065d2016de1b5012a77d0bde1177c01d151b25173a9678e4565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a7bdce86af25c3c92f273596a6a6df7d4309592a09e7709d0050511e0b8d4ccb805f5c0f9d872e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 780.275390625,
+        "param": 1073767421,
+        "payloadHex": "308e5202b17ff0cf21a5649b0f4f784284"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 840.29931640625,
+        "param": 1073767421,
+        "payloadHex": "b30c7feeb3ad4d96f185f8b065d2016de1b5012a77d0bde1177c01d151b25173a9678e4508d47d890882cf7bb7832f3ac2b6377c28d20a6353fa094a98359523095c10a93c527e2a7bdce86af25c3c92f273596a6a6df7d4309592a09ec28349be980c4936057a2398d3b9494572e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 840.29931640625,
+        "param": 1073767421,
+        "payloadHex": "7c8e5202cc48f0cf3848461bcb4f784284"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 900.323486328125,
+        "param": 1073777443,
+        "payloadHex": "8c0c789c33ba4d963d23fa7f4daabf95a0bf0b6b341961db50829f478d47b899d82a4560106a7b3968c389be877a3a904e984a1d0d3c6399aa017c3c491aea093f4b8198026d720231e9b9e9875a77b27084fe6414ce60b5ceb0680a1450879850b9d3fe40454936a70c72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 900.323486328125,
+        "param": 1073777443,
+        "payloadHex": "4c8ef0d19028526939ac635bf74f261387"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 960.3447265625,
+        "param": 1073777443,
+        "payloadHex": "8c8d789ef3a84d963d23fa7f4a76ec91e1ec7c17d660d1012a50b55116517399d82a4550ee2c7b67b2a189fb752f3af1079f4a53e20a63149deb7c3c491aea093f4b8198026d720231e9b9e9875a77b27084fe6414ce60b5ceb0680a1450879850b9d3fe40454936a70c72dad872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 960.3447265625,
+        "param": 1073777443,
+        "payloadHex": "6a8ef003263b528ddd8758da304f261387"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 1140.3880615234375,
+        "param": 1073791216,
+        "payloadHex": "930f3aecb3b24d96d7f9fcb0a4fbfdf7141afd1004f306141c021808f9181c02867686703cbdf74565b37d899256cf7be550b13a75e5377cf521386344fb094a98359523095c10a93c527e2a20ca8ca5c73ae8d7c71e41a52dcdc9064fd070aac9d7412dcc56821b2f9b15ef185a46e02fef991b3f9b9218eb72e9d872"
+      },
+      {
+        "opcode": 385,
+        "timestamp": 1140.3880615234375,
+        "param": 1073791216,
+        "payloadHex": "008e5202b17ff0cf21a57139b84f750486"
+      }
+    ]
+  }
+]

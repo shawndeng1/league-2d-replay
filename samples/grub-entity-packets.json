@@ -1,0 +1,716 @@
+[
+  {
+    "file": "NA1-5640196741.rofl",
+    "sha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "duration": 2193.71,
+    "participants": [
+      {
+        "SKIN": "Malphite",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Graves",
+        "TEAM": "100",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ashe",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Seraphine",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Camille",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Naafiri",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Syndra",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Vayne",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Shaco",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 647,
+        "timestamp": 473.2507385253944,
+        "param": 1073763088,
+        "payloadHex": "94147a8c33924d962cd10284d5211743f863c63c3e381442f3fd1a1886707e86706787ed1adc13a47bc9ec1689644d2f3ae0f16c4a18d60a63def4267c5a8edada3c491aea093f4b8198026d723fc48c85c797edd78cd2c7d0c9a51e6b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.2507385253944,
+        "param": 1073763090,
+        "payloadHex": "919ebe9cf3154d961183cc5886ff1b43f863c63c3e381442f3fd1a1886707e867e6787ed1a08d4ea7bc77da1898b4d2f3a6d319f4a32d60a6385c8717c5a8edada3c491aea093f4b8198026d72aecf7205f21a7292e808f295596a736b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.2507385253944,
+        "param": 1073763092,
+        "payloadHex": "91d4b99c932b4d962cd10284d5211f43f8634076ec91e160d001b5d15173ae51f86787ed1a08ad1b7b0887c3898b4d2f3a2cfd984a32d60a635dbdde7c5a8edada3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb06b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.1988220214844,
+        "param": 1073763088,
+        "payloadHex": "9bcd7f9c93bc4d961743f8632faabf95a0198edb9f6147b80547b86787ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a736b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.1988220214844,
+        "param": 1073763090,
+        "payloadHex": "91cd79ecf3b04d961b43f863c63c3e381442f3fd1a1886707e867e6787ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72897be97b31e97087b2f48460b5ceb06b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.1988220214844,
+        "param": 1073763092,
+        "payloadHex": "8bcf79cc93ae4d961f43f8634076ec91e160d001b5d15173ae51f86787ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb06b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.221435546875,
+        "param": 1073763088,
+        "payloadHex": "b40cba8cf3ba4d961743f8632faabf95a0198edb9f6147b80547b86787ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d723fc48c85c797edd78cd2c7d0c9a51e6b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.221435546875,
+        "param": 1073763090,
+        "payloadHex": "9b0f3e8cf3aa4d961b43f8634076ec91e160d001b5d15173ae51ae6787ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72aecf7205f21a7292e808f295596a736b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.221435546875,
+        "param": 1073763092,
+        "payloadHex": "9ccc3bec93bc4d961f43f8632faabf95a0198edb9f6147b80547b76787ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 600.22314453125,
+        "param": 1073763088,
+        "payloadHex": "950d3e8cf3be4d961743f8632faabf95a0198edb9f6147b80547b86787ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a73224485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 600.22314453125,
+        "param": 1073763090,
+        "payloadHex": "930f3ecc93bd4d961b43f8632faabf95a0198edb9f6147b80547056787ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72aecf7205f21a7292e808f295596a73224485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 600.22314453125,
+        "param": 1073763092,
+        "payloadHex": "8c8f38ecb3b04d961f43f863c63c3e381442f3fd1a1886707e867c6787ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb0224485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 628.2759721679737,
+        "param": 1073763090,
+        "payloadHex": "3f6455f4e6f33b5e4600373f5564cd89089472b5d0f0b13f3f0c1ba89ab2972ca9f0"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 641.9870903320333,
+        "param": 1073763092,
+        "payloadHex": "2f6455f4d69d353400efb531644f53c194607e36a4160a757b258311af42a93c08"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 652.3480903320351,
+        "param": 1073763088,
+        "payloadHex": "0f6455f494e53534009a2e2a648e44bc941155af2f4f6af57b258311af42a13c08"
+      }
+    ],
+    "expectedKills": 3
+  },
+  {
+    "file": "NA1-5640893952.rofl",
+    "sha256": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "duration": 1356.441,
+    "participants": [
+      {
+        "SKIN": "KSante",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Darius",
+        "TEAM": "100",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "Zyra",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Jinx",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Senna",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Jax",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ahri",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Caitlyn",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 647,
+        "timestamp": 473.27587475586313,
+        "param": 1073758703,
+        "payloadHex": "b11f798c33144d961183cc5886ffd5fdf863c63c3e381442f3fd1a1886707e86704584ed1adc13a47bc9ec1689644d2f3ae0f16c4a18d60a63def4267c5a8edada3c491aea093f4b8198026d728931e97b31e97087b2f48460b5ceb06b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.27587475586313,
+        "param": 1073758705,
+        "payloadHex": "94943eccb3184d962cd10284d521d9fdf8632faabf95a0198edb9f6147b80547054584ed1a08d4ea7bc77da1898b4d2f3a6d319f4a32d60a6385c8717c5a8edada3c491aea093f4b8198026d72aecf7205f21a7292e808f295596a736b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.27587475586313,
+        "param": 1073758707,
+        "payloadHex": "8917398c93fc4d962cd10284d521ddfdf8632faabf95a0198edb9f6147b80547b74584ed1a08ad1b7b0887c3898b4d2f3a2cfd984a32d60a635dbdde7c5a8edada3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb06b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18975830078125,
+        "param": 1073758703,
+        "payloadHex": "b5cf798c33b04d96d5fdf863c63c3e381442f3fd1a1886707e86704584ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d728931e97b31e97087b2f48460b5ceb06b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18975830078125,
+        "param": 1073758705,
+        "payloadHex": "b3cd3b8c93bb4d96d9fdf8632faabf95a0198edb9f6147b80547054584ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d723fc4ed85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18975830078125,
+        "param": 1073758707,
+        "payloadHex": "8c8c3a9cf3be4d96ddfdf8632faabf95a0198edb9f6147b80547b74584ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 520.9541472167988,
+        "param": 1073758705,
+        "payloadHex": "5f6455f414b23534006ddda064a6bc6e945aef5d2fa362f2ec0a909fb642a13c84"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 529.2781472168003,
+        "param": 1073758703,
+        "payloadHex": "7f6455f494e53538006dad0864c7acfc948674c92f953fab7b060c6db042a13c69"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 535.9921472168015,
+        "param": 1073758707,
+        "payloadHex": "7f6455f492e5353400f835f364cd41c1940ecb902fa362f28079fea0b242a13c3f"
+      }
+    ],
+    "expectedKills": 3
+  },
+  {
+    "file": "NA1-5640901584.rofl",
+    "sha256": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "duration": 1186.993,
+    "participants": [
+      {
+        "SKIN": "Camille",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Zed",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ziggs",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Fiora",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "200",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ezreal",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Blitzcrank",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 647,
+        "timestamp": 473.2653776855509,
+        "param": 1073756703,
+        "payloadHex": "9d977a8c931a4d962cd10284d52135de632faabf95a0198edb9f6147b80547b85630ed1adc13a47bc9ec1689644d2f3ae0f16c4a18d60a63def4267c5a8edada3c491aea093f4b8198026d723fc48c85c797edd78cd2c7d0c9a51e6b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.2653776855509,
+        "param": 1073756705,
+        "payloadHex": "89c43f8cf3144d96b9180267204139de63c63c3e381442f3fd1a1886707e867e5630ed1a08d4ea7bc77da1898b4d2f3a6d319f4a32d60a6385c8717c5a8edada3c491aea093f4b8198026d72aecf7205f21a7292e808f295596a736b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.2653776855509,
+        "param": 1073756707,
+        "payloadHex": "99943a9c33934d962cd10284d5213dde63c63c3e381442f3fd1a1886707e867c5630ed1a08ad1b7b0887c3898b4d2f3a2cfd984a32d60a635dbdde7c5a8edada3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18133544921875,
+        "param": 1073756703,
+        "payloadHex": "b50f388c33b54d9635de63c63c3e381442f3fd1a1886707e86705630ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d728931e97b31e97087b2f48460b5ceb06b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18133544921875,
+        "param": 1073756705,
+        "payloadHex": "8d0cb9ccf3a84d9639de634076ec91e160d001b5d15173ae51ae5630ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72897be97b31e97087b2f48460b5ceb06b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18133544921875,
+        "param": 1073756707,
+        "payloadHex": "93cf3becf3b34d963dde63c63c3e381442f3fd1a1886707e867c5630ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 522.2098742675802,
+        "param": 1073756707,
+        "payloadHex": "7f64b6f424be35be00e2286f644fd2ab94f4b49ecbaf3f3f27a776fbb597ac3c"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 531.1678742675817,
+        "param": 1073756703,
+        "payloadHex": "2f64b6f47a9a357a00de2b3a640a60819449f9b32f936744831770a1ad95ad3c"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 533.0048742675821,
+        "param": 1073756705,
+        "payloadHex": "0f64b6f4a1bd395e4600edb01f64cd89089497d5acf0b13f3f0c1ba89ab2972c04f0"
+      }
+    ],
+    "expectedKills": 3
+  },
+  {
+    "file": "NA1-5640933743.rofl",
+    "sha256": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "duration": 2111.17,
+    "participants": [
+      {
+        "SKIN": "Pantheon",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Caitlyn",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MonkeyKing",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Yasuo",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Seraphine",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Brand",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 647,
+        "timestamp": 473.27058105469126,
+        "param": 1073757366,
+        "payloadHex": "95d43becf3304d962cd10284d52163e863c63c3e381442f3fd1a1886707e867044f5ed1adc13a47bc9ec1689644d2f3ae0f16c4a18d60a63def4267c5a8edada3c491aea093f4b8198026d723fc48c85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.27058105469126,
+        "param": 1073757368,
+        "payloadHex": "9916bacc938b4d962cd10284d52167e8634076ec91e160d001b5d15173ae51ae44f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4a32d60a6385c8717c5a8edada3c491aea093f4b8198026d723fc4ed85c797edd78cd2c7d0c9a51e6b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.27058105469126,
+        "param": 1073757370,
+        "payloadHex": "9d1cbfecf32e4d961183cc5886ff6be8634076ec91e160d001b5d15173ae51f844f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984a32d60a635dbdde7c5a8edada3c491aea093f4b8198026d72aecf6505f21a7292e808f295596a736b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18511962890625,
+        "param": 1073757366,
+        "payloadHex": "938d3eccf3ba4d9663e8632faabf95a0198edb9f6147b80547b844f5ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a736b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18511962890625,
+        "param": 1073757368,
+        "payloadHex": "b40f7acc93bc4d9667e8632faabf95a0198edb9f6147b805470544f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d723fc4ed85c797edd78cd2c7d0c9a51e6b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18511962890625,
+        "param": 1073757370,
+        "payloadHex": "9d8e389cf3b54d966be863c63c3e381442f3fd1a1886707e867c44f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb06b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.199462890625,
+        "param": 1073757366,
+        "payloadHex": "8b0e3e8c33ac4d9663e8634076ec91e160d001b5d15173ae517344f5ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a736b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.199462890625,
+        "param": 1073757368,
+        "payloadHex": "b38e3a9cf3ad4d9667e8634076ec91e160d001b5d15173ae51ae44f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d723fc4ed85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.199462890625,
+        "param": 1073757370,
+        "payloadHex": "918ebaec33ac4d966be8634076ec91e160d001b5d15173ae51f844f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e6b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 600.2100830078125,
+        "param": 1073757366,
+        "payloadHex": "990e3fec33be4d9663e8632faabf95a0198edb9f6147b80547b844f5ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a73224485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 600.2100830078125,
+        "param": 1073757368,
+        "payloadHex": "9d0c79cc93ab4d9667e8634076ec91e160d001b5d15173ae51ae44f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72897be97b31e97087b2f48460b5ceb0222e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 600.2100830078125,
+        "param": 1073757370,
+        "payloadHex": "898f3eecf3ae4d966be8634076ec91e160d001b5d15173ae51f844f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d72aecf6505f21a7292e808f295596a73224485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 660.2247314453125,
+        "param": 1073757366,
+        "payloadHex": "b3cfbb9cb3be4d9663e8632faabf95a0198edb9f6147b80547b844f5ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d723fc48c85c797edd78cd2c7d0c9a51e225f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 660.2247314453125,
+        "param": 1073757368,
+        "payloadHex": "b38fbe8cb3bb4d9667e8632faabf95a0198edb9f6147b805470544f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72aecf7205f21a7292e808f295596a73225f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 660.2247314453125,
+        "param": 1073757370,
+        "payloadHex": "99cf7b8cf3b04d966be863c63c3e381442f3fd1a1886707e867c44f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e222e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 720.255859375,
+        "param": 1073757366,
+        "payloadHex": "938c3e9cf3b64d9663e863c63c3e381442f3fd1a1886707e867044f5ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a739e4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 720.255859375,
+        "param": 1073757368,
+        "payloadHex": "948d7a8c33a84d9667e8634076ec91e160d001b5d15173ae51ae44f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d723fc4ed85c797edd78cd2c7d0c9a51e9e2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 720.255859375,
+        "param": 1073757370,
+        "payloadHex": "b10e38ccf3be4d966be8632faabf95a0198edb9f6147b80547b744f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb09e4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 780.2696533203125,
+        "param": 1073757366,
+        "payloadHex": "9b0e3f9cb3b34d9663e863c63c3e381442f3fd1a1886707e867044f5ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a739e4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 780.2696533203125,
+        "param": 1073757368,
+        "payloadHex": "898c3a9c33ab4d9667e8634076ec91e160d001b5d15173ae51ae44f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d723fc4ed85c797edd78cd2c7d0c9a51e9e4485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 780.2696533203125,
+        "param": 1073757370,
+        "payloadHex": "8d8cbacc33bd4d966be8632faabf95a0198edb9f6147b80547b744f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e9e5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 840.2910766601562,
+        "param": 1073757366,
+        "payloadHex": "950e389cf3b84d9663e8632faabf95a0198edb9f6147b80547b844f5ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d728931e97b31e97087b2f48460b5ceb0684485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 840.2910766601562,
+        "param": 1073757368,
+        "payloadHex": "9bcf399cb3ad4d9667e8634076ec91e160d001b5d15173ae51ae44f5ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72897be97b31e97087b2f48460b5ceb0684485ef43461a2f18921372dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 840.2910766601562,
+        "param": 1073757370,
+        "payloadHex": "b40fb8ec33b44d966be863c63c3e381442f3fd1a1886707e867c44f5ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb0685f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 885.0220175781276,
+        "param": 1073757368,
+        "payloadHex": "7f64ac3a6746349f0f"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 885.0220175781276,
+        "param": 1073757366,
+        "payloadHex": "5f64253aa747349f0f"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 885.0220175781276,
+        "param": 1073757370,
+        "payloadHex": "4f64b83a6746349f0f"
+      }
+    ],
+    "expectedKills": 0
+  },
+  {
+    "file": "NA1-5640962900.rofl",
+    "sha256": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "duration": 1547.266,
+    "participants": [
+      {
+        "SKIN": "Vladimir",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Naafiri",
+        "TEAM": "100",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Jinx",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Pyke",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "JarvanIV",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Diana",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ashe",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Thresh",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 647,
+        "timestamp": 473.2622377929727,
+        "param": 1073757629,
+        "payloadHex": "9506788c33884d96b9180267204171ec634076ec91e160d001b5d15173ae51733030ed1adc13a47bc9ec1689644d2f3ae0f16c4a18d60a63def4267c5a8edada3c491aea093f4b8198026d728931e97b31e97087b2f48460b5ceb06b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.2622377929727,
+        "param": 1073757631,
+        "payloadHex": "95067e8c932c4d96b9180267204175ec634076ec91e160d001b5d15173ae51ae3030ed1a08d4ea7bc77da1898b4d2f3a6d319f4a32d60a6385c8717c5a8edada3c491aea093f4b8198026d72aecf7205f21a7292e808f295596a736b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 473.2622377929727,
+        "param": 1073757633,
+        "payloadHex": "9417bbccb39e4d962cd10284d52179ec632faabf95a0198edb9f6147b80547b73030ed1a08ad1b7b0887c3898b4d2f3a2cfd984a32d60a635dbdde7c5a8edada3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e6b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.15057373046875,
+        "param": 1073757629,
+        "payloadHex": "b50f7fccf3b04d9671ec63c63c3e381442f3fd1a1886707e86703030ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a736b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.15057373046875,
+        "param": 1073757631,
+        "payloadHex": "940eba9cf3bd4d9675ec632faabf95a0198edb9f6147b80547053030ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d723fc4ed85c797edd78cd2c7d0c9a51e6b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.15057373046875,
+        "param": 1073757633,
+        "payloadHex": "940e798cf3ad4d9679ec634076ec91e160d001b5d15173ae51f83030ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb06b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 516.2060002441416,
+        "param": 1073757631,
+        "payloadHex": "5f6455f454ea357a009ab73464cd8908948d83f0a490c780920a1f16b995ad3c"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 528.0180002441436,
+        "param": 1073757629,
+        "payloadHex": "5f6455f4a1e5354e00e216bd648e2efb94606d9dcb074e24a98628a2ac97ac3ce1"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 532.1420002441444,
+        "param": 1073757633,
+        "payloadHex": "3f6455f4111e357a00de8d8564cde4cb94396ba885fa173395ad3c"
+      }
+    ],
+    "expectedKills": 3
+  }
+]

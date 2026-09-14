@@ -6,6 +6,8 @@ import { worldToMap, formatTime } from './math';
 import {indexLifeEvents,playerLifeAt,samplePlayerPosition} from './life';
 import {findEventsNearTimestamp} from './events';
 import {recentTrail} from './trails';
+import {eventIcons,eventIconAsset,eventIconKind,objectiveMapAnchor,type EventIconKind} from './eventIcons';
+import {createMapEntitiesLayer} from './MapEntitiesLayer';
 
 export interface Playback { time: number; playing: boolean; speed: number; selected: number | null; debug: boolean;follow:boolean;trail:boolean;trailSeconds:number }
 interface Props { replay: Replay | null; clock: MutableRefObject<Playback>; onTime: (time: number, playing: boolean) => void;onSelect:(id:number)=>void }
@@ -18,6 +20,8 @@ export function ReplayMap({ replay, clock, onTime,onSelect }: Props) {
   const selectionCallback=useRef(onSelect);selectionCallback.current=onSelect;
   const [error, setError] = useState('');
   const [ready, setReady] = useState(false);
+  const [showEntities,setShowEntities]=useState(true);
+  const showEntitiesRef=useRef(true);showEntitiesRef.current=showEntities;
   useEffect(() => {
     let disposed = false, initialized = false;
     let observer: ResizeObserver | undefined;
@@ -35,8 +39,20 @@ export function ReplayMap({ replay, clock, onTime,onSelect }: Props) {
         if (disposed) return;
         const map = new Sprite(texture); map.width=800; map.height=800;
         map.alpha = replay ? 0.94 : 0.25; scene.addChild(map);
+        const mapEntities=replay?await createMapEntitiesLayer(replay.mapEntities??[],replay.metadata.worldBounds):undefined;
+        if(disposed)return;
+        if(mapEntities)scene.addChild(mapEntities.layer);
         const trailGraphic=new Graphics(),eventGraphic=new Graphics();scene.addChild(trailGraphic,eventGraphic);
         const events=[...(replay?.events??[])].sort((a,b)=>a.timestamp-b.timestamp);
+        const objectiveSprites=new Map<EventIconKind,Sprite>();
+        if(replay){
+          for(const kind of ['dragon','rift_herald','baron','void_grub'] as const){
+            const sprite=new Sprite(await Assets.load(eventIconAsset(kind)));
+            sprite.anchor.set(.5);sprite.width=24;sprite.height=24;
+            sprite.tint=eventIcons[kind].color;sprite.visible=false;sprite.eventMode='none';
+            objectiveSprites.set(kind,sprite);scene.addChild(sprite);
+          }
+        }
         const lifeEvents=indexLifeEvents(replay?.metadata.eventCoverage?.respawns?events:[],replay?.players.map(p=>p.id)??[]);
         const actors = await Promise.all((replay?.players ?? []).map(async player => {
           const node = new Container();
@@ -57,6 +73,10 @@ export function ReplayMap({ replay, clock, onTime,onSelect }: Props) {
         }));
         if (disposed) return;
         actors.forEach(a=>scene.addChild(a.node));
+        // Small event badges sit above the pit, keeping the champion cluster
+        // visible while preventing champion sprites from hiding the event icon.
+        scene.addChild(eventGraphic);
+        objectiveSprites.forEach(sprite=>scene.addChild(sprite));
         const grid = new Graphics();
         for (let i=0;i<=4;i++) { grid.moveTo(i*200,0).lineTo(i*200,800); grid.moveTo(0,i*200).lineTo(800,i*200); }
         grid.stroke({color:0xffffff,width:1,alpha:0.15});
@@ -87,8 +107,21 @@ export function ReplayMap({ replay, clock, onTime,onSelect }: Props) {
             if(c.trail&&actor){const points=recentTrail(actor.track.samples,c.time,c.trailSeconds,actor.life);for(let i=1;i<points.length;i++){if(points[i].breakBefore)continue;const a=worldToMap(points[i-1].x,points[i-1].y,800,800,replay!.metadata.worldBounds),b=worldToMap(points[i].x,points[i].y,800,800,replay!.metadata.worldBounds);trailGraphic.moveTo(a.x,a.y).lineTo(b.x,b.y).stroke({color:actor.player.team==='BLUE'?0x63caff:0xff6c87,width:3,alpha:.15+.65*(1-points[i].age)});}}
           }
           eventGraphic.clear();
-          for(const event of findEventsNearTimestamp(events,c.time,2.5)){if(event.x===undefined||event.y===undefined)continue;const p=worldToMap(event.x,event.y,800,800,replay!.metadata.worldBounds),age=c.time-event.timestamp;eventGraphic.circle(p.x,p.y,20+age*8).stroke({color:event.type==='CHAMPION_KILL'?0xffa1a1:0xf1da99,width:2,alpha:Math.max(0,.7*(1-age/2.5))});}
-          if(performance.now()-lastUpdate>100) { callback.current(c.time,c.playing); lastUpdate=performance.now(); if(debugText.current && c.debug) debugText.current.textContent=lines.join('\n'); }
+          objectiveSprites.forEach(sprite=>{sprite.visible=false;});
+          for(const event of findEventsNearTimestamp(events,c.time,2.5)){
+            const p=event.x!==undefined&&event.y!==undefined
+              ?worldToMap(event.x,event.y,800,800,replay!.metadata.worldBounds)
+              :objectiveMapAnchor(event,800,800);
+            if(!p)continue; // Never guess locations for unidentified structures.
+            const age=c.time-event.timestamp,kind=eventIconKind(event);
+            eventGraphic.circle(p.x,p.y,20+age*8).stroke({color:eventIcons[kind].color,width:2,alpha:Math.max(0,.7*(1-age/2.5))});
+            if(event.type==='OBJECTIVE_KILL'){
+              const sprite=objectiveSprites.get(kind)!;sprite.position.set(p.x,p.y-36);
+              eventGraphic.circle(p.x,p.y-36,15).fill({color:0x09131d,alpha:.9}).stroke({color:eventIcons[kind].color,width:1});
+              sprite.visible=true;sprite.alpha=Math.min(1,(2.5-age)*2);
+            }
+          }
+          if(performance.now()-lastUpdate>100) { mapEntities?.update(c.time,showEntitiesRef.current);callback.current(c.time,c.playing); lastUpdate=performance.now(); if(debugText.current && c.debug) debugText.current.textContent=lines.join('\n'); }
         });
         setReady(true);
       } catch (reason) { if(!disposed) setError(`Map renderer could not load: ${String(reason)}`); }
@@ -102,6 +135,6 @@ export function ReplayMap({ replay, clock, onTime,onSelect }: Props) {
     {!replay&&ready&&<div className="map-message empty-map"><span className="map-symbol">◇</span><strong>Your match, from above.</strong><p>Open a replay to see every rotation,<br/>roam, and route across the Rift.</p></div>}
     <span className="map-corner top-left">SUMMONER’S RIFT</span>
     <span className="map-corner bottom-right">ALL PLAYERS · 2D</span>
-  </div><pre className="debug-panel" ref={debugText} hidden={!clock.current.debug} aria-label="Developer overlay" /></>;
+  </div>{replay&&<div className="map-entity-controls"><label><input type="checkbox" checked={showEntities} onChange={e=>setShowEntities(e.target.checked)}/> Map entities</label><small className="pit-note">{replay.mapEntities?.length?'Towers: colored = alive, slashed = destroyed, faded = rebuild state unknown. Objectives appear from their first recorded observation until death or despawn. Void Grub markers show initial placement, not combat movement. Hover for details. Inhibitor placement and unobserved objective spawns remain unavailable.':'Re-upload this replay to add persistent map entities.'}</small></div>}<pre className="debug-panel" ref={debugText} hidden={!clock.current.debug} aria-label="Developer overlay" /></>;
 }
 

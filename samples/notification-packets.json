@@ -1,0 +1,2243 @@
+[
+  {
+    "file": "NA1-5640196741.rofl",
+    "sha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "duration": 2193.71,
+    "participants": [
+      {
+        "SKIN": "Malphite",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "Graves",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "Ashe",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "2",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "Seraphine",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "Camille",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "2",
+        "FRIENDLY_TURRET_LOST": "4"
+      },
+      {
+        "SKIN": "Naafiri",
+        "TEAM": "200",
+        "BARON_KILLS": "2",
+        "RIFT_HERALD_KILLS": "1",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "4"
+      },
+      {
+        "SKIN": "Syndra",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "6",
+        "FRIENDLY_TURRET_LOST": "4"
+      },
+      {
+        "SKIN": "Vayne",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "4"
+      },
+      {
+        "SKIN": "Shaco",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "4"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 281,
+        "timestamp": 20.020778274536156,
+        "param": 0,
+        "payloadHex": "639202b7a685858585858539858585ad6aa7433d351b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.007778274536197,
+        "param": 0,
+        "payloadHex": "6d90fab7a6858585858585cda3c22dbfaf1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.007778274536197,
+        "param": 0,
+        "payloadHex": "e192fab7a6858585858585cda3c22dbf611b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 300.0335136718803,
+        "param": 0,
+        "payloadHex": "6390fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 402.4428977050802,
+        "param": 0,
+        "payloadHex": "21932ab7a68585f77d858085858585f77d85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585c05ff22b8585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 480.27253247070314,
+        "param": 0,
+        "payloadHex": "eb92fab7a6858585858585cda3c22dbfbc1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 628.2759721679737,
+        "param": 0,
+        "payloadHex": "dd922ab7a6858584228580858585858422858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585858585858585858585858585858422858029a6c06cfceb1be47687"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 641.9870903320333,
+        "param": 0,
+        "payloadHex": "71932ab7a6858545228580858585854522858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585858585858585858585858585854522858029a6c06cfceb1b657687"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 652.3480903320351,
+        "param": 0,
+        "payloadHex": "3d932ab7a68585ba22858085858585ba2285808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585858585858585858585858585ba22858029a6c06cfceb1be57687"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 687.3561855468798,
+        "param": 0,
+        "payloadHex": "273df4402ef2f9d443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 687.3561855468798,
+        "param": 1073741988,
+        "payloadHex": "0f64e8f454c23534948eecc17967c1c100f61ec175a1a23a42a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 687.3561855468798,
+        "param": 0,
+        "payloadHex": "20b0f4566f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 702.4759594726584,
+        "param": 0,
+        "payloadHex": "6390fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 767.1328334960967,
+        "param": 0,
+        "payloadHex": "c3922ab7a685855217858085858585521785808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585dea8f75885858585858585856685858029a6c06cfcb71bf487"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 772.2538334960976,
+        "param": 0,
+        "payloadHex": "6392fab7a6858585858585cda3c22dbfcb1b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 841.1716899414064,
+        "param": 0,
+        "payloadHex": "063d232aca537b9443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 841.1716899414064,
+        "param": 1073741987,
+        "payloadHex": "5f6420f4a691355e8694ab5ec17921c1c1948c8bc1f0087d827a8e77eeac9f2f84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 841.1716899414064,
+        "param": 0,
+        "payloadHex": "1258f4ae6f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 900.8264560546876,
+        "param": 0,
+        "payloadHex": "6d92fab7a6858585858585cda3c22dbf091b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1067.153805664055,
+        "param": 0,
+        "payloadHex": "6192fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1080.8850087890623,
+        "param": 0,
+        "payloadHex": "383c892b1cc4af7d1ae758cbfc78e0e46dba9e1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1080.8850087890623,
+        "param": 0,
+        "payloadHex": "cd922ab7a685858def8580858585858def85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585ff22fe378585858585858585c285858029a6c06cfca51b7587"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1093.8030087890565,
+        "param": 0,
+        "payloadHex": "7b932ab7a68585749e858085858585749e85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585638b1b258585858585858585fe85858029a6c06cfcb71b5287"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1178.3736855468712,
+        "param": 0,
+        "payloadHex": "be33f4402ef2f9d443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1178.3736855468712,
+        "param": 1073741984,
+        "payloadHex": "4f64e8f454e4333400c32d5b791fe3a900c1649d85b041b59391a80eb146a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1178.3736855468712,
+        "param": 0,
+        "payloadHex": "1eb0f4c46f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1200.0156855468617,
+        "param": 0,
+        "payloadHex": "6393fab7a6858585858585cda3c22dbfda1b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1207.8964003906215,
+        "param": 0,
+        "payloadHex": "273c8a907653f9b443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1207.8964003906215,
+        "param": 1073741985,
+        "payloadHex": "2f6451f4d2c1353400f644c17967c1c1944cb3c175a1a23a42a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1207.8964003906215,
+        "param": 0,
+        "payloadHex": "2460f46e6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1302.3049921874947,
+        "param": 0,
+        "payloadHex": "7837232aca537b9443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1302.3049921874947,
+        "param": 1073741990,
+        "payloadHex": "7f6420f452c43534d3534dc179ffc1c100fff8c18194f3f6b442a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1302.3049921874947,
+        "param": 0,
+        "payloadHex": "3658f4a76f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1334.237893554682,
+        "param": 0,
+        "payloadHex": "7f374f395103553d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1334.237893554682,
+        "param": 1073741964,
+        "payloadHex": "5f64adf4d667353e00ffb19279850a2fd33f40ccf01729d59faf3e"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1334.237893554682,
+        "param": 0,
+        "payloadHex": "11a3f4c96f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1393.8353408203068,
+        "param": 0,
+        "payloadHex": "6393fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1418.762613281246,
+        "param": 0,
+        "payloadHex": "4d932ab7a685855b58a680858585855b58a6808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585638b1b258585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1459.8485849609287,
+        "param": 0,
+        "payloadHex": "3e3c1ab1fd18dc43b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1459.8485849609287,
+        "param": 1073741971,
+        "payloadHex": "3f6455f4a6bd353e0037c3c17967c1c100676ac1a43f3f3f0c1ba89ab297ad3ca9"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1459.8485849609287,
+        "param": 0,
+        "payloadHex": "21ebf40f6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1470.8002841796874,
+        "param": 0,
+        "payloadHex": "8033892b1cc4af7d345a6f77664b8fc044389e1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1470.8002841796874,
+        "param": 0,
+        "payloadHex": "3b922ab7a68585c8d5858085858585c8d5858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585859e84c8bf8585858585858585c285858029a6c06cfcfd1b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1478.7952841796844,
+        "param": 0,
+        "payloadHex": "572d4af2881cf943b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1478.7952841796844,
+        "param": 1073741995,
+        "payloadHex": "3f64a5e85fd2c13534940bf6c17916c1c1d346c1c115140a6db042a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1478.7952841796844,
+        "param": 0,
+        "payloadHex": "25796f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1647.8174550781132,
+        "param": 0,
+        "payloadHex": "472963b11c1843b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1647.8174550781132,
+        "param": 1073741965,
+        "payloadHex": "5f64ea004251c43534948603c179a7c1c194d82ac18194f3f6b442a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1647.8174550781132,
+        "param": 0,
+        "payloadHex": "15fd6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1678.6990468749877,
+        "param": 0,
+        "payloadHex": "063d4f395103553d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1678.6990468749877,
+        "param": 1073741966,
+        "payloadHex": "4f64adf416fc35389433149879bcee699441617285475c0621a790a4b942a13c69"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1678.6990468749877,
+        "param": 0,
+        "payloadHex": "14a3f47c6f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1718.7985673828086,
+        "param": 0,
+        "payloadHex": "6392fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1749.7392353515581,
+        "param": 0,
+        "payloadHex": "5d922ab7a68585bfdaa68085858585bfdaa6808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585638b1b258585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1815.491851562493,
+        "param": 0,
+        "payloadHex": "5f2963b11c18c7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1815.491851562493,
+        "param": 1073741969,
+        "payloadHex": "5046fc3b737c"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1830.85596484375,
+        "param": 0,
+        "payloadHex": "e192fab7a6858585858585cda3c22dbfda1b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1917.4548056640501,
+        "param": 0,
+        "payloadHex": "6139892b1cc4af7d345a6f77664b8fc044389e1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1917.4548056640501,
+        "param": 0,
+        "payloadHex": "c1922ab7a68585781ba68085858585781ba68085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585859e84c8bf8585858585858585c285858029a6c06cfcfd1b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2000.1811679687419,
+        "param": 0,
+        "payloadHex": "bf33232aca537b9443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2000.1811679687419,
+        "param": 1073741986,
+        "payloadHex": "3f6420f43ee2353494cd3fa779bcee2dd34bff4985d72aa80370fa00aa42a93c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2000.1811679687419,
+        "param": 0,
+        "payloadHex": "2458f4e16f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2011.9692851562493,
+        "param": 0,
+        "payloadHex": "983de82aa2f2925dc7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 2011.9692851562493,
+        "param": 1073741962,
+        "payloadHex": "4a06fc8048"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2017.9642851562462,
+        "param": 0,
+        "payloadHex": "7f37232aca537b9443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2017.9642851562462,
+        "param": 1073741972,
+        "payloadHex": "0f6420f4d1c33534d3085ec179f1c1c1942359c1f51682c342a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2017.9642851562462,
+        "param": 0,
+        "payloadHex": "2058f4b56f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 2049.7793183593712,
+        "param": 0,
+        "payloadHex": "ed92fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 2078.976703124996,
+        "param": 0,
+        "payloadHex": "91922ab7a68585458aa68085858585458aa6808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585638b1b258585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2114.0633613281198,
+        "param": 0,
+        "payloadHex": "3932232aca537b9443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2114.0633613281198,
+        "param": 1073741960,
+        "payloadHex": "3f6420f4249c355e86d32b03c179a7c1c1943595c1f025bb560370fa00aa9f2f3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2114.0633613281198,
+        "param": 0,
+        "payloadHex": "0e58f4406f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2151.48866796874,
+        "param": 0,
+        "payloadHex": "6737e82aa2f2925d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2151.48866796874,
+        "param": 1073741963,
+        "payloadHex": "4f6450f451e03534d314086479bceec394ac9c0985aa2e35201e091cad42a13c84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2151.48866796874,
+        "param": 0,
+        "payloadHex": "0e34f49b6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2155.765667968738,
+        "param": 0,
+        "payloadHex": "9f394f395103553dc7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 2155.765667968738,
+        "param": 1073741981,
+        "payloadHex": "5486fcb348"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2162.1759726562495,
+        "param": 0,
+        "payloadHex": "583d2fe6a6a00e75c7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 2162.1759726562495,
+        "param": 1073741969,
+        "payloadHex": "7d26fc3548"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2172.5429726562443,
+        "param": 0,
+        "payloadHex": "1638232aca537b9443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2172.5429726562443,
+        "param": 1073741978,
+        "payloadHex": "2f6420f411c0353494f95ec1798bc1c1d3b853c1f51682c342a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2172.5429726562443,
+        "param": 0,
+        "payloadHex": "2758f42d6f"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 2189.951972656236,
+        "param": 1073742252,
+        "payloadHex": "4ebb3104"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640893952.rofl",
+    "sha256": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "duration": 1356.441,
+    "participants": [
+      {
+        "SKIN": "KSante",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "1",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "12"
+      },
+      {
+        "SKIN": "Darius",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "12"
+      },
+      {
+        "SKIN": "Zyra",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "12"
+      },
+      {
+        "SKIN": "Jinx",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "12"
+      },
+      {
+        "SKIN": "Senna",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "12"
+      },
+      {
+        "SKIN": "Jax",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "3",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "Ahri",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "4",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "Caitlyn",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "2",
+        "TURRETS_KILLED": "4",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 281,
+        "timestamp": 20.02294802093508,
+        "param": 0,
+        "payloadHex": "6d9002b7a685858585858539858585ad6aa7433d351b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.011948020935133,
+        "param": 0,
+        "payloadHex": "6b90fab7a6858585858585cda3c22dbfaf1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.011948020935133,
+        "param": 0,
+        "payloadHex": "ed92fab7a6858585858585cda3c22dbf611b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 300.0228986816458,
+        "param": 0,
+        "payloadHex": "6390fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 480.28980883789063,
+        "param": 0,
+        "payloadHex": "6d90fab7a6858585858585cda3c22dbfbc1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 520.9541472167988,
+        "param": 0,
+        "payloadHex": "3b932ab7a685856dcc8580858585856dcc858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585858585858585858585858585856dcc858029a6c06cfceb1bddc687"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 524.3011472167994,
+        "param": 0,
+        "payloadHex": "9d922ab7a6858526318580858585852631858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585856fe476b18585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 529.2781472168003,
+        "param": 0,
+        "payloadHex": "53932ab7a68585dbcc858085858585dbcc85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585858585858585858585858585dbcc858029a6c06cfceb1b5ac687"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 535.9921472168015,
+        "param": 0,
+        "payloadHex": "2d932ab7a6858529cc85808585858529cc8580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858529cc858029a6c06cfceb1bdcc687"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 626.9314467773485,
+        "param": 0,
+        "payloadHex": "603ddf5d83b3553d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 626.9314467773485,
+        "param": 1073741990,
+        "payloadHex": "7f6425f4d4953534d36a0d4279407da90006fc9c2f05c48f0ca1961eaf42a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 626.9314467773485,
+        "param": 0,
+        "payloadHex": "2166f4a76f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 816.3637080078136,
+        "param": 0,
+        "payloadHex": "7937df5d83b3553d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 816.3637080078136,
+        "param": 1073741960,
+        "payloadHex": "3f6425f496cd3534d32b03c179a7c1c1943595c1297317fab542a13c84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 816.3637080078136,
+        "param": 0,
+        "payloadHex": "0f66f4406f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 824.364708007815,
+        "param": 0,
+        "payloadHex": "e192fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 858.6525527343782,
+        "param": 0,
+        "payloadHex": "41932ab7a685852e068580858585852e068580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858531b177f28585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 863.7625527343791,
+        "param": 0,
+        "payloadHex": "6190fab7a6858585858585cda3c22dbfcb1b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 899.424778808599,
+        "param": 0,
+        "payloadHex": "39324e53d665f99443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 899.424778808599,
+        "param": 1073741987,
+        "payloadHex": "7f6420f4fce13534942c74fd7952d11e94abf47e85853ef429a79124ad42a93c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 899.424778808599,
+        "param": 0,
+        "payloadHex": "0c58f4ae6f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 900.8278022460938,
+        "param": 0,
+        "payloadHex": "6192fab7a6858585858585cda3c22dbf091b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 939.5489526367204,
+        "param": 0,
+        "payloadHex": "57371d54ea9792f41ae758cbfc78e0e46dba43"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 939.5489526367204,
+        "param": 0,
+        "payloadHex": "dd922ab7a68585363a858085858585363a85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585ff22fe3785858585858585851385858029a6c06cfca51b7287"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1007.6714990234406,
+        "param": 0,
+        "payloadHex": "0632bb0c5ce6ce5d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1007.6714990234406,
+        "param": 1073741964,
+        "payloadHex": "0f64adf494c3353400deffc179cbc1c1d366aac18194f3f6b442a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1007.6714990234406,
+        "param": 0,
+        "payloadHex": "09a3f4c96f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1016.033499023442,
+        "param": 0,
+        "payloadHex": "173ddf5d83b3553d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1016.033499023442,
+        "param": 1073741963,
+        "payloadHex": "3f6425f456fe3534d318c1807935e0cf9460cd7f8548451377a89597b042a13c"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1016.033499023442,
+        "param": 0,
+        "payloadHex": "1766f49b6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1044.9065507812425,
+        "param": 0,
+        "payloadHex": "1e36df5d83b3553dc7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1044.9065507812425,
+        "param": 1073741981,
+        "payloadHex": "7a26fc3548"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1082.751777343749,
+        "param": 0,
+        "payloadHex": "503d4e53d665f99443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1082.751777343749,
+        "param": 1073741965,
+        "payloadHex": "3f6420f4babd35349430c53879e6f323941eb5892f495fa629a79124ad42a93c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1082.751777343749,
+        "param": 0,
+        "payloadHex": "3758f4fd6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1122.2662607421823,
+        "param": 0,
+        "payloadHex": "9039bb0c5ce6ce5d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1122.2662607421823,
+        "param": 1073741995,
+        "payloadHex": "7f64adf414c23534940bf6c17916c1c1d346c1c115140a6db042a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1122.2662607421823,
+        "param": 0,
+        "payloadHex": "3aa3f4796f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1131.4672607421785,
+        "param": 0,
+        "payloadHex": "213de2f43acfce7543b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1131.4672607421785,
+        "param": 1073741972,
+        "payloadHex": "0f6450f43e9c3534d3fdd04879bceec3946d32b22fa829c68e791327b542a93c84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1131.4672607421785,
+        "param": 0,
+        "payloadHex": "3f34f4b56f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1152.7826005859317,
+        "param": 0,
+        "payloadHex": "6139bb0c5ce6ce5d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1152.7826005859317,
+        "param": 1073741986,
+        "payloadHex": "3f64adf4d1f33534948e5a0c79bca684d3a364932fd7747c946a1e27aa42a13cb9"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1152.7826005859317,
+        "param": 0,
+        "payloadHex": "16a3f4e16f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1158.696600585929,
+        "param": 0,
+        "payloadHex": "e392fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1200.034444335924,
+        "param": 0,
+        "payloadHex": "e192fab7a6858585858585cda3c22dbfda1b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1258.9413193359246,
+        "param": 0,
+        "payloadHex": "0139df5d83b3553d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1258.9413193359246,
+        "param": 1073741966,
+        "payloadHex": "2f6425f4149e35349424cb1b79bceec39445ca628588d11277a89597b042a13c"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1258.9413193359246,
+        "param": 0,
+        "payloadHex": "3e66f47c6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1265.6948867187475,
+        "param": 0,
+        "payloadHex": "1e224af2881cf9c7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1265.6948867187475,
+        "param": 1073741969,
+        "payloadHex": "5346fc4c4b63"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1265.8278867187473,
+        "param": 0,
+        "payloadHex": "71922ab7a685859f358580858585859f3585808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585638b1b258585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1280.4768867187415,
+        "param": 0,
+        "payloadHex": "1938df5d83b3553dc7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1280.4768867187415,
+        "param": 1073741962,
+        "payloadHex": "5526fc3548"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1311.7458261718655,
+        "param": 0,
+        "payloadHex": "60374e53d665f99443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1311.7458261718655,
+        "param": 1073741978,
+        "payloadHex": "5f6420f4fce5353494b9f5b479bceec394714895851bf26f29a79124ad42a93c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1311.7458261718655,
+        "param": 0,
+        "payloadHex": "2658f42d6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1318.3618261718623,
+        "param": 0,
+        "payloadHex": "40334e53d665f99443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1318.3618261718623,
+        "param": 1073741972,
+        "payloadHex": "5f6420f4391e355eb4d363f6b879bcee5f94ed8ee285fb063796ac3e"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1318.3618261718623,
+        "param": 0,
+        "payloadHex": "0c58f4b56f"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1352.6999306640614,
+        "param": 1073742252,
+        "payloadHex": "6e0fb763"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640901584.rofl",
+    "sha256": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "duration": 1186.993,
+    "participants": [
+      {
+        "SKIN": "Camille",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "1"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "1"
+      },
+      {
+        "SKIN": "Zed",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "1"
+      },
+      {
+        "SKIN": "Ziggs",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "1"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "1"
+      },
+      {
+        "SKIN": "Fiora",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "2"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "2"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "2"
+      },
+      {
+        "SKIN": "Ezreal",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "2"
+      },
+      {
+        "SKIN": "Blitzcrank",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "2"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 281,
+        "timestamp": 20.024646209716824,
+        "param": 0,
+        "payloadHex": "619302b7a685858585858539858585ad6aa7433d351b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.011646209716876,
+        "param": 0,
+        "payloadHex": "6d93fab7a6858585858585cda3c22dbfaf1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.011646209716876,
+        "param": 0,
+        "payloadHex": "6193fab7a6858585858585cda3c22dbf611b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 300.01505126953646,
+        "param": 0,
+        "payloadHex": "6b92fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 480.28178271484376,
+        "param": 0,
+        "payloadHex": "6b90fab7a6858585858585cda3c22dbfbc1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 522.2098742675802,
+        "param": 0,
+        "payloadHex": "53902ab7a68585e242858085858585e24285808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585858585858585858585858585e242858029a6c06cfceb1bd63d"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 531.1678742675817,
+        "param": 0,
+        "payloadHex": "41932ab7a685851d428580858585851d42858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585858585858585858585858585851d42858029a6c06cfceb1b403d"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 533.0048742675821,
+        "param": 0,
+        "payloadHex": "21922ab7a685859b428580858585859b42858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585858585858585858585858585859b42858029a6c06cfceb1bd73d"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 563.6912670898479,
+        "param": 0,
+        "payloadHex": "21902ab7a68585acf3858085858585acf385808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585dea8f7588585858585858585fe85858029a6c06cfcb71b5287"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 804.2059169921918,
+        "param": 0,
+        "payloadHex": "0738738563e86bdc43b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 804.2059169921918,
+        "param": 1073741988,
+        "payloadHex": "4f64e8f4273634f0d4ad959fcd"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 804.2059169921918,
+        "param": 0,
+        "payloadHex": "0ab0f4566f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 863.7338051757854,
+        "param": 0,
+        "payloadHex": "6390fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 867.8418051757861,
+        "param": 0,
+        "payloadHex": "3f3c0b57a90a565d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 867.8418051757861,
+        "param": 1073741964,
+        "payloadHex": "3f64adf4e6f3355e8600deffc179cbc1c1d366aac185f6d5d7ff7727f8ac9f2f84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 867.8418051757861,
+        "param": 0,
+        "payloadHex": "17a3f4c96f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 900.8266225585938,
+        "param": 0,
+        "payloadHex": "6393fab7a6858585858585cda3c22dbf091b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 962.1263876953128,
+        "param": 0,
+        "payloadHex": "13922ab7a685857fb58580858585857fb585808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585638b1b258585858585858585fe85858029a6c06cfcb71b5287"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 967.2363876953137,
+        "param": 0,
+        "payloadHex": "6393fab7a6858585858585cda3c22dbf3b1b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1164.8621279296767,
+        "param": 0,
+        "payloadHex": "963d5b62b454ced443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1164.8621279296767,
+        "param": 1073741979,
+        "payloadHex": "4f6451f451c4353400c162c17967c1c1003dd7c12115038aac42a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1164.8621279296767,
+        "param": 0,
+        "payloadHex": "1f60f4666f"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1183.2445927734327,
+        "param": 1073742248,
+        "payloadHex": "46"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1185.2145927734316,
+        "param": 0,
+        "payloadHex": "b92940b2c4a5f91ae758cbfc78e0e46dba8ea9"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1185.2145927734316,
+        "param": 0,
+        "payloadHex": "3b922ab7a685851c8d8580858585851c8d85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585ff22fe3785858585858585851c8d858029a6c06cfca51b5afc87"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640933743.rofl",
+    "sha256": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "duration": 2111.17,
+    "participants": [
+      {
+        "SKIN": "Pantheon",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "9"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "100",
+        "BARON_KILLS": "1",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "9"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "9"
+      },
+      {
+        "SKIN": "Caitlyn",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "2",
+        "FRIENDLY_TURRET_LOST": "9"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "9"
+      },
+      {
+        "SKIN": "MonkeyKing",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "2",
+        "FRIENDLY_TURRET_LOST": "3"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "BARON_KILLS": "1",
+        "RIFT_HERALD_KILLS": "1",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "3"
+      },
+      {
+        "SKIN": "Yasuo",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "3",
+        "FRIENDLY_TURRET_LOST": "3"
+      },
+      {
+        "SKIN": "Seraphine",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "3",
+        "FRIENDLY_TURRET_LOST": "3"
+      },
+      {
+        "SKIN": "Brand",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "3"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 281,
+        "timestamp": 20.001921726226847,
+        "param": 0,
+        "payloadHex": "ed9202b7a685858585858539858585ad6aa7433d351b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.02292172622691,
+        "param": 0,
+        "payloadHex": "e392fab7a6858585858585cda3c22dbfaf1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.02292172622691,
+        "param": 0,
+        "payloadHex": "eb92fab7a6858585858585cda3c22dbf611b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 300.0475810546926,
+        "param": 0,
+        "payloadHex": "ed92fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 480.286482421875,
+        "param": 0,
+        "payloadHex": "6193fab7a6858585858585cda3c22dbfbc1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 572.7879013671879,
+        "param": 0,
+        "payloadHex": "7d932ab7a68585d9e2858085858585d9e285808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585c05ff22b8585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 828.0145712890657,
+        "param": 0,
+        "payloadHex": "a033727984530e5d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 828.0145712890657,
+        "param": 1073741964,
+        "payloadHex": "0f64adf4969535340002680879850a2fd3c8075b8527004910816e17ad42a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 828.0145712890657,
+        "param": 0,
+        "payloadHex": "10a3f4c96f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 872.8160175781254,
+        "param": 0,
+        "payloadHex": "6190fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 885.0220175781276,
+        "param": 0,
+        "payloadHex": "9d922ab7a68585aeac858085858585aeac85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585858585858585858585858585aeac858029a6c06cfceb1bf199"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 885.0220175781276,
+        "param": 0,
+        "payloadHex": "dd922ab7a6858543ac85808585858543ac8580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858543ac858029a6c06cfceb1b7499"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 885.0220175781276,
+        "param": 0,
+        "payloadHex": "53902ab7a6858534ac85808585858534ac8580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858534ac858029a6c06cfceb1bf099"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 900.8357978515626,
+        "param": 0,
+        "payloadHex": "6b90fab7a6858585858585cda3c22dbf091b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 950.4320131835974,
+        "param": 0,
+        "payloadHex": "31932ab7a68585e28d858085858585e28d858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585856fe476b18585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 955.5430131835983,
+        "param": 0,
+        "payloadHex": "6b93fab7a6858585858585cda3c22dbfc11b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1012.7294643554726,
+        "param": 0,
+        "payloadHex": "2032d9179789af9c43b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1012.7294643554726,
+        "param": 1073741985,
+        "payloadHex": "5f64eaf412b23534008a7be279850a2f94ac389c85b469ec927c82edaf42a13c84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1012.7294643554726,
+        "param": 0,
+        "payloadHex": "16a0f46e6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1082.1594414062492,
+        "param": 0,
+        "payloadHex": "063975d51bcfaf7d1ae758cbfc78e0e46dba9e1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1082.1594414062492,
+        "param": 0,
+        "payloadHex": "bb922ab7a68585c906858085858585c90685808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585ff22fe378585858585858585c285858029a6c06cfca51b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1156.3272265624933,
+        "param": 0,
+        "payloadHex": "4633de891bb2d83d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1156.3272265624933,
+        "param": 1073741987,
+        "payloadHex": "2f6420f454ec353494348c4b795273a294f31c1f2f0c421cfa7c210cb042a13c86"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1156.3272265624933,
+        "param": 0,
+        "payloadHex": "2258f4ae6f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1200.0315458984237,
+        "param": 0,
+        "payloadHex": "6b90fab7a6858585858585cda3c22dbfda1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1250.4777812499908,
+        "param": 0,
+        "payloadHex": "6390fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1265.1731240234353,
+        "param": 0,
+        "payloadHex": "2b902ab7a6858507e685808585858507e68580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858531b177f28585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1274.612124023431,
+        "param": 0,
+        "payloadHex": "793d838f73e168d4345a6f77664b8fc0443843"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1274.612124023431,
+        "param": 0,
+        "payloadHex": "2d922ab7a68585ea9a858085858585ea9a858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585859e84c8bf8585858585858585fe85858029a6c06cfcfd1b5287"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1381.202692382812,
+        "param": 0,
+        "payloadHex": "a03ddf5d83b355dc43b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1381.202692382812,
+        "param": 1073741984,
+        "payloadHex": "0f64e8f4d4ed353494274e1079619afa002d97ba8563459d0ca1961eaf42a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1381.202692382812,
+        "param": 0,
+        "payloadHex": "0ab0f4c46f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1403.9996923828016,
+        "param": 0,
+        "payloadHex": "003ddf5d83b355dc43b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1403.9996923828016,
+        "param": 1073741988,
+        "payloadHex": "0f64e8f4d4ef3534945426c27929c29b00dbfc03f03ff5f677a89597b042a13c"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1403.9996923828016,
+        "param": 0,
+        "payloadHex": "3ab0f4566f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1551.822155273428,
+        "param": 0,
+        "payloadHex": "6737de891bb2d83d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1551.822155273428,
+        "param": 1073741990,
+        "payloadHex": "7f6420f496e53534d3145d647994916400ffd883853544758fa121fcb042a13c86"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1551.822155273428,
+        "param": 0,
+        "payloadHex": "0858f4a76f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1565.2252861328109,
+        "param": 0,
+        "payloadHex": "6190fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1599.6972714843705,
+        "param": 0,
+        "payloadHex": "a037727984530e5d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1599.6972714843705,
+        "param": 1073741965,
+        "payloadHex": "5f64adf414c23534948603c179a7c1c194d82ac1eb988d7eb542a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1599.6972714843705,
+        "param": 0,
+        "payloadHex": "14a3f4fd6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1606.585271484368,
+        "param": 0,
+        "payloadHex": "3e36de891bb2d83d43b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1606.585271484368,
+        "param": 1073741960,
+        "payloadHex": "0f6420f456e43534d37d02fe7994e09a94e1774e2fe045ba80a32120b042a13c86"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1606.585271484368,
+        "param": 0,
+        "payloadHex": "1058f4406f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1634.6521835937438,
+        "param": 0,
+        "payloadHex": "6192fab7a6858585858585cda3c22dbfda1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1671.6407607421784,
+        "param": 0,
+        "payloadHex": "1d902ab7a68585f1a6a68085858585f1a6a680858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858531b177f28585858585858585c285858029a6c06cfcb71b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1925.038458984373,
+        "param": 0,
+        "payloadHex": "27294af2881cf943b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1925.038458984373,
+        "param": 1073741995,
+        "payloadHex": "4f6485ef5f91cd3534940bf6c17916c1c1d346c1c115140a6db042a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1925.038458984373,
+        "param": 0,
+        "payloadHex": "0d796f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 2031.6828212890528,
+        "param": 0,
+        "payloadHex": "e192fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2081.8953476562447,
+        "param": 0,
+        "payloadHex": "a73d0cc4cf5d689443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2081.8953476562447,
+        "param": 1073741966,
+        "payloadHex": "2f6425f42190355e869424c1c1798cc1c1941021c1f03196d4ec080f06b29f2fb9"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2081.8953476562447,
+        "param": 0,
+        "payloadHex": "1266f47c6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2086.3753476562424,
+        "param": 0,
+        "payloadHex": "813375d51bcfaf7d345a6f77664b8fc044389e1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 2086.3753476562424,
+        "param": 0,
+        "payloadHex": "a1922ab7a685853b02a680858585853b02a68085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585859e84c8bf8585858585858585c285858029a6c06cfcfd1b7587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2086.742347656242,
+        "param": 0,
+        "payloadHex": "5e37727984530e5dc7e86f28359e1b"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 2086.742347656242,
+        "param": 1073741969,
+        "payloadHex": "6386fcb348"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2093.523347656239,
+        "param": 0,
+        "payloadHex": "b8370cc4cf5d689443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2093.523347656239,
+        "param": 1073741978,
+        "payloadHex": "0f6425f439f23534949ab6fd79bceec194cbb2f385dec244ec080f06b242a93cb9"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2093.523347656239,
+        "param": 0,
+        "payloadHex": "1f66f42d6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 2096.8633476562372,
+        "param": 0,
+        "payloadHex": "97390cc4cf5d689443b172fc588a673d9e1b"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 2096.8633476562372,
+        "param": 1073741972,
+        "payloadHex": "0f6425f4bee335349455e42179bcee5f94fe084185dec244ec080f06b242a93cb9"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 2096.8633476562372,
+        "param": 0,
+        "payloadHex": "1666f4b56f"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 2107.4295312499967,
+        "param": 1073742252,
+        "payloadHex": "5e5548"
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640962900.rofl",
+    "sha256": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "duration": 1547.266,
+    "participants": [
+      {
+        "SKIN": "Vladimir",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "6",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "Naafiri",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "3",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "Jinx",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "1",
+        "BARRACKS_KILLED": "1",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "Pyke",
+        "TEAM": "100",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "1",
+        "FRIENDLY_TURRET_LOST": "0"
+      },
+      {
+        "SKIN": "JarvanIV",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "Diana",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "Ashe",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "11"
+      },
+      {
+        "SKIN": "Thresh",
+        "TEAM": "200",
+        "BARON_KILLS": "0",
+        "RIFT_HERALD_KILLS": "0",
+        "BARRACKS_KILLED": "0",
+        "TURRETS_KILLED": "0",
+        "FRIENDLY_TURRET_LOST": "11"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 281,
+        "timestamp": 20.000560981750514,
+        "param": 0,
+        "payloadHex": "619302b7a685858585858539858585ad6aa7433d351b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.021068283081092,
+        "param": 0,
+        "payloadHex": "6192fab7a6858585858585cda3c22dbfaf1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 30.021068283081092,
+        "param": 0,
+        "payloadHex": "e392fab7a6858585858585cda3c22dbf611b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 300.02384960938014,
+        "param": 0,
+        "payloadHex": "6d90fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 399.09053588867346,
+        "param": 0,
+        "payloadHex": "11902ab7a685855be28580858585855be285808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585c05ff22b8585858585858585fe85858029a6c06cfcb71b5287"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 480.2839599609375,
+        "param": 0,
+        "payloadHex": "6390fab7a6858585858585cda3c22dbfbc1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 516.2060002441416,
+        "param": 0,
+        "payloadHex": "cb922ab7a6858562d385808585858562d38580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858562d3858029a6c06cfceb1b5098"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 528.0180002441436,
+        "param": 0,
+        "payloadHex": "53902ab7a6858523d385808585858523d38580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858523d3858029a6c06cfceb1b5198"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 532.1420002441444,
+        "param": 0,
+        "payloadHex": "21922ab7a6858533d385808585858533d38580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858533d3858029a6c06cfceb1bcf98"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 699.1227753906265,
+        "param": 0,
+        "payloadHex": "e392fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 747.4388178710985,
+        "param": 0,
+        "payloadHex": "10381c73f77692d443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 747.4388178710985,
+        "param": 1073741988,
+        "payloadHex": "2f6456f456e23534944c4dc17961a112004b0fc18550a3f59b217078ad42a13c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 747.4388178710985,
+        "param": 0,
+        "payloadHex": "187bf4566f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 773.0054658203165,
+        "param": 0,
+        "payloadHex": "2038fe89e2d65af443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 773.0054658203165,
+        "param": 1073741985,
+        "payloadHex": "7f64eaf4e29b353e00f644c17967c1c1944cb3c1a43f3f3f920a1f16b997ad3c"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 773.0054658203165,
+        "param": 0,
+        "payloadHex": "39a0f46e6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 789.3970117187516,
+        "param": 0,
+        "payloadHex": "1739838f73e168b443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 789.3970117187516,
+        "param": 1073741984,
+        "payloadHex": "0f6451f4f9f335340069121c7918184100dc1236852f718022f492efb142a93c3f"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 789.3970117187516,
+        "param": 0,
+        "payloadHex": "3f60f4c46f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 844.7476230468758,
+        "param": 0,
+        "payloadHex": "51902ab7a685857bbc8580858585857bbc8580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858553af86a28585858585858585fe85858029a6c06cfcb71b5287"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 849.8586230468767,
+        "param": 0,
+        "payloadHex": "6192fab7a6858585858585cda3c22dbfc11b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 900.8087558593751,
+        "param": 0,
+        "payloadHex": "6b93fab7a6858585858585cda3c22dbf091b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 991.2317285156252,
+        "param": 0,
+        "payloadHex": "4737d490d516649c1ae758cbfc78e0e46dba43"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 991.2317285156252,
+        "param": 0,
+        "payloadHex": "7d932ab7a68585e23a858085858585e23a85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585ff22fe378585858585858585d885858029a6c06cfca51bd587"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1016.7637285156297,
+        "param": 0,
+        "payloadHex": "5633838f73e168b443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1016.7637285156297,
+        "param": 1073741971,
+        "payloadHex": "4f6451f464fa353e0037c3c17967c1c100676ac1a4003f3f920a1f16b997ad3c"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1016.7637285156297,
+        "param": 0,
+        "payloadHex": "1a60f40f6f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1040.206428222649,
+        "param": 0,
+        "payloadHex": "87298297b4036443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1040.206428222649,
+        "param": 1073741975,
+        "payloadHex": "7f6450d581e1cd353a001f390979850abd94afeea887238395af95a53c62"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1040.206428222649,
+        "param": 0,
+        "payloadHex": "21a0f4066f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1144.7730302734358,
+        "param": 0,
+        "payloadHex": "6b92fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1177.7293642578088,
+        "param": 0,
+        "payloadHex": "31922ab7a68585ab73858085858585ab738580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858531b177f285858585858585851385858029a6c06cfcb71b7287"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1200.0303642577983,
+        "param": 0,
+        "payloadHex": "6b90fab7a6858585858585cda3c22dbfda1b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1265.8279277343725,
+        "param": 0,
+        "payloadHex": "7e39d490d516649c43b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1265.8279277343725,
+        "param": 1073741989,
+        "payloadHex": "0f64e8f466ea353e0070efc1798bc1c1001968c1a43f3f3f920a1f16b997ad3c"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1265.8279277343725,
+        "param": 0,
+        "payloadHex": "3ab0f4966f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1274.0459277343687,
+        "param": 0,
+        "payloadHex": "5837d490d516649cc7e86f283543"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1274.0459277343687,
+        "param": 1073741967,
+        "payloadHex": "4ac6fcfc48"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1295.22359472656,
+        "param": 0,
+        "payloadHex": "013cfe89e2d65af443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1295.22359472656,
+        "param": 1073741979,
+        "payloadHex": "5f64eaf479b2353494dd3439791f3e1400d04d6a8592c2547c040814b242a93c84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1295.22359472656,
+        "param": 0,
+        "payloadHex": "3aa0f4666f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1375.130018554676,
+        "param": 0,
+        "payloadHex": "a633fe89e2d65af443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1375.130018554676,
+        "param": 1073741974,
+        "payloadHex": "0f64eaf47af4353400186ba679b833a500fae7d48597b0e17c040814b242a93c84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1375.130018554676,
+        "param": 0,
+        "payloadHex": "24a0f4226f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1421.947653320307,
+        "param": 0,
+        "payloadHex": "2737838f73e168b443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1421.947653320307,
+        "param": 1073741976,
+        "payloadHex": "7f6451f4e1bb353e00ce21c1798bc1c1008a5ec1a4003f3f920a1f16b997ad3c"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1421.947653320307,
+        "param": 0,
+        "payloadHex": "1060f4476f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1439.049653320299,
+        "param": 0,
+        "payloadHex": "5f37838f73e168b4c7e86f283543"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1439.049653320299,
+        "param": 1073741983,
+        "payloadHex": "7fe6fcbe48"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 1477.7727480468711,
+        "param": 0,
+        "payloadHex": "6d93fab7a6858585858585cda3c22dbf851b"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1529.1388007812363,
+        "param": 0,
+        "payloadHex": "6733fe89e2d65af443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1529.1388007812363,
+        "param": 1073741970,
+        "payloadHex": "2f64eaf4fee135340007ecd0798ce15900c41d69853ca9487c040814b242a93c84"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1529.1388007812363,
+        "param": 0,
+        "payloadHex": "12a0f4846f"
+      },
+      {
+        "opcode": 573,
+        "timestamp": 1533.3806259765613,
+        "param": 0,
+        "payloadHex": "3832fe89e2d65af443b172fc588a673d43"
+      },
+      {
+        "opcode": 1123,
+        "timestamp": 1533.3806259765613,
+        "param": 1073741991,
+        "payloadHex": "0f64eaf4bc91353400dbb60c798ce1c600c430c6853ca9488b030818b242a93c42"
+      },
+      {
+        "opcode": 1030,
+        "timestamp": 1533.3806259765613,
+        "param": 0,
+        "payloadHex": "1ea0f4126f"
+      },
+      {
+        "opcode": 1073,
+        "timestamp": 1543.5256259765563,
+        "param": 1073742248,
+        "payloadHex": "6efc48"
+      }
+    ]
+  }
+]

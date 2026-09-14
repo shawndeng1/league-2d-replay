@@ -1,0 +1,546 @@
+[
+  {
+    "file": "NA1-5640196741.rofl",
+    "sha256": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "duration": 2193.71,
+    "participants": [
+      {
+        "SKIN": "Malphite",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Graves",
+        "TEAM": "100",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ashe",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Seraphine",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Camille",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Naafiri",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Syndra",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Vayne",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Shaco",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 573,
+        "timestamp": 652.3480903320351,
+        "param": 0,
+        "payloadHex": "26321ab1fd18dc0265ed31f5dd149d8e5443"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 652.3480903320351,
+        "param": 0,
+        "payloadHex": "3d932ab7a68585ba22858085858585ba2285808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585858585858585858585858585ba22858029a6c06cfceb1be57687"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 652.3480903320351,
+        "param": 1073763088,
+        "payloadHex": "0f6455f494e53534009a2e2a648e44bc941155af2f4f6af57b258311af42a13c08"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.1988220214844,
+        "param": 1073763088,
+        "payloadHex": "9bcd7f9c93bc4d961743f8632faabf95a0198edb9f6147b80547b86787ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a736b2e14508798407a490c4572dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 540.221435546875,
+        "param": 1073763088,
+        "payloadHex": "b40cba8cf3ba4d961743f8632faabf95a0198edb9f6147b80547b86787ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d723fc48c85c797edd78cd2c7d0c9a51e6b5f88d084cc9005b8f95c72dad872"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 600.22314453125,
+        "param": 1073763088,
+        "payloadHex": "950d3e8cf3be4d961743f8632faabf95a0198edb9f6147b80547b86787ed1adc13a47bc9ec1689644d2f3ae0f16c4aa5c20a63def4267c3c491aea093f4b8198026d72aecfe805f21a7292e808f295596a73224485ef43461a2f18921372dad872"
+      }
+    ],
+    "expectedEvents": [
+      {
+        "id": "void-grub-652348-40005310-ea7e5fb31b8a",
+        "timestamp": 652.34809,
+        "type": "OBJECTIVE_KILL",
+        "objective": "VOID_GRUB",
+        "coverage": "CAMP_ANNOUNCED_KILL_ONLY",
+        "killerPlayerId": 1,
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x043c",
+          "packetSize": 33,
+          "rawTimestamp": 652.3480903320351,
+          "entityId": 1073763088,
+          "killerEntityId": 1073741999,
+          "corroboratingOpcode": "0x023d",
+          "confidence": "VERIFIED"
+        }
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640893952.rofl",
+    "sha256": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "duration": 1356.441,
+    "participants": [
+      {
+        "SKIN": "KSante",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Darius",
+        "TEAM": "100",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "Zyra",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Jinx",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Senna",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Jax",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ahri",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Caitlyn",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 573,
+        "timestamp": 535.9921472168015,
+        "param": 0,
+        "payloadHex": "5039606ab41b56dc0265ed31f5dd149d8e5443"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 535.9921472168015,
+        "param": 0,
+        "payloadHex": "2d932ab7a6858529cc85808585858529cc8580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858529cc858029a6c06cfceb1bdcc687"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 535.9921472168015,
+        "param": 1073758707,
+        "payloadHex": "7f6455f492e5353400f835f364cd41c1940ecb902fa362f28079fea0b242a13c3f"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18975830078125,
+        "param": 1073758707,
+        "payloadHex": "8c8c3a9cf3be4d96ddfdf8632faabf95a0198edb9f6147b80547b74584ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d723fc42e85c797edd78cd2c7d0c9a51e6b4485ef43461a2f18921372dad872"
+      }
+    ],
+    "expectedEvents": [
+      {
+        "id": "void-grub-535992-400041f3-cfc0b61889aa",
+        "timestamp": 535.992147,
+        "type": "OBJECTIVE_KILL",
+        "objective": "VOID_GRUB",
+        "coverage": "CAMP_ANNOUNCED_KILL_ONLY",
+        "killerPlayerId": 1,
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x043c",
+          "packetSize": 33,
+          "rawTimestamp": 535.9921472168015,
+          "entityId": 1073758707,
+          "killerEntityId": 1073741999,
+          "corroboratingOpcode": "0x023d",
+          "confidence": "VERIFIED"
+        }
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640901584.rofl",
+    "sha256": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "duration": 1186.993,
+    "participants": [
+      {
+        "SKIN": "Camille",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Zed",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ziggs",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Fiora",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "200",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ezreal",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Blitzcrank",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 573,
+        "timestamp": 533.0048742675821,
+        "param": 0,
+        "payloadHex": "7e33838f73e168940265ed31f5dd149d8e549e1b"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 533.0048742675821,
+        "param": 0,
+        "payloadHex": "21922ab7a685859b428580858585859b42858085858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585851414141485858585858585858585858585858585858585859b42858029a6c06cfceb1bd73d"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 533.0048742675821,
+        "param": 1073756705,
+        "payloadHex": "0f64b6f4a1bd395e4600edb01f64cd89089497d5acf0b13f3f0c1ba89ab2972c04f0"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.18133544921875,
+        "param": 1073756705,
+        "payloadHex": "8d0cb9ccf3a84d9639de634076ec91e160d001b5d15173ae51ae5630ed1a08d4ea7bc77da1898b4d2f3a6d319f4ab3c20a6385c8717c3c491aea093f4b8198026d72897be97b31e97087b2f48460b5ceb06b5f88d084cc9005b8f95c72dad872"
+      }
+    ],
+    "expectedEvents": [
+      {
+        "id": "void-grub-533005-40003a21-7578ef8c10cf",
+        "timestamp": 533.004874,
+        "type": "OBJECTIVE_KILL",
+        "objective": "VOID_GRUB",
+        "coverage": "CAMP_ANNOUNCED_KILL_ONLY",
+        "killerPlayerId": 6,
+        "killerTeam": "RED",
+        "source": {
+          "opcode": "0x043c",
+          "packetSize": 34,
+          "rawTimestamp": 533.0048742675821,
+          "entityId": 1073756705,
+          "killerEntityId": 1073742004,
+          "corroboratingOpcode": "0x023d",
+          "confidence": "VERIFIED"
+        }
+      }
+    ]
+  },
+  {
+    "file": "NA1-5640933743.rofl",
+    "sha256": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "duration": 2111.17,
+    "participants": [
+      {
+        "SKIN": "Pantheon",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "TwistedFate",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Caitlyn",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Lux",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MonkeyKing",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Yasuo",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Seraphine",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Brand",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 573,
+        "timestamp": 885.0220175781276,
+        "param": 0,
+        "payloadHex": "3e2d99a20719a10265ed31f5dd149d8e548ea9"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 885.0220175781276,
+        "param": 0,
+        "payloadHex": "9d922ab7a68585aeac858085858585aeac85808585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585141414148585858585858585858585858585858585858585aeac858029a6c06cfceb1bf199"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 885.0220175781276,
+        "param": 1073757368,
+        "payloadHex": "7f64ac3a6746349f0f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 885.0220175781276,
+        "param": 0,
+        "payloadHex": "dd922ab7a6858543ac85808585858543ac8580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858543ac858029a6c06cfceb1b7499"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 885.0220175781276,
+        "param": 1073757366,
+        "payloadHex": "5f64253aa747349f0f"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 885.0220175781276,
+        "param": 0,
+        "payloadHex": "53902ab7a6858534ac85808585858534ac8580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858534ac858029a6c06cfceb1bf099"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 885.0220175781276,
+        "param": 1073757370,
+        "payloadHex": "4f64b83a6746349f0f"
+      }
+    ],
+    "expectedEvents": []
+  },
+  {
+    "file": "NA1-5640962900.rofl",
+    "sha256": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "duration": 1547.266,
+    "participants": [
+      {
+        "SKIN": "Vladimir",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Naafiri",
+        "TEAM": "100",
+        "HORDE_KILLS": "3"
+      },
+      {
+        "SKIN": "Amumu",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Jinx",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Pyke",
+        "TEAM": "100",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "JarvanIV",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "MasterYi",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Diana",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Ashe",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      },
+      {
+        "SKIN": "Thresh",
+        "TEAM": "200",
+        "HORDE_KILLS": "0"
+      }
+    ],
+    "packets": [
+      {
+        "opcode": 573,
+        "timestamp": 532.1420002441444,
+        "param": 0,
+        "payloadHex": "3938892b1cc4afdc0265ed31f5dd149d8e5443"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 532.1420002441444,
+        "param": 1073760306,
+        "payloadHex": "2f6455f4941f357a00de8d8564cde4cb94396ba82f92b0a895ad3c"
+      },
+      {
+        "opcode": 281,
+        "timestamp": 532.1420002441444,
+        "param": 0,
+        "payloadHex": "21922ab7a6858533d385808585858533d38580858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858514141414858585858585858585858585858585858585858533d3858029a6c06cfceb1bcf98"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 532.1420002441444,
+        "param": 1073757633,
+        "payloadHex": "3f6455f4111e357a00de8d8564cde4cb94396ba885fa173395ad3c"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 532.1420002441444,
+        "param": 1073760307,
+        "payloadHex": "7f6455f4163e357a00de8d8564cde4cb94396ba82f92b0a895ad3c"
+      },
+      {
+        "opcode": 1084,
+        "timestamp": 532.1420002441444,
+        "param": 1073760308,
+        "payloadHex": "7f6455f4167e357a00de8d8564cde4cb94396ba82f92b0a895ad3c"
+      },
+      {
+        "opcode": 647,
+        "timestamp": 480.15057373046875,
+        "param": 1073757633,
+        "payloadHex": "940e798cf3ad4d9679ec634076ec91e160d001b5d15173ae51f83030ed1a08ad1b7b0887c3898b4d2f3a2cfd984ab3c20a635dbdde7c3c491aea093f4b8198026d728935e97b31e97087b2f48460b5ceb06b2e14508798407a490c4572dad872"
+      }
+    ],
+    "expectedEvents": [
+      {
+        "id": "void-grub-532142-40003dc1-30734a0e1dc4",
+        "timestamp": 532.142,
+        "type": "OBJECTIVE_KILL",
+        "objective": "VOID_GRUB",
+        "coverage": "CAMP_ANNOUNCED_KILL_ONLY",
+        "killerPlayerId": 1,
+        "killerTeam": "BLUE",
+        "source": {
+          "opcode": "0x043c",
+          "packetSize": 27,
+          "rawTimestamp": 532.1420002441444,
+          "entityId": 1073757633,
+          "killerEntityId": 1073741999,
+          "corroboratingOpcode": "0x023d",
+          "confidence": "VERIFIED"
+        }
+      }
+    ]
+  }
+]

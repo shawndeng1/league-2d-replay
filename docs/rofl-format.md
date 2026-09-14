@@ -463,6 +463,157 @@ are rounded to six decimals; decimal-bucket equality can drop genuine matches.
 Candidate probes stop at their first decoding error. They never update the
 production profile automatically.
 
+## Baron, Herald and structures: review-v4
+
+This section supersedes the earlier unsupported-status notes for Baron, Herald,
+towers and inhibitors. Movement and life-state decoding are unchanged.
+
+### Independently identified name hashes
+
+`0x023D` announcement decoded object fields are four-byte plaintext writes:
+actor name hash `+0x10`, category identifier `+0x18`, target name hash `+0x1C`,
+and acting team `+0x20`. The hashes use lowercase ASCII SDBM:
+`h = (h * 65599 + byte) mod 2^32`, starting at zero. This reproduces champion
+names (Syndra `0x404673AB`, Ashe `0xDA1E294F`, TwistedFate `0xD04DE692`)
+and independently identifies `SRU_Baron = 0x68AC12C9`,
+`SRU_RiftHerald = 0xDDAF53D2`, `Turret = 0x07B471D0`.
+These name identities are VERIFIED; most category strings remain UNKNOWN.
+The final byte-obfuscated object snapshot must not be read as plaintext.
+
+### VERIFIED objective credits, paired notifications
+
+`0x0119` is a generic script-event envelope. Object `+0x20` identifies the
+observed neutral-death script (`0x60FD8A21`), `+0x10` points to its byte vector,
+`+0x18` gives logical length, and `+0x28` gives its credited entity. Other
+script identifiers are ignored. The relevant script's 124-byte decoded body
+has a `0x1D7` tag, repeated dead entity IDs at `+4` and `+12`, the SDBM unit-name
+hash at `+108`, and credited entity at `+120`. These are offsets in the
+deserialized script body, not the ROFL payload. All range, tag and duplicated
+identity checks precede normalization.
+
+Production requires a same-tick `0x023D` announcement matching target hash,
+killer champion name and killer team. Four Baron kills and four Herald kills
+across five real replays match every participant's independent `BARON_KILLS`
+and `RIFT_HERALD_KILLS` metadata. On the primary fixture, a separate research
+decode of generic unit-death opcode `0x043C` also matches each objective's
+dead entity, killer entity and timestamp. Its deserializer is
+`0xF09E20`–`0xF0A39D`, constructor `0xE8AAF0`–`0xE8AC33`; it is not needed
+in production, avoiding emulation of thousands of unrelated unit deaths.
+
+Primary Herald: approximately 1080.885 seconds, Naafiri. Primary Baron:
+approximately 1470.800 and 1917.455 seconds, both Naafiri. Their recorded
+notification times are preserved; no more precise damage instant is claimed.
+Map coordinates and exact pit positions are not decoded or invented.
+
+Important negative fixture: `5640901584` includes a Herald self-removal at
+1185.214593 seconds near match end. Script killer equals the dead neutral
+entity; the matching announcement's actor equals its target and its team is
+300. This is excluded from captures, consistent with zero Herald credits.
+The script and announcement must agree before this exclusion applies.
+
+An earlier two-occurrence candidate, `0x02F3`, actually decodes the name
+`SRU_Crab`; its frequency is not evidence of Baron kills and it is not enabled.
+
+### VERIFIED tower and inhibitor destruction
+
+Tower normalization correlates three sources:
+
+- `0x0463`: destroyed tower is the block parameter, actual final-hit entity
+  is decoded object `+0x1C`.
+- `0x0406`: credited entity at object `+0x10`, destroyed tower at `+0x14`.
+- `0x023D`: target name hash `Turret`, acting team. Destroyed team is the
+  opposite blue/red team, verified against `FRIENDLY_TURRET_LOST` for each team.
+
+The actual final hitter and credited participant can differ. At 1040.206s in
+`5640962900`, a minion finishes a tower but `0x0406` credits Vladimir. All
+53 tower notifications match team loss totals; separate credit IDs match all
+50 participant `TURRETS_KILLED` totals. No player credit is inferred from gold.
+
+Inhibitor normalization pairs `0x0431` with `0x023D` category `0x18564B76`.
+The category's original string is UNKNOWN; its inhibitor interpretation is
+VERIFIED by the independent evidence below. `0x0431` uses its block parameter
+for building identity, object `+0x10` for credited entity and `+0x14` for final
+hitter. This opcode also occurs for the nexus, so **it alone is not an
+inhibitor event**. Only the correlated inhibitor announcement enables emission.
+
+All ten inhibitor events across five matches match each player's
+`BARRACKS_KILLED` total. In the original replay, Syndra receives the first
+credit at 1815.491852s while a minion is the final hitter. The same building
+entity `0x40000091` changes state again at 2115.466361s (approximately 300s
+later), then is destroyed again at 2162.175973s. The corresponding `0x03CD`
+state packets independently support destruction/respawn behavior; unknown
+state encoding is not exported as a guessed inhibitor lifecycle.
+
+Team ownership is derived from the verified opposing acting team, not from a
+guessed entity-ID range. Lane, tier, structure position and complete structure
+respawn state remain UNKNOWN. Source coordinates in shared death objects can
+describe the killer; they are deliberately not plotted as structure locations.
+
+| Fixture | Baron | Herald | Towers | Inhibitors |
+| --- | ---: | ---: | ---: | ---: |
+| NA1-5640196741 | 2 | 1 | 15 | 4 |
+| NA1-5640893952 | 0 | 1 | 12 | 3 |
+| NA1-5640901584 | 0 | 0 | 3 | 0 |
+| NA1-5640933743 | 2 | 1 | 12 | 1 |
+| NA1-5640962900 | 0 | 1 | 11 | 2 |
+
+### Exact-build functions and maintained boundaries
+
+| Decoder | Constructor RVA range | Deserializer RVA range |
+| --- | --- | --- |
+| Announcement `0x023D` | `0xEAF430–0xEAF5CD` | `0x1039D00–0x103A5B0` |
+| Script envelope `0x0119` | `0xEA1170–0xEA11F5` | `0x101DAB0–0x101E23A` |
+| Tower death `0x0463` | `0xE8A9A0–0xE8AAE3` | `0xF098A0–0xF09E1D` |
+| Tower credit `0x0406` | `0xE96C90–0xE96D34` | `0xF7B950–0xF7BF03` |
+| Building death `0x0431` | `0xE86BE0–0xE86C73` | `0x10BA740–0x10BAC75` |
+
+`parser/notifications.py` models the decoded structures with named dataclasses,
+uses the existing hash-checked emulator, and normalizes only corroborated events.
+No frontend ROFL dependency or raw packet dump is introduced. Normalized v1
+events already support these types; source provenance adds credited entity and
+corroborating/credit opcode fields. The decoder tag becomes `16.18-review-v4`;
+objective and structure coverage become true for these supported categories.
+Assists remain unavailable and are not inferred from the newly found credits.
+
+Unknown semantic kinds are skipped. Recognized events with missing, conflicting
+or ambiguous evidence fail closed. Simultaneous identical-actor tower events
+that cannot be uniquely paired are unsupported rather than arbitrarily assigned.
+IDs include type, timestamp, entity and payload digest, so a later destruction
+of the same structure is a separate stable event.
+
+`samples/notification-packets.json` contains small real payloads, timestamps,
+hashes and the minimal final metadata needed to reproduce the five-match checks;
+no player display names or client executable bytes are included. Recreate it
+from the ignored research dumps with `python -m tools.export_notification_evidence`.
+`tests/test_notifications.py` checks exact name hashes, normalization, credits,
+negative self-removal, truncated packets, unknown kinds and missing/duplicate
+evidence. Existing real-corpus tests exercise the complete parser pipeline.
+
+## Event icon rendering and schematic annotations
+
+`web/public/assets/events` contains original SVG line icons, with no external
+icon service dependency. `eventIcons.ts` centralizes category, asset and color
+selection; React uses the SVGs as masks and Pixi loads the same assets as three
+cached objective sprites. The timeline preserves descriptive accessible button
+names, keyboard focus, tooltips and review offsets. A text legend explains the
+distinct shapes rather than relying on color alone.
+
+Objective event rings use image annotations measured on the bundled 512×512
+`map11.png`: dragon pit center `(343,360)`, shared Baron/Herald pit center
+`(170,148)`. These are schematic image coordinates, **not decoded Riot world
+coordinates**, and are never inserted into normalized replay JSON. They scale
+with map size; the small icon badge is offset 36 render units above the ring
+to avoid covering the champion cluster. Recorded event coordinates, when present,
+take precedence over schematic anchors.
+
+Badges are visible only during the 2.5 replay seconds following an actual
+normalized objective kill. Pausing and seeking use replay time, including
+backward seeks; this is not an alive/dead state or a guessed spawn timer.
+The existing binary-search event-window helper remains responsible for lookup.
+No structure locations are inferred: events without positions that are not
+objectives receive no map annotation. Full structure map icons/state remain
+pending reliable entity-to-location decoding.
+
 ## Reproduce the offline comparison
 
 Install `requirements-dev.txt`. Clone the two reference repositories only if
@@ -481,3 +632,242 @@ Do not point them at another build. `probe_decoder.py` writes a local candidate
 profile to permit research observation; it does not change the production profile
 or upstream's installed files. The extraction script writes path evidence and
 reports parity assertions as failures, not verified movement.
+
+## Persistent map entities: keyframe evidence (2026-09-13)
+
+The important change is reading **keyframe packets**, in addition to the existing
+`gameChunk` event decoder. Container framing and champion movement are unchanged.
+`parser/map_entities.py` exports optional `mapEntities` in normalized schema v1;
+the browser sees IDs, positions and timestamped state observations, not packets.
+The decoder identifier is now `rofl-v2/16.18-review-v5`.
+
+### VERIFIED: tower identity and position
+
+| Source | Decoded object fields | Evidence |
+| --- | --- | --- |
+| Keyframe `0x0456` | `+0x18` entity; string `+0x30` tier; string `+0x40` map name | Embedded entity agrees with block parameter; 22 regular towers plus two excluded fountain lasers in every initial snapshot |
+| Keyframe `0x0181` | plaintext f32 `+0x10/+0x14` world x/y; last u32 `+0x34` entity | Independent 0s, 60s and 120s snapshots agree on every tower position across five matches |
+| Existing `0x0463` + credit/announcement correlation | destroyed tower entity and time | Every destruction maps to a named tower; destroyed team agrees with the map name |
+
+The name `Turret_TOrder_L0_P2_3812066093_0` identifies blue bottom inner tower
+`0x40000088`, at `(6919,1483)`. Order/Chaos identify blue/red. L0/L1/L2 map to
+bottom/middle/top, corroborated by the decoded positions. Tier strings are
+`SR_Outer`, `SR_Inner`, `SR_Inhibitor` (the tower guarding an inhibitor), and
+`SR_Nexus`. Each team has three outer, three inner, three inhibitor towers and
+two nexus towers. The two empty-tier fountain lasers are excluded.
+
+Exact-build functions added to the checked profile:
+
+| Packet | Constructor | Deserializer |
+| --- | --- | --- |
+| `0x0456` | `0xE95DC0–0xE96027` | `0xF19970–0xF1A81E` |
+| `0x0181` | `0xE9BC50–0xE9BDD1` | `0x100DA00–0x100E2CB` |
+
+Ordinary towers start alive in the initial keyframe and become destroyed at their
+recorded event. **Nexus rebuild state is UNKNOWN after destruction**: replay
+5640893952 destroys entity 0x40000094 at 1131.467261s and again at 1318.361826s.
+Treating all towers as permanently destroyed would be false. Nexus icons therefore
+fade with an explicit unknown-rebuild tooltip after the first destruction. Both
+destruction events retain their individual IDs and map association.
+
+### Objective observations, not simulated spawn timers
+
+For Baron/Herald, verified kill entity IDs are matched to `0x0287` keyframe
+records and same-entity `0x0181` positions. The full `0x0287` payload is **not**
+claimed decoded. These matches establish observed presence before the known kill.
+The marker starts at its first recorded keyframe and ends at the exact kill;
+first observation is **not the exact spawn timestamp**. Positions are actual
+keyframe coordinates, not schematic pit annotations. Pit neighborhoods are used
+only as sanity checks. No objective that lacks corroborating observations is
+manufactured, and no live marker is backdated from a kill alone.
+
+For dragons, matching `0x0039` envelope parameters at the exact team-notification
+time, followed by the keyframe identity/position checks, supplies 16 observed
+entities across the five matches. This identity correlation is **LIKELY**, while
+the sampled coordinates themselves are VERIFIED. Two of the original replay's
+six dragons lack this complete corroboration and remain event-only. Elemental
+subtype, unseen/un-killed objective presence, precise spawn/respawn instants and
+presence before the first matching keyframe remain UNKNOWN.
+
+| Match | Persistent towers | Observed dragons | Heralds | Barons |
+| --- | ---: | ---: | ---: | ---: |
+| 5640196741 | 22 | 4 | 1 | 2 |
+| 5640893952 | 22 | 3 | 1 | 0 |
+| 5640901584 | 22 | 2 | 0 | 0 |
+| 5640933743 | 22 | 4 | 1 | 2 |
+| 5640962900 | 22 | 3 | 1 | 0 |
+
+### Unresolved inhibitor identity and research tools
+
+`0x03CD` decodes a u16 at object +0x10 and bytes at +0x12/+0x13. The primary
+inhibitor's known death has last plaintext +0x13=0; its later return candidate
+has +0x13=1 and +0x10=300. However, keyframes use IDs such as 0x40000191 while
+some game-stream deaths use 0x40000091. No generic alias rule is established.
+Similarly, `0x04DA` on the rebuilt nexus tower changes bit masks, but sometimes
+uses 0x40000194 instead of 0x40000094. These observations are research evidence,
+not normalized lifecycle events. Resolve this identity relationship before adding
+inhibitor placement or nexus rebuild transitions.
+
+Local patch-matched map assets were inspected using CommunityDragon Toolbox
+(https://github.com/CommunityDragon/CDTB, research-only installation). The public
+map configuration is at
+https://raw.communitydragon.org/16.18/game/data/maps/shipping/map11/map11.bin.json.
+The installed Map11 WAD contains `data/maps/mapgeometry/map11/base_srx.materials.bin`
+with six named inhibitor visual-effect anchors, but no verified binding to the
+replay IDs. Those anchors are not shipped as invented structure positions.
+
+`tools/probe_packet.py` now accepts stream/entity filters and explicit research
+runtime initialization. Its optional MSVC guard/TLS, stack-probe and logging
+experiments affect private emulator memory only, never the installed executable.
+Some candidates (notably complete neutral creation) still fail; none of those
+experimental stubs is enabled in production map decoding. The production additions
+use the existing hash-checked engine unchanged.
+
+`tools/export_map_entity_evidence.py` generates `samples/map-entity-packets.json`
+from the five private replays. Tests check all initial tower identities, teams,
+tiers, stable IDs, later coordinate snapshots, event associations, monotonic
+transitions and failure on missing/mismatched identity. Full replays, player
+names, map binaries and executable code are not included in this small fixture.
+
+To refresh a previously normalized replay without redoing movement decoding:
+`python -m tools.enrich_map_entities <actual.rofl> <cached.json>`.
+The tool checks source SHA-256 and exact replay/client build before replacing JSON.
+Normal uploads also populate map entities. Pixi uses one small container per
+entity, updates state at 10 Hz with binary search, and keeps champion animation
+on its ticker. Hover labels, map-entity visibility and backward seeking are supported.
+
+
+## Void Grubs: partial camp-announcement coverage (2026-09-13)
+
+**VERIFIED:** exact-build `0x023D` decoded announcement target +0x1c is
+SDBM(`SRU_Horde`) = `0x8b8ab483`; category +0x18 is `0xcb5a3f01`.
+Actor +0x10 and team +0x20 match the credited champion/team. Four corpus
+announcements coincide with a `0x043C` unit death whose decoded +0x1c is that
+champion's network ID. The dying entity is the death block's envelope parameter.
+An independent `0x0119` neutral-death script at the same timestamp repeats that
+entity at vector +4/+12/+120 and decoded object +0x28. This script describes
+self-removal and has no usable target-name hash: it must NOT supply killer credit.
+The existing neutral script tag/length checks apply (0x1d7, 124 bytes).
+Unit-death decoder: RVA F09E20�F0A39D; constructor E8AAF0�E8AC33. All offsets
+are decoded client-object fields, not raw packet offsets. Exact client hash remains required.
+
+| Replay suffix | Time (seconds) | Dying entity | Credited participant (zero based) |
+|---|---:|---|---:|
+| 196741 | 652.348090 | 0x40005310 | 1 (Graves) |
+| 893952 | 535.992147 | 0x400041f3 | 1 |
+| 901584 | 533.004874 | 0x40003a21 | 6 |
+| 933743 | 885.022018 | neutral cleanup | none; excluded |
+| 962900 | 532.142000 | 0x40003dc1 | 1 |
+
+The last match has four simultaneous generic death packets. Matching the script
+entity is essential; timestamp and killer alone are ambiguous. Every credited
+participant has positive final HORDE_KILLS. This is a corroboration, not a claim
+that the emitted events sum to final stats. Primary Graves has three final kills,
+but only one camp-announced kill is currently normalized.
+
+**LIKELY:** the announcement is issued when the camp resolves. Its full trigger
+semantics are not established. We therefore label events `CAMP_ANNOUNCED_KILL_ONLY`
+and do not call this a complete individual kill feed or assign a count of three.
+A neutral team-300 announcement in 933743 is cleanup and never becomes a capture.
+
+**UNKNOWN:** identification of earlier individual grub deaths, exact spawns and
+positions. The four dying entities appear in `0x0287` keyframes (first observations
+near 480 seconds) but have no matching `0x0181` position records. No persistent
+grubs are emitted. The UI's brief pit flash is a labeled map-image annotation,
+not decoded entity coordinates. Next: decode neutral creation identity/position
+fields in `0x0287`, then correlate all individual `0x043C` deaths and reconcile
+per-player HORDE_KILLS across the corpus before claiming complete coverage.
+
+Correction to the earlier plan: do not assume two grub spawns. Riot removed the
+second spawn in [patch 25.09](https://www.leagueoflegends.com/en-au/news/game-updates/patch-25-09-notes/).
+No spawn timers from those notes are used to manufacture replay state.
+
+Fixtures: `samples/grub-packets.json` contains relevant real announcement, script,
+death, and neutral snapshot bytes from all five files, without participant names.
+`tests/test_grubs.py` re-decodes them, tests ambiguity/missing evidence, verifies
+stable IDs, excludes neutral cleanup, and asserts that missing position evidence
+does not create live markers. `tools/discover_grubs.py` reproduces fixture export
+from the existing private announcement research dumps and actual ROFL files.
+Normalized decoder version is now `rofl-v2/16.18-review-v6`. The added optional
+objective coverage field and `VOID_GRUB` category preserve schema version 1;
+movement tracks and all previous event IDs are unchanged.
+
+
+## Individual Void Grubs and persistent placement (v7, 2026-09-13)
+
+This supersedes the partial-coverage limitations immediately above.
+
+**VERIFIED identity/position prefix:** `0x0287` decoder entry F16B60 can run
+without experimental runtime patches through F19037. That instruction is the
+common successful continuation after the unit-name decoder and its success check
+(F1902F test / F19031 failure branch). The later unsupported field at F192B4
+calls E734D0 and enters client logging; the complete packet remains unsupported.
+The production profile deliberately stops at F19037 and does NOT bypass that
+later field or claim a successful complete decode. The wrapper checks RIP at the
+boundary and RSP at the verified prologue depth (five pushes + 0x20 = 0x48).
+Early failure returns to the emulator's synthetic stop address but has a different
+stack depth, so it is rejected. Truncated prefixes and mismatched entity IDs are
+tested. A valid prefix with an unexamined tail is intentionally not a full-packet
+validity check. No TLS, logging, allocator, or game-client modifications were added.
+The existing engine and exact executable hashes still gate this patch profile.
+
+Decoded object fields:
+
+| Offset | Meaning / confidence |
+|---|---|
+| +0x2c | VERIFIED network ID; must equal block parameter |
+| +0x38 | VERIFIED instance-name string, e.g. SRU_Horde.12.1 |
+| +0xa0 | VERIFIED unit-name string: SRU_Horde for grubs |
+| +0x60 | VERIFIED position x (last plaintext f32 write) |
+| +0x64 | LIKELY height; not exported |
+| +0x68 | VERIFIED position z, exported as normalized planar y |
+| +0x6c..+0x74 | UNKNOWN secondary vector; not used |
+
+The x/z values match the separately decoded `0x0181` position records exactly
+at matching timestamps for dragons, Herald, and Baron in the primary fixture.
+This independently establishes axis order; no pit coordinates are manufactured.
+Each corpus replay identifies these three separate units:
+
+| Instance | Initial world x | Initial world y |
+|---|---:|---:|
+| SRU_Horde.12.1 | 4841.942871 | 10638.950195 |
+| SRU_Horde.12.2 | 4790.000000 | 10182.446289 |
+| SRU_Horde.12.3 | 5210.000000 | 10424.000000 |
+
+**VERIFIED individual deaths:** match the `0x043C` envelope ID to those decoded
+identities and read the established killer field +0x1c. Every player's emitted
+kill count must equal final HORDE_KILLS, and prior camp-announced kills must be
+an identical-ID/credit subset. Across the five matches: 3, 3, 3, 0, 3 kills.
+Primary Graves receives all three at 628.275972, 641.987090, 652.348090 seconds.
+In 933743 all three units report themselves as killer at 885.022018 seconds;
+zero final credits and the neutral camp announcement corroborate cleanup. These
+become DESPAWNED map transitions, never objective kills.
+
+**Presence and limits:** game-stream creation appears near 473.25 seconds, before
+the first 480-second keyframe. Markers therefore start at FIRST_OBSERVATION with
+state OBSERVED, not an invented eight-minute spawn timer. Exact targetability
+remains UNKNOWN. Markers use initial placement, not simulated combat movement.
+Death events do not reuse placement as an asserted death coordinate; their brief
+pit flash remains a map annotation. Seeking evaluates each entity's transitions,
+including disappearance on cleanup, and restores all markers when seeking back.
+
+`neutral_entities.py` is separate from container parsing, movement, and the
+legacy camp-notification decoder. Normalized coverage is now INDIVIDUAL_KILLS;
+VOID_GRUB events no longer carry the partial-coverage label. Existing event IDs
+are preserved. Map entity states add DESPAWNED and presenceStart adds
+FIRST_OBSERVATION. Decoder version: rofl-v2/16.18-review-v7.
+
+Reproduce fixture export: `python -m tools.discover_grub_entities` (the five
+private ROFL files and matching installed executable are required). It writes
+`samples/grub-entity-packets.json`, containing only relevant packet bytes and
+minimal champion/team/final-grub-count metadata. Tests cover all three identities,
+individual deaths, neutral cleanup, stable prior event links, coordinate
+cross-checks, malformed prefixes, missing deaths, inconsistent final totals, and
+backward-seek visibility. Broader neutral creature lifecycles and inhibitor/Nexus
+rebuild work remain separate follow-ups.
+
+Scope guard: integration testing found other neutral unit classes whose envelope
+IDs do not match decoded identity fields. The grub adapter filters by the decoded
+unit name before applying entity/position assertions. Such unrelated records are
+not normalized. SRU_Horde records still require exact identity agreement; the
+non-grub behavior does not justify an alias rule for grubs or other entities.

@@ -8,7 +8,7 @@ from rofllens.errors import SemanticDecodeError
 
 def test_real_respawns(normalized):
     events=normalized['events']
-    assert len(events)==152
+    assert len(events)==177
     assert events==sorted(events,key=lambda e:(e['timestamp'],e['id']))
     deaths={e['id']:e for e in events if e['type']=='CHAMPION_KILL'}
     respawns=[e for e in events if e['type']=='CHAMPION_RESPAWN']

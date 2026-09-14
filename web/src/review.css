@@ -2,3 +2,12 @@
 .event-marker.near-start .event-tooltip{left:0;transform:none}.event-marker.near-end .event-tooltip{left:auto;right:0;transform:none}
 .event-symbol.respawn{color:#86dbce}.life-state{border-radius:4px;padding:8px 10px;font-weight:600}.life-state.dead{background:#37202a;color:#f8b0bb}.life-state.alive{background:#17342e;color:#9be2cd}
 .timeline-options{display:flex;justify-content:flex-end;align-items:center;gap:6px;color:#a0b6c5;font-size:10px;margin-top:8px}
+.event-symbol{width:20px;height:20px;border-color:transparent;border-radius:4px;background:#101b25}
+.event-glyph{display:block;width:18px;height:18px;background:currentColor;mask-repeat:no-repeat;mask-position:center;mask-size:contain;-webkit-mask-repeat:no-repeat;-webkit-mask-position:center;-webkit-mask-size:contain}
+.event-legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0 10px 12px;color:#9eb2c0;font-size:10px}
+.event-legend>span{display:inline-flex;align-items:center;gap:4px}
+.event-feed .event-symbol{width:24px;height:24px}
+.event-feed .event-glyph{width:21px;height:21px}
+.event-marker:focus-visible{outline:2px solid #9ce9db;outline-offset:3px;border-radius:4px}
+.pit-note{display:block;color:#9eb2c0;font-size:10px;line-height:1.5;margin:6px 0 10px}
+.map-entity-controls{display:flex;gap:12px;align-items:flex-start;padding:8px 12px;max-width:800px}.map-entity-controls label{white-space:nowrap;font-size:12px;color:#c7d6df}.map-entity-controls .pit-note{margin:0}

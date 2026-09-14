@@ -10,6 +10,10 @@ from rofllens import ReplayReader
 from .movement import parse_movement_payloads
 from .events import DeathDecoder, DEATH_OPCODE, RESPAWN_OPCODE, validate_deaths, attach_observed_locations, merge_life_events
 from .events import DRAGON_OPCODE, validate_dragons
+from .notifications import ReviewNotifications, NOTIFICATION_OPCODES
+from .neutral_entities import extract_grub_entities
+from .grubs import normalize_grub_notifications, UNIT_DEATH
+from .map_entities import extract_map_entities, NEUTRAL_REMOVAL
 from rofllens.errors import RoflParseError, SemanticDecodeError
 from .patch_16_18 import (CLIENT_VERSION, PROTOCOL_DIGEST, PLAYER_ENTITY_START,
                           MOVEMENT_OPCODE, PatchDecoder)
@@ -78,13 +82,22 @@ class ReplayParser:
                 raise ParseError('CLIENT_REQUIRED', f'{exc} Set LEAGUE_CLIENT_EXE to the matching local League of Legends.exe.') from exc
             samples = [[] for _ in players]
             death_decoder = DeathDecoder(self.client_exe)
+            notifications = ReviewNotifications(death_decoder.engine)
             events = []
             respawns = []
             dragons = []
+            neutral_removals = []
             opcodes = Counter()
             movement_packets = 0
             for block in reader.iter_blocks(streams={'gameChunk'}, include_payload=True):
                 opcodes[f'0x{block.packet_id:04x}'] += 1
+                if block.packet_id == NEUTRAL_REMOVAL:
+                    neutral_removals.append((block.timestamp,block.param))
+                if block.packet_id in NOTIFICATION_OPCODES:
+                    try:
+                        notifications.accept(block)
+                    except (ValueError,SemanticDecodeError) as exc:
+                        raise ParseError('EVENT_DECODE_FAILED',f'Notification at {block.timestamp:.3f}s: {exc}') from exc
                 if block.packet_id == DRAGON_OPCODE:
                     try:
                         dragons.append(death_decoder.decode_dragon(block))
@@ -136,15 +149,23 @@ class ReplayParser:
             attach_observed_locations(events,samples)
             life_events=merge_life_events(validate_deaths(events,players,duration),respawns,duration)
             objective_events=validate_dragons(dragons,reader.metadata.participants,duration)
+            review_events=notifications.normalize(players,reader.metadata.participants,duration)
+            grub_blocks=[b for b in reader.iter_blocks(streams={'gameChunk'},opcodes={UNIT_DEATH,0x0119},include_payload=True)
+                         if any(abs(b.timestamp-n.block.timestamp)<.000002 for n in notifications.grubs)]
+            grub_events=normalize_grub_notifications(notifications.grubs,grub_blocks,death_decoder.engine,players,reader.metadata.participants,duration)
+            grub_events,grub_entities=extract_grub_entities(reader,death_decoder.engine,players,reader.metadata.participants,duration,grub_events)
+            all_events=sorted(life_events+objective_events+review_events+grub_events,key=lambda e:(e['timestamp'],e['id']))
+            map_entities=extract_map_entities(reader,death_decoder.engine,all_events,neutral_removals)+grub_entities
             log.info('Decoded %s: %d movement packets, %d champion samples', source_hash[:12], movement_packets, sum(map(len, samples)))
             return {'schemaVersion': 1,
                     'metadata': {'patch': CLIENT_VERSION, 'mapId': 11, 'duration': duration,
-                                 'sourceSha256': source_hash, 'decoder': 'rofl-v2/16.18-review-v3',
-                                 'eventCoverage': {'championKills': True, 'respawns': True, 'assists': False, 'objectives': False, 'dragons': True, 'structures': False},
+                                 'sourceSha256': source_hash, 'decoder': 'rofl-v2/16.18-review-v7',
+                                 'eventCoverage': {'championKills': True, 'respawns': True, 'assists': False, 'objectives': True, 'dragons': True, 'structures': True, 'voidGrubs': 'INDIVIDUAL_KILLS'},
                                  'positionSource': 'movement-path-origin-with-route',
                                  'entityMapping': 'patch-profile participant order',
                                  'worldBounds': {'minX': 0, 'maxX': 14716, 'minY': 0, 'maxY': 14824}},
                     'players': players,
                     'tracks': [{'playerId': i, 'samples': track} for i, track in enumerate(samples)],
-                    'events': sorted(life_events+objective_events,key=lambda e:(e['timestamp'],e['id'])),
+                    'events': all_events,
+                    'mapEntities': map_entities,
                     'diagnostics': {'movementPackets': movement_packets, 'sampleCount': sum(map(len, samples)), 'opcodeHistogram': dict(opcodes)}}

@@ -9,20 +9,43 @@ scrub, and change playback speed. No League simulation or invented trajectories.
 samples over 36:33.710. Other client builds fail with an unsupported-version
 error instead of silently applying the wrong decoder.
 
-**Dragon review update:** five real replays now pass integration checks. The
-parser extracts 18 team dragon notifications across them; the original replay
-has six. They appear in the existing event feed and timeline with a ten-second
-review lead-in. Re-upload older cached replay JSON to add these events.
-Individual dragon killer, elemental type, Baron and Herald remain unavailable.
+**Objective and structure review:** five real replays provide 18 dragon,
+4 Baron, 4 Herald, 12 Void Grub, 53 tower and 10 inhibitor events. The original replay now
+has 177 events in total: 75 kills, 71 respawns, 6 dragons, 2 Barons, 1 Herald,
+3 Void Grubs, 15 towers and 4 inhibitors. They appear in the existing event feed and timeline.
+Click Objectives or Structures to filter; click an event for a ten-second
+objective or eight-second structure lead-in. Event URLs preserve that selection.
+Re-upload older cached replay JSON to add these events.
+Baron, Herald and Void Grubs include verified player credit. Dragon killer/subtype and
+inhibitor coordinates and complete objective/structure respawn state remain unavailable.
+
+**Persistent map markers:** re-upload a replay (or reload one of the five locally
+refreshed matches) to see all 22 towers at decoded positions. Ordinary towers
+become faded/slashed at their destruction time; nexus towers fade to an explicit
+unknown rebuild state because their respawn decoding is incomplete. Hover a marker
+for its team, lane, tier and state. The Map entities checkbox hides this layer.
+Tower events now include lane/tier and map highlights at the actual tower position.
+
+Baron, Herald and corroborated dragons remain visible from their first matching
+keyframe until the recorded kill. These are observed-presence intervals, not exact
+spawn timers: unseen objectives and some dragons are not yet covered. The primary
+match has 22 towers, two Baron intervals, one Herald interval and four of its six
+dragon intervals. All three Void Grubs also have individual observed-placement
+markers and recorded death/cleanup transitions. Inhibitor map placement remains unsupported pending a reliable
+link between replay entity IDs and visual anchors. No timer-based spawns are invented.
+
+The timeline/feed retain their eight local vector icons, legend and event seeking.
 Assist-credit candidates were tested across all five matches and rejected for
 inconsistent totals; current assists are still omitted. See
 [`docs/rofl-format.md`](docs/rofl-format.md) for the evidence and next decoding steps.
 
-Run `.\.venv\Scripts\python.exe -m pytest -q` from the root (37 tests), and
-`npm test` / `npm run build` in `web` (27 tests plus production build).
+Run `.\.venv\Scripts\python.exe -m pytest -q` from the root, and
+`npm test` / `npm run build` in `web` (57 Python tests, 34 frontend tests, plus production build).
 `ROFL_TEST_DIR` optionally points to the directory containing all five private
 fixtures; missing local replays or the exact client cause integration skips.
-The small real dragon packet fixtures are included in `samples/dragon-packets.json`.
+Small real packet fixtures are included in `samples/dragon-packets.json` and
+`samples/notification-packets.json`. Full private replays and client binaries
+remain local and are not committed.
 
 ## Run locally
 
@@ -152,7 +175,7 @@ labels/grid. A ticker moves sprites; React updates the control display at 10 Hz.
 Seeking uses binary search independently on each champion's track. The renderer
 follows each recorded route at its recorded speed until the next update, stopping
 at the route endpoint. Long gaps between commands no longer freeze normal travel.
-The next observed origin corrects the position; death/recall events remain undecoded.
+The next observed origin corrects the position; recorded deaths/respawns interrupt routes. Recall completion remains undecoded.
 
 `worldToMap()` centrally maps world `[0,14716] × [0,14824]` onto the image and
 inverts the vertical axis. **Debug** shows raw/world and map coordinates, previous
@@ -184,7 +207,7 @@ Re-upload an existing replay once to regenerate it with event data. The supplied
 fixture produces **75 verified champion kills/deaths and 71 respawns**. Click a timeline marker
 or event-feed row to seek eight seconds before the kill. Hover or keyboard-focus
 a marker for victim/killer information. The collapsible feed supports category
-and selected-player filters. Objectives and structures remain explicitly unsupported.
+and selected-player filters. Objectives and structures are included where decoding is verified.
 
 Respawn events have their own filter and seek three seconds before the recorded
 return. Enable **Respawn markers** to show all returns on the timeline; a selected
@@ -222,7 +245,14 @@ re-uploaded for current kill/death statistics. New frontend modules are
 `EventReview`, `PlayerInspector`, `events`, `urlState`, and `trails`; the existing
 Pixi ticker still owns animation. Sorted event indexes support binary-search
 lookups. The 16.18 death adapter uses Unicorn (now a runtime requirement) behind
-the existing parser interface; movement decoding is preserved.
+the existing parser interface; movement decoding is preserved. The additional
+`parser/notifications.py` layer models and correlates announcements, script
+events and building death/credit records before normalization. It validates
+per-player objective/structure credits and per-team tower losses. Neutral
+Herald self-removal is excluded, and final-hit entities are distinguished from
+credited participants. Decoder `16.18-review-v4` enables these existing event
+types; normalized schema version 1 remains compatible. Debug provenance shows
+the entity IDs and corroborating packet opcodes without exposing raw payloads.
 
 Print the actual decoded event feed with
 `python -m tools.dump_events samples/local/review.json` after producing that JSON
@@ -231,7 +261,7 @@ above to test the phase, including real-packet, stable-ID and final-total assert
 
 On Windows, pytest's fault handler may print an access-violation diagnostic during
 Unicorn memory initialization even when the run completes successfully. This was
-observed here with all 30 Python tests passing; normal CLI and HTTP uploads also
+observed here with all 51 Python tests passing; normal CLI and HTTP uploads also
 completed. See [Unicorn's Windows exception FAQ](https://github.com/unicorn-engine/unicorn/blob/master/docs/FAQ.md#i-debug-my-application-but-soon-get-an-access-violation-inside-unicorn).
 Check the final test result and process exit code; actual parse errors are not ignored.
 
@@ -246,16 +276,16 @@ Check the final test result and process exit code; actual parse errors are not i
 - Positions are network path origins with recorded routes and speeds. This is
   not an exact continuous simulation: changing movement buffs, recalls, deaths,
   and dashes may still cause corrections or snaps. HP is not decoded; death and respawn notifications control life state.
-- Champion kills/deaths are verified against all ten metadata totals. Dragon
-  notifications include team credit, checked against final team totals. Assists,
-  Baron, Herald and structures are not decoded. Death highlight locations
+- Champion kills/deaths, Baron/Herald credits and structure credits are checked
+  against metadata totals. Dragon notifications include verified team credit.
+  Current assists and inhibitor positions are not decoded. Death highlight locations
   use nearby observed movement origins where available, labeled approximate.
 - Fog of war, minions, projectiles, abilities, attacks, cooldowns, and combat
   simulation are postponed. Only the all-player view is exposed.
 - The official Data Dragon map is a schematic minimap, not the detailed in-game
   terrain texture. Uncached champion icons use the official Data Dragon CDN.
 
-Next: identify an explicit assist-credit source and Baron/Herald notifications.
+Next: resolve inhibitor entity identity and exact objective/nexus respawn records.
 Five 16.18 fixtures now provide independent validation; nearby 16.17 replays
 remain unsupported. Improve path timing
 and profile tooling for later patches. Port stable parser layers to Rust when it
@@ -274,3 +304,25 @@ Rift Replay is not endorsed by Riot Games and does not reflect the views or
 opinions of Riot Games or anyone officially involved in producing or managing
 Riot Games properties. Riot Games and all associated properties are trademarks
 or registered trademarks of Riot Games, Inc.
+
+
+### Void Grubs
+
+All three Void Grubs now have persistent markers at their decoded initial
+positions. Each disappears at its own death or recorded cleanup, and seeking
+backward restores the appropriate markers. Individual kill events include player
+and team credit, a distinct timeline icon, and a 10-second review lead-in.
+
+All five integration replays identify three grubs. Per-player kill counts match
+final HORDE_KILLS exactly: three kills in four matches, and zero in the match
+where the camp is cleaned up. Existing camp-event links remain valid.
+
+Markers begin at the first actual entity observation (around 7:53 in these
+matches), not an assumed targetable spawn time. They show initial placement,
+not monster combat movement. The parser decodes a validated identity/position
+prefix of 0x0287; its trailing fields remain unsupported. Evidence and limitations
+are documented in `docs/rofl-format.md`.
+
+Refresh an existing cache with `python -m tools.enrich_map_entities <actual.rofl> <cached.json>`. New uploads use v7 after restarting the backend; reload the viewer
+after updating a cache. Run `python -m pytest tests/test_neutral_entities.py -q`
+and the normal frontend tests/build to verify this feature.

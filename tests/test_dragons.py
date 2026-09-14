@@ -47,7 +47,7 @@ def test_real_corpus(match,replay_parser):
     assert len(replay['players'])==10
     assert all(len(t['samples'])>2 for t in replay['tracks'])
     assert replay['events']==sorted(replay['events'],key=lambda e:(e['timestamp'],e['id']))
-    dragons=[e for e in replay['events'] if e['type']=='OBJECTIVE_KILL']
+    dragons=[e for e in replay['events'] if e.get('objective')=='DRAGON']
     assert Counter(e['killerTeam'] for e in dragons)==Counter(match['finalTeamDragons'])
     assert [e['timestamp'] for e in dragons]==[round(e['timestamp'],6) for e in match['packets']]
     # No guessed assist credit is exposed while discovery is incomplete.

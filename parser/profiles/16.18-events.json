@@ -44,6 +44,13 @@
   },
   "runtimeObjects": [],
   "decoders": {
+    "towerCredit": {
+      "status": "verified",
+      "entryRva": "0xf7b950",
+      "endRva": "0xf7bf03",
+      "constructorRva": "0xe96c90",
+      "constructorEndRva": "0xe96d34"
+    },
     "dragonNotification": {
       "status": "verified",
       "entryRva": "0xf1e520",
@@ -64,6 +71,63 @@
       "endRva": "0xf0989f",
       "constructorRva": "0xe88460",
       "constructorEndRva": "0xe884fc"
+    },
+    "announcement": {
+      "status": "verified",
+      "entryRva": "0x1039d00",
+      "endRva": "0x103a5b0",
+      "constructorRva": "0xeaf430",
+      "constructorEndRva": "0xeaf5cd"
+    },
+    "scriptEvent": {
+      "status": "verified",
+      "entryRva": "0x101dab0",
+      "endRva": "0x101e23a",
+      "constructorRva": "0xea1170",
+      "constructorEndRva": "0xea11f5"
+    },
+    "towerDeath": {
+      "status": "verified",
+      "entryRva": "0xf098a0",
+      "endRva": "0xf09e1d",
+      "constructorRva": "0xe8a9a0",
+      "constructorEndRva": "0xe8aae3"
+    },
+    "buildingDeath": {
+      "status": "verified",
+      "entryRva": "0x10ba740",
+      "endRva": "0x10bac75",
+      "constructorRva": "0xe86be0",
+      "constructorEndRva": "0xe86c73"
+    },
+    "towerIdentity": {
+      "status": "verified",
+      "entryRva": "0xf19970",
+      "endRva": "0xf1a81e",
+      "constructorRva": "0xe95dc0",
+      "constructorEndRva": "0xe96027"
+    },
+    "entityPosition": {
+      "status": "verified",
+      "entryRva": "0x100da00",
+      "endRva": "0x100e2cb",
+      "constructorRva": "0xe9bc50",
+      "constructorEndRva": "0xe9bdd1"
+    },
+    "unitDeath": {
+      "status": "verified",
+      "entryRva": "0xf09e20",
+      "endRva": "0xf0a39d",
+      "constructorRva": "0xe8aaf0",
+      "constructorEndRva": "0xe8ac33"
+    },
+    "neutralIdentityPrefix": {
+      "status": "verified",
+      "entryRva": "0xf16b60",
+      "endRva": "0xf19037",
+      "constructorRva": "0xe94da0",
+      "constructorEndRva": "0xe95394",
+      "scope": "identity-position-prefix-only"
     }
   }
 }
