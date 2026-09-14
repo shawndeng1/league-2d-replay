@@ -6,15 +6,18 @@ const output=resolve(process.argv[3]??'../samples/local/movement-audit');
 const server=await createServer({configFile:false,server:{middlewareMode:true,watch:null},appType:'custom'});
 try{
   const {auditMovement}=await server.ssrLoadModule('/src/movementAudit.ts');
-  const reports=[];
+  const {compareSupplementalPositions}=await server.ssrLoadModule('/src/movementComparison.ts');
+  const reports=[],comparisons=[];
   for(const file of (await readdir(input)).filter(f=>f.endsWith('.json')).sort()){
     const replay=JSON.parse(await readFile(resolve(input,file),'utf8'));
     if(!Array.isArray(replay.tracks))continue;
     reports.push(auditMovement(replay));
+    comparisons.push(compareSupplementalPositions(replay));
   }
   if(!reports.length)throw new Error(`No normalized replays in ${input}`);
   await mkdir(output,{recursive:true});
   await writeFile(resolve(output,'report.json'),JSON.stringify(reports,null,2));
+  await writeFile(resolve(output,'supplemental-comparison.json'),JSON.stringify(comparisons,null,2));
   const lines=['# Movement review candidates','','These are interpolation discontinuities, not confirmed game/protocol defects. Life-related transitions are separated. Distances are world units.',''];
   for(const r of reports){
     lines.push(`## ${r.replayId}`,`Patch ${r.patch}; ${r.boundaries} boundaries; ${r.flagged} flags; ${r.nonLifeCandidates} outside known life transitions; ${r.maskedByLife} masked by life state.`,'', '| Champion | Time | Jump | Gap | Classification | Review |','| --- | ---: | ---: | ---: | --- | --- |');

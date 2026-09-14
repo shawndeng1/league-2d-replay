@@ -27,7 +27,14 @@ export function auditMovement(replay:Replay){
         throw new Error(`Unsorted/nonfinite time for player ${track.playerId}`);
     }
     const playerLife=life.get(track.playerId)??[];
-    const spawns=playerLife.flatMap(e=>e.type==='CHAMPION_RESPAWN'?[{x:e.x,y:e.y}]:[]);
+    const personalSpawns=playerLife.flatMap(e=>e.type==='CHAMPION_RESPAWN'?[{x:e.x,y:e.y}]:[]);
+    // A player may have no recorded personal respawns. Same-team decoded respawns
+    // still provide spatial evidence; never use an opponent's spawn or infer a
+    // recall/teleport event. Keep the evidence source explicit in diagnostics.
+    const teamIds=new Set(replay.players.filter(p=>player?.team && p.team===player.team).map(p=>p.id));
+    const teamSpawns=replay.metadata.eventCoverage?.respawns?events.flatMap(e=>e.type==='CHAMPION_RESPAWN'&&teamIds.has(e.playerId)?[{x:e.x,y:e.y}]:[]):[];
+    const spawns=personalSpawns.length?personalSpawns:teamSpawns;
+    const spawnEvidence=personalSpawns.length?'PLAYER_RESPAWNS':teamSpawns.length?'TEAM_RESPAWNS':'NONE';
     for(let i=1;i<samples.length;i++){
       // At coincident timestamps the renderer uses the last update. Audit once.
       if(samples[i].timestamp===samples[i-1].timestamp){duplicates++;continue;}
@@ -46,12 +53,12 @@ export function auditMovement(replay:Replay){
       const backwards=jump>=30&&Math.hypot(dx,dy)>1e-3&&dx*(visibleAfter.x-visibleBefore.x)+dy*(visibleAfter.y-visibleBefore.y)<0;
       let routeLength=0;
       for(let k=1;k<(a.path?.length??0);k++)routeLength+=distance(a.path![k-1],a.path![k]);
-      const holdSeconds=a.path?.length ? Math.max(0,span-((a.speed??0)>0?routeLength/a.speed!:0)) : a.speed===0||span>10||distance(a,b)>2000?span:0;
+      const holdSeconds=a.positionOnly ? span : a.path?.length ? Math.max(0,span-((a.speed??0)>0?routeLength/a.speed!:0)) : a.speed===0||span>10||distance(a,b)>2000?span:0;
       const lifeRelated=playerLife.some(e=>e.timestamp>=a.timestamp&&e.timestamp<=b.timestamp)||playerLifeAt(playerLife,beforeTime).dead;
       if(jump<30)continue;
       candidates.push({playerId:track.playerId,champion:player?.championName??String(track.playerId),timestamp:b.timestamp,
         gapSeconds:span,jumpWorldUnits:jump,rawJumpWorldUnits:rawJump,backwards,
-        predictedHoldSeconds:holdSeconds,lifeRelated,
+        predictedHoldSeconds:holdSeconds,lifeRelated,spawnEvidence,
         holdContext:holdSeconds>=2?classifyHold(visibleBefore,visibleAfter,jump,spawns):undefined,
         classification:lifeRelated?'LIFE_TRANSITION':holdSeconds>=2?'HOLD_THEN_RELOCATION':backwards?'BACKWARD_CORRECTION':'POSITION_CORRECTION',
         url:`/replay/${replay.metadata.sourceSha256}?t=${Math.max(0,holdSeconds>=2?Math.max(a.timestamp,b.timestamp-15):b.timestamp-3).toFixed(3)}&player=${track.playerId}`,

@@ -1268,3 +1268,32 @@ identity/time/finite-value guards, nearby movement precedence, active routes,
 dead intervals, idempotence, and the exact three additions in the real Amumu
 replay. Frontend tests check holding, endpoints, and backward seeking. The
 real-replay test skips when the private fixture or supported client is absent.
+
+
+### Target-correlated relocation cluster (2026-09-14)
+
+The controlled movement audit and evidence are in
+[movement-review-2026-09-14.md](movement-review-2026-09-14.md). A 990–1010 second
+window from NA1-5640196741 contains three `0x02c4` actions with fingerprint
+`0x008fa255` for Twisted Fate, Syndra, and Malphite. VERIFIED observations:
+source IDs match envelope entities; decoded origin `+0x104/+0x10c` matches each
+stopped movement origin within 2.1 units; decoded target `+0x130/+0x138` is within
+28.2 units of the next real movement origin 6.012–6.291 seconds later. The
+companion fingerprint `0x0a9306a0` has a self-target and fails target correlation.
+
+LIKELY: a shared target-correlated relocation mechanism. UNKNOWN: gameplay name,
+completion time, interruption/cancellation rules, and travel trajectory. The
+candidate is not mapped to a teleport spell based on packet timing alone. The
+repeated intermediate opcode sequence (`0x0345`, `0x0268`, `0x03d6`, `0x01c1`,
+`0x0129`, `0x016b`) occurs about three seconds after the action. Another sequence
+including `0x021c` and `0x028d` precedes the next movement sample by about 33 ms.
+These packets remain unlabeled; proximity is not semantic proof.
+
+`tools/analyze_relocation_candidates.py` applies explicit research gates (150 ms
+stop alignment, 4-unit origin tolerance, 64-unit target tolerance, a stopped gap
+at least two seconds and displacement at least 2,000 units, matching identities,
+and embedded time within 2 ms). These gates select candidates, not supported
+normalized events. Tests and portable fixtures preserve all three matches and
+self-target counterexamples. Next: scan complete matches and additional replays,
+include cancelled actions, then trace the relevant client consumers. No position
+samples or events are emitted from this research tool.

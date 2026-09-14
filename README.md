@@ -440,3 +440,14 @@ Run `python -m pytest tests/test_action_positions.py -q` for the scoped decoder
 and real-replay integration checks, and `npm test` in `web` for playback checks.
 This reduces a specific stale-position interval; other unexplained relocations
 and missing dash trajectories remain unresolved.
+
+
+Movement review follow-up: the controlled five-replay comparison is documented in
+[the movement review report](docs/movement-review-2026-09-14.md). Seven earlier
+observations replace five old jump flags, leaving 3,356 review candidates versus
+3,354 in the same-renderer baseline. This is not a claim that the relocations
+became smooth. The audit now counts position-only holds correctly and recognizes
+same-team observed spawn coordinates when personal respawn evidence is absent.
+Run `npm run audit:movement` in `web` for the report and controlled comparison.
+Three champions share a promising action-target relocation pattern; it remains
+research-only pending completion/cancellation and cross-replay validation.

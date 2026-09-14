@@ -1,0 +1,77 @@
+{
+  "replayId": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+  "candidates": [
+    {
+      "playerId": 2,
+      "entity": "0x400000b0",
+      "actionTimestamp": 994.375387207032,
+      "observationTimestamp": 1000.554387,
+      "elapsedSeconds": 6.178999792968057,
+      "fingerprint": "0x008fa255",
+      "originError": 1.3472745949282605,
+      "targetError": 26.213805849858854,
+      "origin": {
+        "x": 1084.78125,
+        "y": 723.4257202148438
+      },
+      "target": {
+        "x": 12714.751953125,
+        "y": 2538.9501953125
+      },
+      "observedDestination": {
+        "x": 12740.0,
+        "y": 2546.0
+      },
+      "confidence": "LIKELY",
+      "meaning": "Target-correlated relocation candidate; completion time and gameplay identity UNKNOWN"
+    },
+    {
+      "playerId": 7,
+      "entity": "0x400000b5",
+      "actionTimestamp": 996.8803872070324,
+      "observationTimestamp": 1002.892387,
+      "elapsedSeconds": 6.011999792967572,
+      "fingerprint": "0x008fa255",
+      "originError": 1.5303292133461686,
+      "targetError": 23.489243927143757,
+      "origin": {
+        "x": 14237.365234375,
+        "y": 13530.69140625
+      },
+      "target": {
+        "x": 12788.5283203125,
+        "y": 2607.091796875
+      },
+      "observedDestination": {
+        "x": 12812.0,
+        "y": 2608.0
+      },
+      "confidence": "LIKELY",
+      "meaning": "Target-correlated relocation candidate; completion time and gameplay identity UNKNOWN"
+    },
+    {
+      "playerId": 0,
+      "entity": "0x400000ae",
+      "actionTimestamp": 1000.153387207033,
+      "observationTimestamp": 1006.444387,
+      "elapsedSeconds": 6.290999792967,
+      "fingerprint": "0x008fa255",
+      "originError": 2.0895281687104563,
+      "targetError": 28.16443165869178,
+      "origin": {
+        "x": 1346.9951171875,
+        "y": 7304.16796875
+      },
+      "target": {
+        "x": 12740.5390625,
+        "y": 2749.47216796875
+      },
+      "observedDestination": {
+        "x": 12750.0,
+        "y": 2776.0
+      },
+      "confidence": "LIKELY",
+      "meaning": "Target-correlated relocation candidate; completion time and gameplay identity UNKNOWN"
+    }
+  ]
+}

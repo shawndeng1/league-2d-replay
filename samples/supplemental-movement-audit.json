@@ -1,0 +1,166 @@
+[
+  {
+    "replayId": "09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6",
+    "before": 677,
+    "after": 679,
+    "supplementalSamples": 3,
+    "added": [
+      {
+        "playerId": 2,
+        "champion": "Amumu",
+        "timestamp": 342.335318,
+        "jumpWorldUnits": 711.8567271579303,
+        "holdSeconds": 1.836999999999989,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6?t=339.335&player=2"
+      },
+      {
+        "playerId": 2,
+        "champion": "Amumu",
+        "timestamp": 1035.553428,
+        "jumpWorldUnits": 389.6305942813013,
+        "holdSeconds": 1.5059999999998581,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6?t=1032.553&player=2"
+      },
+      {
+        "playerId": 2,
+        "champion": "Amumu",
+        "timestamp": 933.029361,
+        "jumpWorldUnits": 208.61447696648477,
+        "holdSeconds": 1.06899999999996,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6?t=930.029&player=2"
+      }
+    ],
+    "removed": [
+      {
+        "playerId": 2,
+        "champion": "Amumu",
+        "timestamp": 344.142318,
+        "jumpWorldUnits": 721.8032973047435,
+        "holdSeconds": 3.6440000000000055,
+        "classification": "HOLD_THEN_RELOCATION",
+        "url": "/replay/09ed9f33cc67c42a95c9d2097bfd9eaea33b511fab0dbfe10b66969011bad2f6?t=340.498&player=2"
+      }
+    ],
+    "changed": [],
+    "note": "Added flags can be earlier observations of an unresolved relocation, not new defects. Removed flags do not prove a decoded trajectory."
+  },
+  {
+    "replayId": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+    "before": 523,
+    "after": 523,
+    "supplementalSamples": 2,
+    "added": [
+      {
+        "playerId": 6,
+        "champion": "Amumu",
+        "timestamp": 1022.432877,
+        "jumpWorldUnits": 152.11837495845137,
+        "holdSeconds": 1.0019999999999527,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806?t=1019.433&player=6"
+      },
+      {
+        "playerId": 6,
+        "champion": "Amumu",
+        "timestamp": 469.958378,
+        "jumpWorldUnits": 55.46169849544819,
+        "holdSeconds": 0.8349999999999795,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806?t=466.958&player=6"
+      }
+    ],
+    "removed": [
+      {
+        "playerId": 6,
+        "champion": "Amumu",
+        "timestamp": 1022.733877,
+        "jumpWorldUnits": 140.05713120009278,
+        "holdSeconds": 1.3029999999999973,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806?t=1019.734&player=6"
+      },
+      {
+        "playerId": 6,
+        "champion": "Amumu",
+        "timestamp": 470.259378,
+        "jumpWorldUnits": 60.959002616512684,
+        "holdSeconds": 1.136000000000024,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806?t=467.259&player=6"
+      }
+    ],
+    "changed": [],
+    "note": "Added flags can be earlier observations of an unresolved relocation, not new defects. Removed flags do not prove a decoded trajectory."
+  },
+  {
+    "replayId": "971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931",
+    "before": 917,
+    "after": 917,
+    "supplementalSamples": 2,
+    "added": [
+      {
+        "playerId": 1,
+        "champion": "Amumu",
+        "timestamp": 1932.835459,
+        "jumpWorldUnits": 1033.4602072648952,
+        "holdSeconds": 0.37358380049564865,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931?t=1929.835&player=1"
+      },
+      {
+        "playerId": 1,
+        "champion": "Amumu",
+        "timestamp": 1455.094403,
+        "jumpWorldUnits": 161.3071604114337,
+        "holdSeconds": 0.43800000000010186,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931?t=1452.094&player=1"
+      }
+    ],
+    "removed": [
+      {
+        "playerId": 1,
+        "champion": "Amumu",
+        "timestamp": 1933.144459,
+        "jumpWorldUnits": 1045.4491857570122,
+        "holdSeconds": 0.6825838004958451,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931?t=1930.144&player=1"
+      },
+      {
+        "playerId": 1,
+        "champion": "Amumu",
+        "timestamp": 1455.428403,
+        "jumpWorldUnits": 150.37286989347515,
+        "holdSeconds": 0.7719999999999345,
+        "classification": "POSITION_CORRECTION",
+        "url": "/replay/971d3811c61474b924ad4b9238bc36d857dd800b99dae85ffa184c15253c0931?t=1452.428&player=1"
+      }
+    ],
+    "changed": [],
+    "note": "Added flags can be earlier observations of an unresolved relocation, not new defects. Removed flags do not prove a decoded trajectory."
+  },
+  {
+    "replayId": "a3657dbd88f329ed2d32e45e13e5542b36859dd80075f97b45f3dbe25ffa2568",
+    "before": 393,
+    "after": 393,
+    "supplementalSamples": 0,
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "note": "Added flags can be earlier observations of an unresolved relocation, not new defects. Removed flags do not prove a decoded trajectory."
+  },
+  {
+    "replayId": "d2758074c6c538f09f8dc8650da904228c0c8e88b53b603f667a9b84c5cd6581",
+    "before": 844,
+    "after": 844,
+    "supplementalSamples": 0,
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "note": "Added flags can be earlier observations of an unresolved relocation, not new defects. Removed flags do not prove a decoded trajectory."
+  }
+]

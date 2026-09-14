@@ -1,0 +1,183 @@
+{
+  "replayId": "3a968c92f7c599425d8fa8d520135611cfb70f6e4edc2eb121180e531f7e3806",
+  "patch": "16.18.817.5716",
+  "player": {
+    "id": 1,
+    "team": "BLUE",
+    "championName": "MasterYi"
+  },
+  "teammate": {
+    "id": 4,
+    "team": "BLUE"
+  },
+  "respawn": {
+    "id": "respawn-84625-4-71e1d5335326",
+    "timestamp": 84.625245,
+    "type": "CHAMPION_RESPAWN",
+    "playerId": 4,
+    "x": 394.0,
+    "y": 461.0,
+    "source": {
+      "opcode": "0x01b3",
+      "packetSize": 13,
+      "rawTimestamp": 84.6252453002949,
+      "entityId": 1073742002,
+      "confidence": "VERIFIED",
+      "coordinateSource": "respawn notification",
+      "coordinateConfidence": "VERIFIED"
+    },
+    "deathEventId": "kill-74605-4-f75842e34dd1"
+  },
+  "playerLifeEventCount": 1,
+  "cases": [
+    {
+      "timestamp": 380.539021,
+      "samples": [
+        {
+          "timestamp": 372.522021,
+          "x": 13470,
+          "y": 2704,
+          "speed": 355,
+          "path": [
+            {
+              "x": 13470,
+              "y": 2704
+            }
+          ]
+        },
+        {
+          "timestamp": 380.539021,
+          "x": 394,
+          "y": 462,
+          "speed": 355,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 587.685723,
+      "samples": [
+        {
+          "timestamp": 578.624723,
+          "x": 10038,
+          "y": 5930,
+          "speed": 355,
+          "path": [
+            {
+              "x": 10038,
+              "y": 5930
+            },
+            {
+              "x": 10172,
+              "y": 6008
+            }
+          ]
+        },
+        {
+          "timestamp": 587.685723,
+          "x": 394,
+          "y": 462,
+          "speed": 372.75,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 207.217532,
+      "samples": [
+        {
+          "timestamp": 199.201532,
+          "x": 10622,
+          "y": 4978,
+          "speed": 452.2,
+          "path": [
+            {
+              "x": 10622,
+              "y": 4978
+            }
+          ]
+        },
+        {
+          "timestamp": 207.217532,
+          "x": 394,
+          "y": 462,
+          "speed": 452.2,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 971.011388,
+      "samples": [
+        {
+          "timestamp": 962.961388,
+          "x": 10030,
+          "y": 4920,
+          "speed": 512.15,
+          "path": [
+            {
+              "x": 10030,
+              "y": 4920
+            }
+          ]
+        },
+        {
+          "timestamp": 971.011388,
+          "x": 394,
+          "y": 462,
+          "speed": 438.68,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 716.142001,
+      "samples": [
+        {
+          "timestamp": 708.125001,
+          "x": 9478,
+          "y": 2168,
+          "speed": 386.95,
+          "path": [
+            {
+              "x": 9478,
+              "y": 2168
+            }
+          ]
+        },
+        {
+          "timestamp": 716.142001,
+          "x": 394,
+          "y": 462,
+          "speed": 386.95,
+          "path": [
+            {
+              "x": 394,
+              "y": 462
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
